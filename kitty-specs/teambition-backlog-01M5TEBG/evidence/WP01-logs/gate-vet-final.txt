@@ -1,0 +1,3 @@
+CWD: ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go-cache go vet ./...
+EXIT: 0

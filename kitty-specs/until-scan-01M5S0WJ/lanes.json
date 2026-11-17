@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "mission_slug": "until-scan-01M5S0WJ",
+  "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+  "mission_branch": "kitty/mission-until-scan-01M5S0WJ",
+  "target_branch": "fix/until-scan",
+  "lanes": [
+    {
+      "lane_id": "lane-a",
+      "wp_ids": [
+        "WP01"
+      ],
+      "write_scope": [
+        "docs/issues/03-until-scan.md",
+        "rrule.go",
+        "rrule_until_test.go"
+      ],
+      "predicted_surfaces": [
+        "api"
+      ],
+      "depends_on_lanes": [],
+      "parallel_group": 0
+    }
+  ],
+  "computed_at": "2026-10-25T08:14:52.114681+00:00",
+  "computed_from": "dependency_graph+ownership",
+  "planning_artifact_wps": [],
+  "planning_commit_sha": "c90a7d14b47496a34b2f9338139781837f9297e0"
+}

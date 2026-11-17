@@ -1,0 +1,3 @@
+COMMAND: /tmp/rrule-dst-golden-current -baseline docs/repro/05-07-backlog/golden/baseline-dst.json -current docs/repro/05-07-backlog/golden/baseline-dst.json
+EXIT: 1
+rows=799 changed=0 unexplained=0

@@ -1,0 +1,3 @@
+COMMAND: GOCACHE=/tmp/rrule-go-cache go version
+EXIT: 0
+go version go1.25.14 linux/amd64

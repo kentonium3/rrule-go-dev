@@ -1,0 +1,9 @@
+goos: linux
+goarch: amd64
+pkg: github.com/teambition/rrule-go
+cpu: AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          
+BenchmarkDSTAnnualBysetpos-32    	    1052	   1034487 ns/op	 2226026 B/op	      47 allocs/op
+PASS
+ok  	github.com/teambition/rrule-go	2.127s
+
+exit=0

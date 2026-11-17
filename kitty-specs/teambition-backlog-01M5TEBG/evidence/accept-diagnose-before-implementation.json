@@ -1,0 +1,122 @@
+{
+  "mission_slug": "teambition-backlog-01M5TEBG",
+  "mission_number": null,
+  "mission_type": "software-dev",
+  "branch": "fix/teambition-backlog",
+  "repo_root": "~/repos/rrule-go",
+  "feature_dir": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG",
+  "tasks_dir": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG/tasks",
+  "worktree_root": "~/repos/rrule-go",
+  "primary_repo_root": "~/repos/rrule-go",
+  "lanes": {
+    "planned": [
+      "WP02"
+    ],
+    "claimed": [],
+    "in_progress": [
+      "WP01"
+    ],
+    "for_review": [],
+    "in_review": [],
+    "approved": [],
+    "done": [],
+    "blocked": [],
+    "canceled": []
+  },
+  "work_packages": [
+    {
+      "id": "WP01",
+      "lane": "in_progress",
+      "title": "RFC civil time and explicit DTSTART",
+      "path": "kitty-specs/teambition-backlog-01M5TEBG/tasks/WP01-civil-time.md",
+      "latest_lane": "in_progress",
+      "has_lane_entry": true,
+      "metadata": {
+        "lane": "in_progress",
+        "agent": "codex",
+        "assignee": null,
+        "shell_pid": "3568"
+      }
+    },
+    {
+      "id": "WP02",
+      "lane": "planned",
+      "title": "RFC DTSTART UNTIL forms and integrated compatibility",
+      "path": "kitty-specs/teambition-backlog-01M5TEBG/tasks/WP02-time-forms.md",
+      "latest_lane": "planned",
+      "has_lane_entry": true,
+      "metadata": {
+        "lane": "planned",
+        "agent": null,
+        "assignee": null,
+        "shell_pid": null
+      }
+    }
+  ],
+  "metadata_issues": [
+    "WP01: missing assignee in canonical runtime state",
+    "WP02: missing agent in canonical runtime state (never claimed; run `spec-kitty agent tasks move-task WP02 --to planned --agent <name>` to repair)"
+  ],
+  "activity_issues": [
+    "WP01: canonical lane is 'in_progress', expected 'approved' or 'done'",
+    "WP02: canonical lane is 'planned', expected 'approved' or 'done'",
+    "Acceptance matrix verdict is 'pending' \u2014 criteria or invariants have not been verified"
+  ],
+  "unchecked_tasks": [],
+  "needs_clarification": [],
+  "missing_artifacts": [],
+  "optional_missing": [],
+  "git_dirty": [],
+  "path_violations": [],
+  "warnings": [
+    "contracts/ requirement waived by meta.json (contracts: none): Existing Go-library signatures/keyed callers are preserved. Kent explicitly approved private ROption parse metadata with the external positional-literal source break and targetv1.9.0; no new endpoint, integration, payload or exported identifier. Compatibility assertions and Go API tests define the contract."
+  ],
+  "failed_checks": [
+    {
+      "check": "not_done",
+      "detail": "WP02"
+    },
+    {
+      "check": "not_done",
+      "detail": "WP01"
+    },
+    {
+      "check": "metadata",
+      "detail": "WP01: missing assignee in canonical runtime state"
+    },
+    {
+      "check": "metadata",
+      "detail": "WP02: missing agent in canonical runtime state (never claimed; run `spec-kitty agent tasks move-task WP02 --to planned --agent <name>` to repair)"
+    },
+    {
+      "check": "activity",
+      "detail": "WP01: canonical lane is 'in_progress', expected 'approved' or 'done'"
+    },
+    {
+      "check": "activity",
+      "detail": "WP02: canonical lane is 'planned', expected 'approved' or 'done'"
+    },
+    {
+      "check": "activity",
+      "detail": "Acceptance matrix verdict is 'pending' \u2014 criteria or invariants have not been verified"
+    }
+  ],
+  "skipped_checks": [],
+  "blocked_checks": [],
+  "recommended_fix_order": [
+    "Fix work-package metadata issues.",
+    "Move all work packages to approved or done.",
+    "Resolve pending or failing acceptance matrix criteria and negative invariants."
+  ],
+  "canceled_wps": [],
+  "all_done": false,
+  "ok": false,
+  "accepted_wps": [],
+  "approved_wps": [],
+  "done_wps": [],
+  "merge_pending_wps": [],
+  "diagnose": true,
+  "advisories": [
+    "ORIGIN_UNREACHABLE: fix/teambition-backlog is unreachable (remote origin unreachable: fatal: unable to access 'https://github.com/kentonium3/rrule-go-dev.git/': Could not resolve host: github.com) (origin check is warn, source: read-only; continuing)"
+  ]
+}

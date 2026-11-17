@@ -1,0 +1,20 @@
+id: PROJECT_001
+schema_version: '1.0'
+title: Project Intent Directive
+intent: Maintain the private patched rrule-go library to safely handle accepted RRULE inputs that 
+  panic, hang, or yield impossible results.
+enforcement: required
+scope: rrule-go maintenance missions
+integrity_rules:
+- Prioritize iterator panics, then unreachable sub-daily BY-list hangs. UNTIL scan optimization 
+  requires Kent’s scope decision; Vikunja adoption stays in its own repository.
+- Preserve exported types, functions, methods, signatures and occurrence sequences of currently 
+  correct rules. No new dependencies.
+- Keep the repository private until at least 2026-11-13 unless Kent revises that decision. Never 
+  push upstream. Public posts or upstream PRs require approval of exact copy.
+- Prepare a tested private patch promptly; sending it requires explicit messaging authorization. 
+  Preserve MIT LICENSE and README modified-copy notice.
+validation_criteria:
+- Review the implementation and tests against the relevant docs/issues report and API compatibility 
+  boundary.
+- Record red/green regression evidence, required Go validation, and independent model review.

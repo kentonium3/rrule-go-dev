@@ -1,0 +1,89 @@
+{
+  "verified_head": "d4828284acbb5b0c61fdc800f07ae01852005edc",
+  "gates": [
+    {
+      "gate": "diff-check",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.0022461339831352234,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "format",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.034934369032271206,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "fuzz",
+      "tested_head": "d4828284acbb5b0c61fdc800f07ae01852005edc",
+      "exit": 0,
+      "elapsed_seconds": 61.35390684497543,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "go116",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.7659959510201588,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "golden-build",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.1863698490196839,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "golden-dst-collect",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 1.6528362180106342,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "golden-dst-compare",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.00809495896100998,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "golden-forms-collect",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.20141481794416904,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "golden-forms-compare",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.0023956160293892026,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "race",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 149.47236739599612,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "test",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 1.006517993984744,
+      "all_source_hashes_match": true
+    },
+    {
+      "gate": "vet",
+      "tested_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+      "exit": 0,
+      "elapsed_seconds": 0.10136383702047169,
+      "all_source_hashes_match": true
+    }
+  ]
+}

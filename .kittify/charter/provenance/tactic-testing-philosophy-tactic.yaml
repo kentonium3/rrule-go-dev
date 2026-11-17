@@ -1,0 +1,21 @@
+adapter_id: generated
+adapter_notes: 
+  generated-artifact:.kittify/charter/generated/tactics/testing-philosophy-tactic.tactic.yaml
+adapter_version: 1.0.0
+artifact_content_hash: 
+  a070ef41c164d0bded4e8d45aae223e02205ac7f5178c89427dec2185437b096
+artifact_kind: tactic
+artifact_slug: testing-philosophy-tactic
+artifact_urn: tactic:testing-philosophy-tactic
+corpus_snapshot_id: generic-v1.0.0
+evidence_bundle_hash: 
+  4dd8f64ae139b33d1f468ec617857ef78b2a0c2ad9b9f181b58bab231ff91547
+generated_at: '2026-10-25T06:16:49.718856+00:00'
+inputs_hash: 11cb7253aa8999bce15549f17f13852eb586d30ede301ca22df1d0e53fa639a5
+produced_at: '2026-10-25T06:17:04.129763+00:00'
+schema_version: '2'
+source_input_ids: []
+source_section: testing_philosophy
+source_urns: []
+synthesis_run_id: 44AA0EFBCC2040E592D62C9142
+synthesizer_version: 4.0.0rc8

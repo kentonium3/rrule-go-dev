@@ -1,0 +1,36 @@
+{
+  "accept_commit": "d1f94fbad67c4e30b30429d932cefa23a0dd1437",
+  "acceptance_history": [
+    {
+      "accept_commit": "d1f94fbad67c4e30b30429d932cefa23a0dd1437",
+      "acceptance_mode": "pr",
+      "accepted_at": "2026-10-29T04:06:35.181247+00:00",
+      "accepted_by": "kgale",
+      "accepted_from_commit": "9a1a0c4d8e817cc37a3be2f48086066d9ca23313"
+    }
+  ],
+  "acceptance_mode": "pr",
+  "accepted_at": "2026-10-29T04:06:35.181247+00:00",
+  "accepted_by": "kgale",
+  "accepted_from_commit": "9a1a0c4d8e817cc37a3be2f48086066d9ca23313",
+  "baseline_merge_commit": "b9cb40db45faaf64744400a0eecc7e8161042c4e",
+  "change_mode": "bulk_edit",
+  "created_at": "2026-10-29T01:08:23.513845+00:00",
+  "flattened": true,
+  "friendly_name": "rrule-go v1.9.0 module path migration",
+  "merged_at": "2026-10-29T04:06:55.994712+00:00",
+  "merged_commit": "bd0473020484bb7f20f32b27f98490d332424931",
+  "mid8": "01M62K6W",
+  "mission_id": "01M62K6WADRS86HE5GKZ1KKHEY",
+  "mission_number": 5,
+  "mission_slug": "module-path-v1-9-0-01M62K6W",
+  "mission_type": "software-dev",
+  "pr_bound": true,
+  "purpose_context": "Prepare the v1.9.0 module identity transition in the private development repository, preserving recurrence behavior and historical releases, documenting migration from original imports and transitional replacements, and preparing an unposted teambition transition PR. No public publication is authorized.",
+  "purpose_tldr": "Move the maintained library to github.com/kentonium3/rrule-go with clear consumer migration and release communication.",
+  "slug": "module-path-v1-9-0-01M62K6W",
+  "status_phase": "1",
+  "target_branch": "rrule-go-dev-xfer",
+  "vcs": "git",
+  "vcs_locked_at": "2026-10-29T03:16:42.804003+00:00"
+}

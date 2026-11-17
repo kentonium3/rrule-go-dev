@@ -1,0 +1,160 @@
+target:
+  term: github.com/teambition/rrule-go
+  replacement: github.com/kentonium3/rrule-go
+  operation: rename
+categories:
+  code_symbols:
+    action: do_not_change
+    reason: Keep package name rrule and all exported declarations/signatures.
+  import_paths:
+    action: rename
+    reason: Only active module/import declarations follow the new path; explicit history
+      exceptions override.
+  filesystem_paths:
+    action: do_not_change
+    reason: No repository directory or file moves.
+  serialized_keys:
+    action: do_not_change
+    reason: No RRULE serialization, field keys or event schemas change.
+  cli_commands:
+    action: manual_review
+    reason: Review module arguments in migration examples; do not rename commands
+      or flags.
+  user_facing_strings:
+    action: manual_review
+    reason: Mixed history, attribution and active installation URLs require per-occurrence
+      decisions.
+  tests_fixtures:
+    action: manual_review
+    reason: Update active imports only; preserve existing expectations, corpora and
+      recorded outputs.
+  logs_telemetry:
+    action: do_not_change
+    reason: No runtime logging or notification behavior is introduced.
+exceptions:
+- path: go.mod
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: example_test.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: str_timeforms_api_test.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/01-iterator-panics/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/02-unreachable-byset-hang/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/03-until-scan/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/05-07-backlog/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/05-07-backlog/golden/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/edge-cases/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: docs/repro/matrix/main.go
+  action: manual_review
+  reason: Change only active module/import identity; preserve Go minimum, package/API
+    names and program logic.
+- path: README.md
+  action: manual_review
+  reason: Update active install/demo/Go Reference links; CI/CodeQL target the actual
+    private repo here and public repo in later port. Preserve original source/license
+    attribution and do not copy private preamble publicly.
+- path: CHANGELOG.md
+  action: manual_review
+  reason: Add consumer-facing Unreleased migration entry only; preserve released sections
+    and historical upstream links.
+- path: MIGRATION.md
+  action: manual_review
+  reason: New consumer guide with intentional old/new identities, exact commands and
+    dependency-safety gate before replacement removal.
+- path: AGENTS.md
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: .kittify/**
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: .agents/**
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: .codex/**
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/issues/**
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/runbooks/evidence/**
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/releases/v1.9.0-dst.md
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/releases/v1.9.0-timeforms.md
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/repro/**/out-*.txt
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: docs/repro/05-07-backlog/golden/*.json
+  action: do_not_change
+  reason: Existing authority, historical provenance, source links, recorded outputs
+    or inherited golden corpus; no bulk rename.
+- path: kitty-specs/iterator-panics-01M5RT9D/**
+  action: do_not_change
+  reason: Another mission and its historical evidence are not migration targets.
+- path: kitty-specs/teambition-backlog-01M5TEBG/**
+  action: do_not_change
+  reason: Another mission and its historical evidence are not migration targets.
+- path: kitty-specs/unreachable-byset-hang-01M5RZ90/**
+  action: do_not_change
+  reason: Another mission and its historical evidence are not migration targets.
+- path: kitty-specs/until-scan-01M5S0WJ/**
+  action: do_not_change
+  reason: Another mission and its historical evidence are not migration targets.
+- path: kitty-specs/module-path-v1-9-0-01M62K6W/**
+  action: manual_review
+  reason: This mission contains intentional old/new terms, drafts, evidence and planning
+    records; preserve quoted historical facts and runtime-owned state.
+- path: docs/repro/05-07-backlog/golden/README.md
+  action: manual_review
+  reason: 'Update the golden driver header and docs/repro/05-07-backlog/golden/README.md
+    active build instructions: use a historical snapshot''s old-import driver for
+    old source and the candidate''s new-import driver for candidate source. Never
+    tell readers to build a new-import driver against an old-declaration snapshot.
+    Preserve historical facts, corpora and baseline JSON.'
+status:
+  approved: true
+  approval_note: Kent explicitly approved the map and authorized task generation,
+    while noting he cannot personally vouch for every entry. Approval permits use
+    of the policy; technical correctness and occurrence rechecks remain the agents
+    responsibility. No implementation or public action authorized.
+  inventory_reference: research.md#occurrence-inventory
+  classification_date: '2026-10-28'
+  approved_by: Kent Gale
+  approval_date: '2026-10-28'

@@ -1,0 +1,57 @@
+Baseline HEAD a0ea3af6 (source inherited76c646d)
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTAllFrequencies$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTAllFrequencies
+=== RUN   TestDSTAllFrequencies/YEARLYGap
+    rrule_dst_test.go:98: [1] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:98: [2] got 2022-10-03 02:30:00 +1100 AEDT (2022-10-02 15:30:00 +0000 UTC), want 2023-09-30T15:30:00Z
+=== RUN   TestDSTAllFrequencies/YEARLYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/MONTHLYGap
+    rrule_dst_test.go:98: [1] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:98: [2] got 2022-10-03 02:30:00 +1100 AEDT (2022-10-02 15:30:00 +0000 UTC), want 2022-10-31T15:30:00Z
+=== RUN   TestDSTAllFrequencies/MONTHLYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/WEEKLYGap
+    rrule_dst_test.go:98: [1] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:98: [2] got 2022-10-03 02:30:00 +1100 AEDT (2022-10-02 15:30:00 +0000 UTC), want 2022-10-07T15:30:00Z
+=== RUN   TestDSTAllFrequencies/WEEKLYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/DAILYGap
+    rrule_dst_test.go:98: [1] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:98: [2] got 2022-10-03 02:30:00 +1100 AEDT (2022-10-02 15:30:00 +0000 UTC), want 2022-10-03T15:30:00Z
+=== RUN   TestDSTAllFrequencies/DAILYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/HOURLYGap
+    rrule_dst_test.go:98: [2] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-01T17:30:00Z
+    rrule_dst_test.go:98: nonascending instances: [2022-10-02 01:30:00 +1000 AEST 2022-10-02 03:30:00 +1100 AEDT 2022-10-02 03:30:00 +1100 AEDT]
+=== RUN   TestDSTAllFrequencies/HOURLYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/MINUTELYGap
+    rrule_dst_test.go:98: [2] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-01T17:30:00Z
+    rrule_dst_test.go:98: nonascending instances: [2022-10-02 01:30:00 +1000 AEST 2022-10-02 03:30:00 +1100 AEDT 2022-10-02 03:30:00 +1100 AEDT]
+=== RUN   TestDSTAllFrequencies/MINUTELYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTAllFrequencies/SECONDLYGap
+    rrule_dst_test.go:98: [2] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-01T17:30:00Z
+    rrule_dst_test.go:98: nonascending instances: [2022-10-02 01:30:00 +1000 AEST 2022-10-02 03:30:00 +1100 AEDT 2022-10-02 03:30:00 +1100 AEDT]
+=== RUN   TestDSTAllFrequencies/SECONDLYFold
+    rrule_dst_test.go:122: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+--- FAIL: TestDSTAllFrequencies (0.00s)
+    --- FAIL: TestDSTAllFrequencies/YEARLYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/YEARLYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/MONTHLYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/MONTHLYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/WEEKLYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/WEEKLYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/DAILYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/DAILYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/HOURLYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/HOURLYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/MINUTELYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/MINUTELYFold (0.00s)
+    --- FAIL: TestDSTAllFrequencies/SECONDLYGap (0.00s)
+    --- FAIL: TestDSTAllFrequencies/SECONDLYFold (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

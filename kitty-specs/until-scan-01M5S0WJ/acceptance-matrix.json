@@ -1,0 +1,39 @@
+{
+  "mission_slug": "until-scan-01M5S0WJ",
+  "mission_number": "",
+  "mission_type": "",
+  "overall_verdict": "pass",
+  "criteria": [
+    {
+      "criterion_id": "FR-001",
+      "description": "Verify FR-001 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "verification/red.log and green.log: both UTC fixtures<100ms; 4c9dba1; independent-review.md verifies period-bound proof and race.",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T08:24:25.652400+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    },
+    {
+      "criterion_id": "FR-002",
+      "description": "Verify FR-002 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "verification/golden.json and independent-review.md: exact baseline886f07a comparison; all seven frequencies, inclusive endpoints, buffer and non-UTC normalization; final targeted race19.382s.",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T08:24:28.402770+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    },
+    {
+      "criterion_id": "FR-003",
+      "description": "Verify FR-003 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "verification/default-red.log and independent-review.md: old scan9999-12-31 vs default2318-04-18; fixed TestUntilEmptyStopsAtHorizon and public setters pass.",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T08:24:31.185493+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    }
+  ],
+  "negative_invariants": []
+}

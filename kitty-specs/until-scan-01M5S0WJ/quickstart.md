@@ -1,0 +1,3 @@
+# Verification
+
+From the allocated lane run `go test -run Until ./...`, then `go test ./...`, `go test -race ./...`, `go vet ./...`, `go build ./...`, `GOARCH=386 go build ./...`, and `gofmt -l .`. Record baseline and fixed results with toolchain/platform. Public fixture: DTSTART 20260105T100000Z, DAILY, UNTIL 20260201T000000Z, BYSETPOS=2 or 2..366. Both return empty below 100ms operation time. Positive BYSETPOS=1 controls and exact golden sequences must pass. Non-UTC is compatibility-only fallback. Reproduce midnight normalization with research/timezone-counterexamples.go.txt copied to a temporary .go file.

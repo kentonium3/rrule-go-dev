@@ -1,0 +1,63 @@
+from dataclasses import replace
+from pathlib import Path
+import json
+from mission_runtime import MissionArtifactKind, placement_seam
+from specify_cli.coordination.surface_resolver import resolve_for_write
+from specify_cli.git.protection_policy import ProtectionPolicy
+from specify_cli.status import mission_write_lock, BOUNDED_STATUS_LOCK_TIMEOUT_SECONDS
+from specify_cli.tasks.issue_matrix import (
+    ISSUE_MATRIX_JSON_FILENAME, IssueMatrixEntry,
+    parse_issue_matrix_document, write_issue_matrix,
+)
+
+root = Path('~/repos/rrule-go')
+slug = 'teambition-backlog-01M5TEBG'
+resolve_for_write(root, slug, MissionArtifactKind.ISSUE_MATRIX)
+matrix_dir = placement_seam(root, slug).write_dir(MissionArtifactKind.ISSUE_MATRIX).path
+path = matrix_dir / ISSUE_MATRIX_JSON_FILENAME
+policy = ProtectionPolicy.resolve(root)
+print('mission:', slug)
+print('resolved write surface:', matrix_dir)
+print('target branch: fix/teambition-backlog')
+assert matrix_dir == root / 'kitty-specs' / slug, 'Unexpected write surface; refuse before mutation'
+updates = {
+    '#5': IssueMatrixEntry(
+        verdict='in-mission',
+        evidence_ref='Public kentonium3/rrule-go#5: WP01 implementation is under independent gpt-6-astra review; a defect was found and correction/re-review remains owed. No fixed verdict claimed.',
+        title='Public kentonium3/rrule-go#5: RFC civil times across DST',
+        scope='Public kentonium3/rrule-go#5 is in mission teambition-backlog; private development only.',
+        wp='WP01', fr='FR-001, FR-002, FR-007, FR-008',
+        repo='kentonium3/rrule-go', source_file='docs/issues/05-dst-sub-daily.md',
+    ),
+    '#6': IssueMatrixEntry(
+        verdict='in-mission',
+        evidence_ref='Public kentonium3/rrule-go#6: WP02 remains planned, dependent on WP01 approval. Implementation and independent review remain owed. No fixed verdict claimed.',
+        title='Public kentonium3/rrule-go#6: Floating DTSTART and UNTIL forms',
+        scope='Public kentonium3/rrule-go#6 is in mission teambition-backlog; private development only.',
+        wp='WP02', fr='FR-003, FR-004, FR-005, FR-007, FR-008',
+        repo='kentonium3/rrule-go', source_file='docs/issues/06-floating-until.md',
+    ),
+}
+with mission_write_lock(matrix_dir, repo_root=root, timeout=BOUNDED_STATUS_LOCK_TIMEOUT_SECONDS):
+    rows = parse_issue_matrix_document(json.loads(path.read_text())) if path.exists() else {}
+    siblings = {key: entry for key, entry in rows.items() if key not in updates}
+    for key, entry in updates.items():
+        if key in rows:
+            # Preserve optional sibling-owned requirement fields if already authored.
+            entry = replace(entry, nfr=rows[key].nfr, sc=rows[key].sc)
+        rows[key] = entry
+    result = write_issue_matrix(
+        repo_root=root, mission_slug=slug, rows=rows,
+        policy=policy, actor='codex', target_branch='fix/teambition-backlog',
+        matrix_dir=matrix_dir,
+    )
+    print('canonical writer result:', result)
+    assert result.status in ('committed', 'unchanged'), 'Writer did not report success; inspect before retry'
+    actual = parse_issue_matrix_document(json.loads(path.read_text()))
+    assert all(actual[key] == entry for key, entry in siblings.items()), 'Sibling changed'
+    for key in updates:
+        assert actual[key].repo == 'kentonium3/rrule-go'
+        assert actual[key].verdict == 'in-mission'
+        assert actual[key].wp == updates[key].wp
+    print('readback PASS: public repo-qualified #5/#6 in-mission; all siblings preserved')
+    print(json.dumps({key: actual[key].to_dict() for key in updates}, indent=2))

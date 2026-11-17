@@ -1,0 +1,103 @@
+COMMAND: timeout 30 env GOCACHE=/tmp/rrule-go-cache go test -run ^TestSafetyOrdinal/monthly_negative6/options$ -count=1 .
+EXIT: 1
+--- FAIL: TestSafetyOrdinal (0.00s)
+    --- FAIL: TestSafetyOrdinal/monthly_negative6 (0.00s)
+        --- FAIL: TestSafetyOrdinal/monthly_negative6/options (0.00s)
+panic: runtime error: index out of range [-5] [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x5d5aa0, 0xc00001c2a0})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x5d5aa0?, 0xc00001c2a0?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001ae3b8, 0x7ea, 0x1)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:469 +0xcaa
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001b0008)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.safetyOccurrences.func1(0xc0001ae000)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule_safety_test.go:34 +0x105
+testing.tRunner(0xc0001ae000, 0xc0000c93b0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 env GOCACHE=/tmp/rrule-go-cache go test -run ^TestSafetyEaster/-100/options$ -count=1 .
+EXIT: 1
+--- FAIL: TestSafetyEaster (0.00s)
+    --- FAIL: TestSafetyEaster/-100 (0.00s)
+        --- FAIL: TestSafetyEaster/-100/options (0.00s)
+panic: runtime error: index out of range [-6] [recovered, repanicked]
+
+goroutine 20 [running]:
+testing.tRunner.func1.2({0x5d5aa0, 0xc000180078})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x5d5aa0?, 0xc000180078?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001031b8, 0x7ea, 0x1)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:485 +0xa54
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001a8008)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.safetyOccurrences.func1(0xc000102e00)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule_safety_test.go:34 +0x105
+testing.tRunner(0xc000102e00, 0xc000129380)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 19
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 env GOCACHE=/tmp/rrule-go-cache go test -run ^TestSafetyInterval/original_MONTHLY/options$ -count=1 .
+EXIT: 1
+--- FAIL: TestSafetyInterval (0.00s)
+    --- FAIL: TestSafetyInterval/original_MONTHLY (0.00s)
+        --- FAIL: TestSafetyInterval/original_MONTHLY/options (0.00s)
+panic: runtime error: index out of range [9223372036854775807] with length 13 [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x5d5aa0, 0xc00001c4e0})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x5d5aa0?, 0xc00001c4e0?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).calcDaySet(0x49627f?, 0x7ea?, 0x8000000000000000?, 0x0?, 0xc0000f5bf0?)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:498 +0xdf
+github.com/teambition/rrule-go.(*rIterator).generate(0xc0001d0380)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:585 +0xba
+github.com/teambition/rrule-go.(*rIterator).next(0xc0001d0380)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule.go:847 +0x1c
+github.com/teambition/rrule-go.safetyOccurrences.func1(0xc0001d0000)
+	~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-lane-a/rrule_safety_test.go:41 +0x352
+testing.tRunner(0xc0001d0000, 0xc0001c23c0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 env GOCACHE=/tmp/rrule-go-cache go test -run ^TestSafetyInterval/original_DAILY/options$ -count=1 .
+EXIT: 1
+--- FAIL: TestSafetyInterval (0.00s)
+    --- FAIL: TestSafetyInterval/original_DAILY (0.00s)
+        --- FAIL: TestSafetyInterval/original_DAILY/options (0.00s)
+            rrule_safety_test.go:42: unexpected occurrence after 1: 2026-12-31 10:00:00 +0000 UTC
+FAIL
+FAIL	github.com/teambition/rrule-go	0.002s
+FAIL
+
+COMMAND: timeout 30 env GOCACHE=/tmp/rrule-go-cache go test -run ^TestSafetyInterval/original_HOURLY/options$ -count=1 .
+EXIT: 1
+--- FAIL: TestSafetyInterval (0.00s)
+    --- FAIL: TestSafetyInterval/original_HOURLY (0.00s)
+        --- FAIL: TestSafetyInterval/original_HOURLY/options (0.00s)
+            rrule_safety_test.go:42: unexpected occurrence after 1: 2026-01-26 01:00:00 +0000 UTC
+FAIL
+FAIL	github.com/teambition/rrule-go	0.002s
+FAIL
+

@@ -1,0 +1,19 @@
+id: testing-philosophy-tactic
+name: Go regression-first development
+purpose: Demonstrate accepted-input failures before fixing them, then prove the 
+  fix and preserved behavior.
+schema_version: '1.0'
+steps:
+- description: Write a focused regression for the relevant docs/issues failure 
+    and run it on unfixed code; capture the actual failure before 
+    implementation.
+  title: Reproduce first
+- description: Implement the smallest root-cause correction, rerun the 
+    regression to green, and verify previously correct occurrence sequences 
+    remain unchanged.
+  title: Fix and re-run
+- description: Run go test ./..., go test -race ./..., go vet ./..., and gofmt 
+    -l .; run bounded BY* and INTERVAL fuzzing for 60 seconds in the panic 
+    mission. Choose and justify any necessary minimum Go version increase in 
+    planning.
+  title: Validate and fuzz

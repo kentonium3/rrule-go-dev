@@ -1,0 +1,12 @@
+id: documentation-policy-style-guide
+principles:
+- Read AGENTS.md, docs/CONTEXT.md, and the relevant docs/issues file before 
+  mission work.
+- Preserve the MIT LICENSE and existing README modified-copy notice.
+- Tie reproduction instructions and validation evidence to measured behavior; 
+  distinguish expected results from actual observations.
+- Record accepted policy amendments consistently in the project governance 
+  sources; Kent decides those amendments.
+schema_version: '1.0'
+scope: docs
+title: rrule-go documentation

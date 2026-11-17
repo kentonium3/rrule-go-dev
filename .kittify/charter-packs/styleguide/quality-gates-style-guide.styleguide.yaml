@@ -1,0 +1,10 @@
+id: quality-gates-style-guide
+principles:
+- Run go test ./..., go test -race ./..., go vet ./..., and gofmt -l . and 
+  preserve actual outcomes.
+- Run targeted bounded fuzzing for 60 seconds in the panic mission.
+- Verify currently correct occurrence sequences remain unchanged.
+- Do not present a skipped, timed-out, or failing check as passing.
+schema_version: '1.0'
+scope: testing
+title: Go validation evidence

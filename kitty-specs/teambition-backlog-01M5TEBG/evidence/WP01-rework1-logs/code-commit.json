@@ -1,0 +1,15 @@
+{
+  "commit": "ef373a5872dba30063a6a706275a28e46508af77",
+  "reviewed_parent": "af862491333c8a06fdb30bb60a58619e65e9baa6",
+  "model": "gpt-6.1-sol",
+  "date": "2026-10-25",
+  "files": [
+    "civil_time.go",
+    "docs/releases/v1.9.0-dst.md",
+    "docs/repro/05-07-backlog/golden/baseline-dst.json",
+    "docs/repro/05-07-backlog/golden/corpus-dst.json",
+    "rrule.go",
+    "rrule_dst_test.go"
+  ],
+  "status": ""
+}

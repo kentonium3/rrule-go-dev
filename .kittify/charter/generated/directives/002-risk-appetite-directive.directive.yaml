@@ -1,0 +1,21 @@
+id: PROJECT_002
+schema_version: '1.0'
+title: Risk Appetite Directive
+intent: Fix realistic accepted-input service failure modes at their root while preserving correct 
+  recurrence behavior.
+enforcement: required
+scope: Implementation and operational decisions
+integrity_rules:
+- State each finding’s chain of conditions and likelihood. Prefer the smallest root-cause fix over 
+  new machinery or exotic mechanisms.
+- Treat rare cosmetic oddities as known limits; do not invent arbitrary performance budgets. Keep 
+  Vikunja guards as defence in depth.
+- Do not silently work around Spec Kitty faults. Preserve exact command/output and apply the current
+  operator-authorized fault protocol in AGENTS.md and docs/runbooks/autonomous-iterator-panics.md.
+- Kent decides policy exceptions and scope amendments. Use scoped Conventional Commits; never 
+  force-push or stash.
+validation_criteria:
+- Confirm any behavior change concerns a panic, hang, or impossible result rather than a currently 
+  correct rule.
+- Record operational faults and validated recovery evidence; preserve publication and merge approval
+  boundaries.

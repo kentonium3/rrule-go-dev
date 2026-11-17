@@ -1,0 +1,38 @@
+Baseline HEAD a0ea3af6 (source inherited76c646d)
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTSydney$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTSydney
+=== RUN   TestDSTSydney/HourlySpring
+    rrule_dst_test.go:67: [3] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+    rrule_dst_test.go:67: nonascending instances: [2022-10-02 00:00:00 +1000 AEST 2022-10-02 01:00:00 +1000 AEST 2022-10-02 03:00:00 +1100 AEDT 2022-10-02 03:00:00 +1100 AEDT 2022-10-02 04:00:00 +1100 AEDT 2022-10-02 05:00:00 +1100 AEDT]
+    rrule_dst_test.go:67: [4] got 2022-10-02 04:00:00 +1100 AEDT (2022-10-01 17:00:00 +0000 UTC), want 2022-10-01T18:00:00Z
+    rrule_dst_test.go:67: [5] got 2022-10-02 05:00:00 +1100 AEDT (2022-10-01 18:00:00 +0000 UTC), want 2022-10-01T19:00:00Z
+=== RUN   TestDSTSydney/HourlyFold
+    rrule_dst_test.go:67: [2] got 2023-04-02 02:00:00 +1000 AEST (2023-04-01 16:00:00 +0000 UTC), want 2023-04-01T15:00:00Z
+=== RUN   TestDSTSydney/MinutelySpring
+    rrule_dst_test.go:67: [3] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+    rrule_dst_test.go:67: nonascending instances: [2022-10-02 00:00:00 +1000 AEST 2022-10-02 01:00:00 +1000 AEST 2022-10-02 03:00:00 +1100 AEDT 2022-10-02 03:00:00 +1100 AEDT]
+=== RUN   TestDSTSydney/DailyExpansionCompatibility
+    rrule_dst_test.go:67: [3] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-02T15:00:00Z
+    rrule_dst_test.go:67: nonascending instances: [2022-10-01 02:00:00 +1000 AEST 2022-10-01 03:00:00 +1000 AEST 2022-10-02 03:00:00 +1100 AEDT 2022-10-02 03:00:00 +1100 AEDT]
+=== RUN   TestDSTSydney/DailyExpansionAligned
+    rrule_dst_test.go:67: [3] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-02T15:00:00Z
+    rrule_dst_test.go:67: nonascending instances: [2022-10-01 02:00:00 +1000 AEST 2022-10-01 03:00:00 +1000 AEST 2022-10-02 03:00:00 +1100 AEDT 2022-10-02 03:00:00 +1100 AEDT]
+=== RUN   TestDSTSydney/DailyGap
+    rrule_dst_test.go:67: [1] got 2022-10-02 03:30:00 +1100 AEDT (2022-10-01 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:67: [2] got 2022-10-03 02:30:00 +1100 AEDT (2022-10-02 15:30:00 +0000 UTC), want 2022-10-03T15:30:00Z
+=== RUN   TestDSTSydney/DailyFold
+    rrule_dst_test.go:67: [1] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTSydney/BYHOUR9WallClockControl
+--- FAIL: TestDSTSydney (0.00s)
+    --- FAIL: TestDSTSydney/HourlySpring (0.00s)
+    --- FAIL: TestDSTSydney/HourlyFold (0.00s)
+    --- FAIL: TestDSTSydney/MinutelySpring (0.00s)
+    --- FAIL: TestDSTSydney/DailyExpansionCompatibility (0.00s)
+    --- FAIL: TestDSTSydney/DailyExpansionAligned (0.00s)
+    --- FAIL: TestDSTSydney/DailyGap (0.00s)
+    --- FAIL: TestDSTSydney/DailyFold (0.00s)
+    --- PASS: TestDSTSydney/BYHOUR9WallClockControl (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

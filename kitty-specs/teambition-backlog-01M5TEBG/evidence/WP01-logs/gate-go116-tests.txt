@@ -1,0 +1,8 @@
+COMMAND: GOCACHE=/tmp/rrule-go116-cache /tmp/rrule-go116-toolchain/go/bin/go test ./...
+EXIT: 1
+//go:build comment without // +build comment
+//go:build comment without // +build comment
+//go:build comment without // +build comment
+//go:build comment without // +build comment
+//go:build comment without // +build comment
+//go:build comment without // +build comment

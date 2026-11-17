@@ -1,0 +1,34 @@
+package main
+
+import (
+ "crypto/sha256"
+ "encoding/json"
+ "fmt"
+ "os"
+ "reflect"
+ "time"
+ r "github.com/teambition/rrule-go"
+)
+
+func stringsOf(ts []time.Time) []string { out:=make([]string, len(ts)); for i,t:=range ts {out[i]=t.UTC().Format(time.RFC3339)}; return out }
+func main() {
+ cases:=[]struct{name,pos string; want []string}{
+  {"positive-collision","1,2",[]string{"2007-03-11T07:30:00Z","2007-03-11T08:30:00Z","2007-03-12T06:30:00Z","2007-03-12T07:30:00Z"}},
+  {"positive-out-of-range","1,3",[]string{"2007-03-11T07:30:00Z","2007-03-12T06:30:00Z","2007-03-12T08:30:00Z","2007-03-13T06:30:00Z"}},
+  {"signed-control","1,-1",[]string{"2007-03-11T07:30:00Z","2007-03-11T08:30:00Z","2007-03-12T06:30:00Z","2007-03-12T08:30:00Z"}},
+  {"negative-control","-2,-1",[]string{"2007-03-11T07:30:00Z","2007-03-11T08:30:00Z","2007-03-12T07:30:00Z","2007-03-12T08:30:00Z"}},
+ }
+ failures:=0
+ for _,c:=range cases {
+  input:="DTSTART;TZID=America/New_York:20070311T023000\nRRULE:FREQ=DAILY;COUNT=4;BYHOUR=2,3,4;BYMINUTE=30;BYSETPOS="+c.pos
+  rr,e:=r.StrToRRule(input);if e!=nil {panic(e)}
+  bytes,_:=json.Marshal(c.want)
+  fmt.Printf("CASE %s BYSETPOS=%s expected_sha256=%x\nexpected=%s\n",c.name,c.pos,sha256.Sum256(bytes),bytes)
+  next:=rr.Iterator();var iter []time.Time;for i:=0;i<5;i++ {v,ok:=next();if !ok {break};iter=append(iter,v)}
+  set:=r.Set{};set.RRule(rr)
+  for _,path:=range []struct{name string;got []time.Time}{{"All",rr.All()},{"Iterator",iter},{"Set.All",set.All()}} {
+   got:=stringsOf(path.got);pass:=reflect.DeepEqual(got,c.want);fmt.Printf("%s pass=%v actual=%v\n",path.name,pass,got);if !pass {failures++}
+  }
+ }
+ fmt.Printf("failures=%d\n",failures);if failures!=0 {os.Exit(1)}
+}

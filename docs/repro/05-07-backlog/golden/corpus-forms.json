@@ -1,0 +1,1341 @@
+{
+  "baseline": "76c646dde8d33ff7c3325df0613b31b058243bea",
+  "baseline_sha256": "1cc3299bf76264f6bcaf653ed3a6b2509765c62c4639880b081775667b1ae934",
+  "provenance": {
+    "source": "WP02 explicit deterministic regression matrix; no existing fixture extraction repeated",
+    "included": 158,
+    "skipped": 0,
+    "existing_suite_coverage": "811-row corpus-dst.json retains WP01 extraction/provenance"
+  },
+  "cases": [
+    {
+      "id": "pair-date-date-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "46470442e87614fbfbd8de7bbfa41f4e21a42dca12f6a1b022b707fda12f6511"
+    },
+    {
+      "id": "pair-date-date-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "e6bd05d45529b951344055f093bc269eb033ce807289fca061bfb1e12794ade2"
+    },
+    {
+      "id": "pair-date-date-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "9254ceffb0993d4b54561b1f633326d4cf55ec15b85a7b9ca236d53f9ce0fc9e"
+    },
+    {
+      "id": "pair-date-date-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; pair/order validation and form serialization. Library order-independent component parser contract.",
+      "approved_current_sha256": "a023a249b1085aae7b4922ed9b98c5268f19248bcf4db322da52b79aa8cf9d6b"
+    },
+    {
+      "id": "pair-date-floating-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "fe01698c0710ef37c7e57c51bb85ed8b17eed1d31d474a44f5b4f3f870fce7b2"
+    },
+    {
+      "id": "pair-date-floating-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "160fa35f102c781489487b167d41874f2cc285dfcd2df591cfce38118894bd6f"
+    },
+    {
+      "id": "pair-date-floating-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "fb378dc8923da0ec4a6b84ce26cd0879c3f922051beffdd62d4d7781e5a4496a"
+    },
+    {
+      "id": "pair-date-floating-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "43b9a83aa65426db631a3a4c3a557f329d24f320cf4860344dcce7570f6b1e6a"
+    },
+    {
+      "id": "pair-date-utc-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "459ef7dda61fee8dcf6335f0b9b441b5ea88257cbb8734521931dfaee7002a06"
+    },
+    {
+      "id": "pair-date-utc-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "5833cc161ffca4acfb7c8e87e337d43b07884cebdc5b3ff0ec3cec29713d3261"
+    },
+    {
+      "id": "pair-date-utc-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "bdc31b165f198532ac6051d5249c328cc4a382f8d46cef7ce5c200ab23887503"
+    },
+    {
+      "id": "pair-date-utc-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a75c40b5c92979432a97bf4a2d5143ed646f14baed39acc52793ec2d1c85ce6b"
+    },
+    {
+      "id": "pair-floating-date-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "8741970ef1d8b98e923239da2c901d5d20a8fe62d5873ee42731b914af713f1b"
+    },
+    {
+      "id": "pair-floating-date-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "f80dd520e7608066d5245b80074a203ac7518271d552b066c28accd59a4919bb"
+    },
+    {
+      "id": "pair-floating-date-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "4b03d39dedd55ff2a1d5cc398678c278dc034443823d1f2da1979fe017f00d35"
+    },
+    {
+      "id": "pair-floating-date-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "0cc4da467653f42ee2b61e39e37ed3ce33eab07e2f98d9fc5ff449c8dcd873d5"
+    },
+    {
+      "id": "pair-floating-floating-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "aff5e0dcc722455c2bcd0ead73e7860194e2d639d56a80e5583da2f97c382403"
+    },
+    {
+      "id": "pair-floating-floating-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "4303f319d86913ad0bd975578e3c494ba8d00baa788716930b290b1c0efdb800"
+    },
+    {
+      "id": "pair-floating-floating-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "b80500ce923c7278029be7799b2dce4233450395dc8061bf24361839c019d3bd"
+    },
+    {
+      "id": "pair-floating-floating-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; pair/order validation and form serialization. Library order-independent component parser contract.",
+      "approved_current_sha256": "e6cb4b07c7492e9d291491e6b078342d3e2b74fe743fdf2438a27816f2b4edee"
+    },
+    {
+      "id": "pair-floating-utc-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "b09ed1cbe63a8a6c62b992ebb1df9cec1d945ce314c806aa66d32e9f985d93db"
+    },
+    {
+      "id": "pair-floating-utc-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "53a058bb53c5cc2c3eb8bfb692e394e12f98d5887a0a29434835af64b4fcfaba"
+    },
+    {
+      "id": "pair-floating-utc-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "ac80942339600a6c241ec94b8faf4e01d1524815996b29aee76410d37e09af30"
+    },
+    {
+      "id": "pair-floating-utc-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a2dfee6080b47be0dbc7b3d27ba0d94556183b9ab658501d729633fb5da6ffb1"
+    },
+    {
+      "id": "pair-utc-date-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "557e790818c29f1bc6554becb97891e5db3a455b38c0e7aa0683e7eda3c64331"
+    },
+    {
+      "id": "pair-utc-date-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "295d7c460b8b9654e326b4da4488c484846dea916e62e9bb3eb6428bfda93ded"
+    },
+    {
+      "id": "pair-utc-date-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228T090000Z",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "fefa984708ea45db23f3d271e7083937fe5f84c996dd59dcd6fa567589950dcc"
+    },
+    {
+      "id": "pair-utc-date-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART:20201228T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "0ba8a156044c5eb1c3998c004f48b4292faed5afce1c2f1e49152a995caa75a5"
+    },
+    {
+      "id": "pair-utc-floating-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "6e42f8091cc38a12c744c87ba53a6d82b605c5aabab3760232360a552f7a8290"
+    },
+    {
+      "id": "pair-utc-floating-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "1e60c1114df6807e07552eddcc69e4de76f06b03184ef0da517f43487545d8bc"
+    },
+    {
+      "id": "pair-utc-floating-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000Z",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "8813c0904904ac3d839061690b911e76de5a0a4d7f398a487242a5466452652c"
+    },
+    {
+      "id": "pair-utc-floating-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "cad0718fe6c7ef085d59036a2dc9f322571d71cbe45c307eed13b1f13ca6df9e"
+    },
+    {
+      "id": "pair-utc-utc-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false
+    },
+    {
+      "id": "pair-utc-utc-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true
+    },
+    {
+      "id": "pair-utc-utc-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000Z",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "e9ef00e589f8184108ecf7e1e8cc5c90e34ed46a86b5172b625360cf6fb59dd9"
+    },
+    {
+      "id": "pair-utc-utc-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000Z",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; pair/order validation and form serialization. Library order-independent component parser contract.",
+      "approved_current_sha256": "c45a416df8c4d0be46aae3d2c1adff259848bfab1584cda577abbbe644af7521"
+    },
+    {
+      "id": "pair-tzid-date-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "3a252b63843f15697b0a0faf318f4455638ba1e9ad084b0fbe45a46cca0eafe8"
+    },
+    {
+      "id": "pair-tzid-date-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "5acc2502a067762723e2d750caf9f31d384c03d27311ed0a2e88201d8c96a20b"
+    },
+    {
+      "id": "pair-tzid-date-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "4b8ee0d048a409a140cfeda25005003b3c6ccce6b1913c94d805a05f2296c2c9"
+    },
+    {
+      "id": "pair-tzid-date-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "db9517b5395d53429237cb0c8e50f9fd126f69354ad690510a397cf5d3f70ae3"
+    },
+    {
+      "id": "pair-tzid-floating-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "b9a9ed63238bd6b56dd773b47ecbb614006267277eba5e0cdafbf79af8dd83bc"
+    },
+    {
+      "id": "pair-tzid-floating-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "ef6f477f4024bd1d8cff1a14b7953e3e964a13ac6b33cad575e5e4f40aa255ed"
+    },
+    {
+      "id": "pair-tzid-floating-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "40365a26d44dd7dfcd8694ed6d7e330eeeb670ef6496f907c606af4b77b8e15d"
+    },
+    {
+      "id": "pair-tzid-floating-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a75e84f59e63fe5ec1479510f0e6a07ccd7c598e8801d5b38d17b1ce5afb4dce"
+    },
+    {
+      "id": "pair-tzid-utc-reverse0-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false
+    },
+    {
+      "id": "pair-tzid-utc-reverse0-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true
+    },
+    {
+      "id": "pair-tzid-utc-reverse1-set0",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; pair/order validation and form serialization. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "79228123393ecefc4477ef209e01b722bbeee7f2e3b76d6cb572e799dedccf30"
+    },
+    {
+      "id": "pair-tzid-utc-reverse1-set1",
+      "source": "str_timeforms_test.go; pair/order validation and form serialization",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART;TZID=Australia/Sydney:20201228T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; pair/order validation and form serialization. Library order-independent component parser contract.",
+      "approved_current_sha256": "3a17c77125f8a614c1cefdb130a1edaf8dd02e967af8120248a1ea0da2da0d6f"
+    },
+    {
+      "id": "parameter-00-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "77ab49015c7f8f917acf9aa31fc602bb676d16b892801bcce02f0373c20130a3"
+    },
+    {
+      "id": "parameter-00-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "5fa287dccdd3900ad03dd246d914a68d93f8f7dfee8f0b2a564141be70aa2fcb"
+    },
+    {
+      "id": "parameter-01-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "24cd56f6d48d139f9dc5d7e9c604cea2ec9df16c7dbc7db145da328f2bebc800"
+    },
+    {
+      "id": "parameter-01-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "e79def84360185177596319fc714e88d5a8daa7709b52dadd1b9424789865e11"
+    },
+    {
+      "id": "parameter-02-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "fe9f322b6233c797679ae7f554cdc0285ac155f344af0570e4e541b4b16c73b5"
+    },
+    {
+      "id": "parameter-02-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "5ec04553a1d0dbf1d848f1cbfad17017a17efa1c02bfa2a73bead72cc11f3034"
+    },
+    {
+      "id": "parameter-03-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "7540f97f38c5f0e2c23f9bf8befd975eccd60266ed9e544afacdd7ca001b40ea"
+    },
+    {
+      "id": "parameter-03-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "6937456129dd7c08ae1aba01de60e9e196282f0d8e3a4f832fdfae13b9a6dcc6"
+    },
+    {
+      "id": "parameter-04-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney;VALUE=DATE-TIME:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "0f7a8e75ebbcca1958a93c47499beb95c5ce3c401d29daf693057268f5260e52"
+    },
+    {
+      "id": "parameter-04-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney;VALUE=DATE-TIME:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "f7761c223a0a664499864b0b5254d826ea8efe006a8e7e2e430dea2d1ae603e8"
+    },
+    {
+      "id": "parameter-05-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "7d1095a9f62f9732dbf999aa8281aff2b2b5b05a83b819681270b19e478afa9d"
+    },
+    {
+      "id": "parameter-05-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "298c3ad389079317b77f3f7a18b42276257c9dfb9b464376454fe25232833725"
+    },
+    {
+      "id": "parameter-06-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "60e258e1d18931355eb6e3c57f298731799a37388cf421260da8a4f87ed74fdc"
+    },
+    {
+      "id": "parameter-06-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "4a88835df6e65119fd39e94949ca074ab4b554edaedbaafb597408eaaacb9bc4"
+    },
+    {
+      "id": "parameter-07-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE;TZID=Australia/Sydney:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "d55a4015f18451c88f8399fc137333a52d3c1828fbc0ec27d10b52b7e90186a9"
+    },
+    {
+      "id": "parameter-07-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE;TZID=Australia/Sydney:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "eca6b22eb6cd9578f13681149e29918325d45f1485c527c1d41c644d3cd6908c"
+    },
+    {
+      "id": "parameter-08-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "206f1902eb7ffffb1494e0c5c1da0c8fad2fdeb7edbef6179d852dff80ab59d9"
+    },
+    {
+      "id": "parameter-08-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;TZID=Australia/Sydney;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: TZID must not be applied to DATE or UTC DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a273c9c4549ba63b3d26cb63f019eff52eae1cdbff21decd61e69e71a417791e"
+    },
+    {
+      "id": "parameter-09-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: DTSTART VALUE parameter does not match value type. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "413cccdce16965262980af1fad23de9ca235017aa13ec75afdd420cdad7a111a"
+    },
+    {
+      "id": "parameter-09-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: DTSTART VALUE parameter does not match value type. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "f8fdc16daacd4e98c1f0c9af943350b695b26afe6054cae9d3d727c3057c491f"
+    },
+    {
+      "id": "parameter-10-set0",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": false,
+      "rationale": "Named time-form rejection: DTSTART: DTSTART VALUE parameter does not match value type. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "526b67161a4c00108bbe1f62ceb94cb710e626b6908f65195628630e0224cc21"
+    },
+    {
+      "id": "parameter-10-set1",
+      "source": "str_timeforms_test.go; canonical parameters/TZID prohibition",
+      "rule": "DTSTART;VALUE=DATE-TIME:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "set": true,
+      "rationale": "Named time-form rejection: DTSTART: DTSTART VALUE parameter does not match value type. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; canonical parameters/TZID prohibition. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a591e924dfed20c729a5ea69e6e256b1e38e0ca9d815a24fe8521645efb7df6d"
+    },
+    {
+      "id": "inline-reverse0-bad0",
+      "source": "str_timeforms_test.go; inline pair validation",
+      "rule": "FREQ=DAILY;DTSTART=20201228T090000;UNTIL=20201230T090000",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; inline pair validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "389465a85f5e441c8ad72d1d6eb265ba41f9fe8f94d0b515a0b661d44a1db35a"
+    },
+    {
+      "id": "inline-reverse0-bad1",
+      "source": "str_timeforms_test.go; inline pair validation",
+      "rule": "FREQ=DAILY;DTSTART=20201228T090000;UNTIL=20201230T090000Z",
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; inline pair validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "0c558613b92356ee3ece156ca0401eac37ec48a8412d94b0ff49ca898b08fa85"
+    },
+    {
+      "id": "inline-reverse1-bad0",
+      "source": "str_timeforms_test.go; inline pair validation",
+      "rule": "FREQ=DAILY;UNTIL=20201230T090000;DTSTART=20201228T090000",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; inline pair validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "897b736f0d9f476a01d554db54a6f0274df0313d17c82e80b8db19ccafcce522"
+    },
+    {
+      "id": "inline-reverse1-bad1",
+      "source": "str_timeforms_test.go; inline pair validation",
+      "rule": "FREQ=DAILY;UNTIL=20201230T090000Z;DTSTART=20201228T090000",
+      "rationale": "Named time-form rejection: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; inline pair validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "55e7f43eca303fe73d7780834ddb2f3532d31d7b6bbc402e8d683753ff9120ff"
+    },
+    {
+      "id": "shared-overwritten-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "6ebbdf088a7a7a62f0f526d1845a7ee746e1d3edc614ee8d9dc0c424f4694b28"
+    },
+    {
+      "id": "shared-overwritten-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "082885b47154edad27e3f1c3785cd531defc8bad8d04901e0467958915754d88"
+    },
+    {
+      "id": "shared-overwritten-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "82ab03d6d42143659c1ee43ad22cfb6b038fb55defe45d842c11cafb7f869e87"
+    },
+    {
+      "id": "shared-ignored-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "8c63d5e6dfd0bbc741d38710982cad6865262318e473c899c35d316c050190c8"
+    },
+    {
+      "id": "shared-ignored-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "2e596a1f91c3670ece8b5223c70dc8d467d1648065147b042d3b3f34d1dd086c"
+    },
+    {
+      "id": "shared-ignored-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000Z\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "7b1d116e3eda0e885246615908ad68922d2463548a896987cd92797e8277235b"
+    },
+    {
+      "id": "shared-inline-bypass-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;DTSTART=20201228T090000Z;UNTIL=20201230T090000Z",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "2fa7e97cdea80ee27789d4db6d12e9c41199b7d40b4205e4fb3aea5e934becb6"
+    },
+    {
+      "id": "shared-inline-bypass-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201228T090000Z;UNTIL=20201230T090000Z\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "6ffc522183d199be4a9991b91162050e263cd8689fbeae71acefa3f419c743f9"
+    },
+    {
+      "id": "shared-inline-bypass-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201228T090000Z;UNTIL=20201230T090000Z\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "6df349a270a3e8411fdde4f5b4e2ded98ac1fc44bb445a2737b78932cf6ee6ce"
+    },
+    {
+      "id": "shared-inline-anchor-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;DTSTART=20201229T090000;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "e2f2fe83f9ebfc307429816599ea3c07355cb4245a12a220f85969e82ad8cb09"
+    },
+    {
+      "id": "shared-inline-anchor-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201229T090000;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "613552f9feba3ea4686791331c2da76c958e22a9376f49a4e4ae2b4c0888df27"
+    },
+    {
+      "id": "shared-inline-anchor-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201229T090000;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: DTSTART conflicts with shared DTSTART. Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "2a7bf680d0933817a0c05ae225035d43ff85db91c080ede85be447319cbb0f1e"
+    },
+    {
+      "id": "shared-valid-last-wins-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=WEEKLY;UNTIL=20201230T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "7c8a7930b1da1ff2f8ab58763ee9a4360f18eda39a9cdb4eab35c6a738084e54"
+    },
+    {
+      "id": "shared-valid-last-wins-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=WEEKLY;UNTIL=20201230T090000\nDTSTART:20201228T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. Library order-independent component parser contract.",
+      "approved_current_sha256": "32dd95dd7b28e8f8f9965a99345bfeed1c9dd1d61cefdfb5b12ab9efce715a6f"
+    },
+    {
+      "id": "shared-valid-last-wins-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=WEEKLY;UNTIL=20201230T090000\nEXRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. Library order-independent component parser contract.",
+      "approved_current_sha256": "50baca655978e5fcefbdcb67e31124297eec0c28fc3a86b70cf1452eff7a5c4f"
+    },
+    {
+      "id": "shared-matching-inline-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;DTSTART=20201228T090000;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "7a6785d72b29b4a7d02483296d914c72998c95b9310d854988af81710f8e6f4a"
+    },
+    {
+      "id": "shared-matching-inline-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201228T090000;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "fd54067b3f1180c2112e4fa14b47e5307a7acd501538099929b3dae923450052"
+    },
+    {
+      "id": "shared-matching-inline-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;DTSTART=20201228T090000;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "6ee25279be8c66251d2cdda3dfe258d67befceb077dfbd051cc00357c8fd7ef1"
+    },
+    {
+      "id": "shared-ignored-unknown-pos0",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000\nEXRULE:IGNORED=legacy;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "1020d259420360278d0fc89e5c5f028e7b0b3bb2ae012f689a0837b45b54f0f5"
+    },
+    {
+      "id": "shared-ignored-unknown-pos1",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nDTSTART:20201228T090000\nEXRULE:IGNORED=legacy;UNTIL=20201230T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. Library order-independent component parser contract.",
+      "approved_current_sha256": "00e38fc430cbc5c480a1703fb14b317360c7ba6332d2031bf47a2739ce966111"
+    },
+    {
+      "id": "shared-ignored-unknown-pos2",
+      "source": "str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation",
+      "rule": "RRULE:FREQ=DAILY;UNTIL=20201230T090000\nEXRULE:IGNORED=legacy;UNTIL=20201230T090000\nDTSTART:20201228T090000",
+      "set": true,
+      "rationale": "Shared DTSTART collected before rules regardless of placement; previously ignored late shared start now anchors the same specified rule. str_timeforms_test.go; shared DTSTART consistency; EXRULE time-only validation. Library order-independent component parser contract.",
+      "approved_current_sha256": "e684a44ce2f3185bd336992d437d53faf7ed2ba98792d5cdbd59d439d92feba1"
+    },
+    {
+      "id": "copy-floating-copy",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "action": "copy",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "ba8295b189fb30f84cc85bccac8abf9f55cd72680f68d2bbebdb0d4a9d63698f"
+    },
+    {
+      "id": "copy-floating-set-after-copy",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "action": "set-after-copy",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "a8f07ba04aee10e21e8fcef27e3870ca25503daab0bbafda556294e6243e3072"
+    },
+    {
+      "id": "copy-floating-start-setter",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "action": "start-setter",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "6f7c5aed7af7b277acf84c52f531ac2e7c7991b24f93339ffb1b172402398da8"
+    },
+    {
+      "id": "copy-floating-until-setter",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "action": "until-setter",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "02875bd5b0e7137deeba717861e34ee8c5c0901b521e668c6c2c554d78727687"
+    },
+    {
+      "id": "copy-floating-programmatic",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000",
+      "action": "programmatic"
+    },
+    {
+      "id": "copy-date-copy",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "action": "copy",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "69900995ab51466dd89ce9df0dea2c9887f041236ee8acabe015ee9d41c4f7af"
+    },
+    {
+      "id": "copy-date-set-after-copy",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "action": "set-after-copy",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "f7d1eae546d1efe1a13aa4effdeb2a2c27d180171fbd7952fe86c903d875105c"
+    },
+    {
+      "id": "copy-date-start-setter",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "action": "start-setter",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "aeb481f1c502e10c01aefa1713ef598d0c40bcff3a357f8675fc58a6a925e148"
+    },
+    {
+      "id": "copy-date-until-setter",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "action": "until-setter",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; immutable transport/setters/programmatic control. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "4f0232cbd4e68e23505decb7b6f7a8c8cd00b8f458b905e56fe86a1a856425a1"
+    },
+    {
+      "id": "copy-date-programmatic",
+      "source": "str_timeforms_test.go; immutable transport/setters/programmatic control",
+      "rule": "DTSTART:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230",
+      "action": "programmatic"
+    },
+    {
+      "id": "location-iana-until0-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "copy",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "06c8e7bce3da51d0dd47d098eb068fe318d2b806fb453a400346174f30de7aa7"
+    },
+    {
+      "id": "location-iana-until0-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "6cfbb65528e8325e3a858c3da7f54b7619856734b997393fd6c3db6225480953"
+    },
+    {
+      "id": "location-iana-until0-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "start-setter",
+      "location": "America/New_York"
+    },
+    {
+      "id": "location-iana-until0-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "ef5d3a2581b25ff52f7ccb0c588de031ef82182ada095b90ea629ca9e7360d33"
+    },
+    {
+      "id": "location-iana-until0-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "3abebde97c903b46d8f0a5b79f4ee9259df3e8697ec80cb58f3f632082149b63"
+    },
+    {
+      "id": "location-iana-until1-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "copy",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "28952d6e8f426ad8b5930c2552d3956b2da17363c881c0bf5b8c133cc3946919"
+    },
+    {
+      "id": "location-iana-until1-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "cb65431b8c2192e835f0451463fa1208744f6598f195d66e720d69cad1461254"
+    },
+    {
+      "id": "location-iana-until1-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "start-setter",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "5e962a32e7fc41673cb8e5d0cfae7ce3e647ef2ce0c111b8f9522330eed1393c"
+    },
+    {
+      "id": "location-iana-until1-until-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "until-setter",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "ceb2810c269982c689f69c45fd175a968a784b180221e6d52a6d513a31225ecd"
+    },
+    {
+      "id": "location-iana-until1-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "e05f24cd13401f55999c26f0ecba4221b0382c05ddffb4b87ec5df4aa1a1dae7"
+    },
+    {
+      "id": "location-iana-until1-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "121e7e9bd3e163e19c5bcf87ba447f3fa9186f5561f80505fc1f3e5539bb90a7"
+    },
+    {
+      "id": "fragment-iana-20201230",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230",
+      "start": "20201228T090000",
+      "location": "America/New_York"
+    },
+    {
+      "id": "fragment-iana-20201230T090000",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230T090000",
+      "start": "20201228T090000",
+      "location": "America/New_York"
+    },
+    {
+      "id": "location-fixed-until0-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "copy",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "fb8d683e075ad4c7ce6caa87061dd061d9b36c9684d022830bd4fcd6520a6e8c"
+    },
+    {
+      "id": "location-fixed-until0-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "a7f4d3ccf988febce6fdf288573825958bf2601b8b9e7d7907d8cab83799389d"
+    },
+    {
+      "id": "location-fixed-until0-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "start-setter",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000
+    },
+    {
+      "id": "location-fixed-until0-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "4ac74835beca400e16b1a2cf9167ff63bace4824576ae3fb815de93c729e169b"
+    },
+    {
+      "id": "location-fixed-until0-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "3ccecd52e18e6a71a7137a3360c489957296a0ad047b747363504903b3859cbe"
+    },
+    {
+      "id": "location-fixed-until1-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "copy",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "be5874d9c197ee0bb90cb87a75c5f7f3df5a1d26612bc62c2551f17915a1c398"
+    },
+    {
+      "id": "location-fixed-until1-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "dc6c468d7750b1b10653928d1e6b3b1b3ca0b4bf3c206b223050bd06b1a511fc"
+    },
+    {
+      "id": "location-fixed-until1-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "start-setter",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "f827791aa369fef304bc5788687c84d9fe33bdbd953d92467073eceae0508809"
+    },
+    {
+      "id": "location-fixed-until1-until-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "until-setter",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "256a56dfd60087fe7f2b4a65ed4df36b5eff0e46c40c614d5a01dd10af6de15f"
+    },
+    {
+      "id": "location-fixed-until1-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "0c7dc82ddc69035faf1100516ed49c84613ca492ab26a08126cd36885f018437"
+    },
+    {
+      "id": "location-fixed-until1-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "c75b223c0051d017025868cd16de3a3922eba02322ba688d9f91120c8967e0c1"
+    },
+    {
+      "id": "fragment-fixed-20201230",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230",
+      "start": "20201228T090000",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000
+    },
+    {
+      "id": "fragment-fixed-20201230T090000",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230T090000",
+      "start": "20201228T090000",
+      "location": "America/New_York",
+      "location_kind": "fixed",
+      "offset": -18000
+    },
+    {
+      "id": "location-tzif-until0-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "copy",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "108a59bbed08ec42330d51e48617b26aa9cb8c722e13a356fd8a707382516fae"
+    },
+    {
+      "id": "location-tzif-until0-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "cca8cf989c7144cf36d624eae2e73086898e1419c1f3109fd7ee38b5ccd2180f"
+    },
+    {
+      "id": "location-tzif-until0-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "action": "start-setter",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200
+    },
+    {
+      "id": "location-tzif-until0-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "21137ec2fc188353b7542649f5f9a3a314a7a133e4477f93e960ad513e4c2d79"
+    },
+    {
+      "id": "location-tzif-until0-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "510ea9143c1a58016aa4bf15d52b989aa6800ac6a3f4fc5bb926c0534efa18e7"
+    },
+    {
+      "id": "location-tzif-until1-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "copy",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "eebb20dbee56ae98cb1886ec0168e4357722602c7366804fab13a12778f08bc5"
+    },
+    {
+      "id": "location-tzif-until1-set-after-copy",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "set-after-copy",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "8cfbb5d0d3f8a4ff7edcc60e40afe206b80982c2be28b89494b485d1a312747e"
+    },
+    {
+      "id": "location-tzif-until1-start-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "start-setter",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "fc67544b8f0e7eaf2edcb57f9adde08eebe7c4128aeabf79486dfea445210113"
+    },
+    {
+      "id": "location-tzif-until1-until-setter",
+      "source": "str_timeforms_test.go; exact custom location/copy/setter transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "action": "until-setter",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom location/copy/setter transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "ccfe67e010168f2ff1a93b5818c5a36404aab339d7f4cbb40502df921541a092"
+    },
+    {
+      "id": "location-tzif-until1-set",
+      "source": "str_timeforms_test.go; exact custom shared location transport",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; exact custom shared location transport. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "1719a5f4c681bd96faba8e24dd0faa8f1d5e6cb1564e7d572627e4029127515d"
+    },
+    {
+      "id": "location-tzif-until1-replace-rule",
+      "source": "str_timeforms_test.go; private shared start replacement",
+      "rule": "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000",
+      "set": true,
+      "action": "set-replace-rule",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; private shared start replacement. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "4d967480866ca0342477db8b7a50a0aad2adc0a53cfce506125e93e78fc87211"
+    },
+    {
+      "id": "fragment-tzif-20201230",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230",
+      "start": "20201228T090000",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200
+    },
+    {
+      "id": "fragment-tzif-20201230T090000",
+      "source": "str_timeforms_test.go; bare fragment convention (unchanged control)",
+      "rule": "FREQ=DAILY;UNTIL=20201230T090000",
+      "start": "20201228T090000",
+      "location": "America/New_York",
+      "location_kind": "tzif",
+      "offset": 7200
+    },
+    {
+      "id": "old-mixed-exrule",
+      "source": "str_timeforms_test.go; legacy invalid fixture rejection",
+      "rule": "DTSTART;TZID=America/New_York:20180101T090000\nRRULE:FREQ=WEEKLY;COUNT=2\nEXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3",
+      "set": true,
+      "rationale": "Named time-form rejection: EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; legacy invalid fixture rejection. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "04a5b157f97fd9dc0645e925a5e6d7893f55800e6cdd331b1729b8283bff9e0c"
+    },
+    {
+      "id": "old-mixed-exrule-valid",
+      "source": "str_timeforms_test.go; legacy UTC fixture control",
+      "rule": "DTSTART;TZID=America/New_York:20180101T090000\nRRULE:FREQ=WEEKLY;COUNT=2\nEXRULE:FREQ=MONTHLY;UNTIL=20180520T040000Z;BYMONTHDAY=1,2,3",
+      "set": true
+    },
+    {
+      "id": "old-LA-invalid",
+      "source": "str_timeforms_test.go; legacy invalid fixture rejection",
+      "rule": "DTSTART;TZID=America/Los_Angeles:20181115T000000\nRRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959",
+      "set": true,
+      "rationale": "Named time-form rejection: StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART). Validated before shared/inline/ignored/overwritten processing; str_timeforms_test.go; legacy invalid fixture rejection. RFC5545 3.3.10/3.2.19 and explicit library shared-anchor policy.",
+      "approved_current_sha256": "a89c76138ebb6d08ac336964ce80fec7ff81c052adc14735b1d24621d3fbf09f"
+    },
+    {
+      "id": "old-LA-valid",
+      "source": "str_timeforms_test.go; legacy UTC fixture control",
+      "rule": "DTSTART;TZID=America/Los_Angeles:20181115T000000\nRRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181118T075959Z",
+      "set": true
+    },
+    {
+      "id": "integrated-gap-bysetpos-set0",
+      "source": "str_timeforms_test.go; integrated floating/gap/position/inclusive UNTIL",
+      "rule": "DTSTART:20260307T020000\nRRULE:FREQ=DAILY;UNTIL=20260309T020000;BYSETPOS=1;BYHOUR=2,3",
+      "location": "America/New_York",
+      "set": false,
+      "rationale": "RFC5545 3.3.10 generated gap removed before BYSETPOS, floating form/UNTIL retained; TestTimeFormsIntegratedGapBysetpos; issue5+6 integrated correction.",
+      "approved_current_sha256": "e337c3263d611d33757756809881addcae9c4627b3ea9cc81c538e3b0c3696ad"
+    },
+    {
+      "id": "integrated-date-set0",
+      "source": "str_timeforms_test.go; DATE midnight bounds across DST",
+      "rule": "DTSTART;VALUE=DATE:20260307\nRRULE:FREQ=DAILY;UNTIL=20260309",
+      "location": "America/New_York",
+      "set": false,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; DATE midnight bounds across DST. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "208e613200b55c30e63bacab0ec150f7952d4a7eff2b6b78307ddaf53606e8c1"
+    },
+    {
+      "id": "explicit-gap-until-set0",
+      "source": "str_timeforms_test.go; explicit floating UNTIL uses pre-gap offset",
+      "rule": "DTSTART:20260308T003000\nRRULE:FREQ=HOURLY;UNTIL=20260308T023000",
+      "location": "America/New_York",
+      "set": false,
+      "rationale": "RFC5545 3.3.5 explicit floating gap UNTIL interpreted with pre-gap offset, inclusive bound includes03:30; TestTimeFormsExplicitGapTextAndUntil; lexical forms retained.",
+      "approved_current_sha256": "0758ff2caaa8dbae2dd57fa974513a5153f2c7c7effee6f0889e454cba3a2f4c"
+    },
+    {
+      "id": "explicit-gap-anchor-set0",
+      "source": "str_timeforms_test.go; nominal gap anchor text preserves cadence",
+      "rule": "DTSTART;TZID=America/New_York:20070311T023000\nRRULE:FREQ=DAILY;COUNT=2",
+      "set": false,
+      "rationale": "RFC5545 3.3.5 explicit gap anchor physical instant and nominal civil cadence retained; serialized nominal fields preserve rule on reparse; TestTimeFormsExplicitGapTextAndUntil.",
+      "approved_current_sha256": "1dcfcca61edbf234e33bcc9af2de0cd97c9d936db247c73119e054be23e69c1a"
+    },
+    {
+      "id": "effectiveUTC-short-until-set0",
+      "source": "str_timeforms_test.go; effective-UTC bounded no-match horizon",
+      "rule": "DTSTART:20260105T100000\nRRULE:FREQ=DAILY;UNTIL=20260201T000000;BYMONTH=2;BYMONTHDAY=30",
+      "set": false,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; effective-UTC bounded no-match horizon. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "d7173ff1da2b295f97169b956e3c2867c17fb311c4ecfc2444cee1764b6a5bb7"
+    },
+    {
+      "id": "integrated-gap-bysetpos-set1",
+      "source": "str_timeforms_test.go; integrated floating/gap/position/inclusive UNTIL",
+      "rule": "DTSTART:20260307T020000\nRRULE:FREQ=DAILY;UNTIL=20260309T020000;BYSETPOS=1;BYHOUR=2,3",
+      "location": "America/New_York",
+      "set": true,
+      "rationale": "RFC5545 3.3.10 generated gap removed before BYSETPOS, floating form/UNTIL retained; TestTimeFormsIntegratedGapBysetpos; issue5+6 integrated correction.",
+      "approved_current_sha256": "bbe92c049961ea8c7c5eed986c1561c42e89e66d41393a5064cd43b138a2d24b"
+    },
+    {
+      "id": "integrated-date-set1",
+      "source": "str_timeforms_test.go; DATE midnight bounds across DST",
+      "rule": "DTSTART;VALUE=DATE:20260307\nRRULE:FREQ=DAILY;UNTIL=20260309",
+      "location": "America/New_York",
+      "set": true,
+      "rationale": "Conformant canonical VALUE/date-time or reversed DTSTART/RRULE input now accepted with preserved DATE/floating/TZID semantics; str_timeforms_test.go; DATE midnight bounds across DST. RFC5545 3.8.2.4/3.3.10 and library order-independent parser contract.",
+      "approved_current_sha256": "8beec786ddbe62664a8ea539e3a930ff5b05721395a60764548c373e4a0f3ae1"
+    },
+    {
+      "id": "explicit-gap-until-set1",
+      "source": "str_timeforms_test.go; explicit floating UNTIL uses pre-gap offset",
+      "rule": "DTSTART:20260308T003000\nRRULE:FREQ=HOURLY;UNTIL=20260308T023000",
+      "location": "America/New_York",
+      "set": true,
+      "rationale": "RFC5545 3.3.5 explicit floating gap UNTIL interpreted with pre-gap offset, inclusive bound includes03:30; TestTimeFormsExplicitGapTextAndUntil; lexical forms retained.",
+      "approved_current_sha256": "da84e70b92d2519c35b7cc6c38bf9b5d3aa9474cb799db829a7326442edd9d0e"
+    },
+    {
+      "id": "explicit-gap-anchor-set1",
+      "source": "str_timeforms_test.go; nominal gap anchor text preserves cadence",
+      "rule": "DTSTART;TZID=America/New_York:20070311T023000\nRRULE:FREQ=DAILY;COUNT=2",
+      "set": true,
+      "rationale": "RFC5545 3.3.5 explicit gap anchor physical instant and nominal civil cadence retained; serialized nominal fields preserve rule on reparse; TestTimeFormsExplicitGapTextAndUntil.",
+      "approved_current_sha256": "d50e366975be4589f8d189ec01c9f6cad53373ae96256cad57d8e022ed84e7c4"
+    },
+    {
+      "id": "effectiveUTC-short-until-set1",
+      "source": "str_timeforms_test.go; effective-UTC bounded no-match horizon",
+      "rule": "DTSTART:20260105T100000\nRRULE:FREQ=DAILY;UNTIL=20260201T000000;BYMONTH=2;BYMONTHDAY=30",
+      "set": true,
+      "rationale": "Floating/DATE descriptor retained across parse/copy/Set or per-part setter replacement; programmatic/fragment conventions retained. str_timeforms_test.go; effective-UTC bounded no-match horizon. RFC5545 3.3.5/3.8.2.4.",
+      "approved_current_sha256": "178641a75b6c507e92c7a81513219c55a93bfac4573f9f5fdb80962b7f11f759"
+    }
+  ]
+}

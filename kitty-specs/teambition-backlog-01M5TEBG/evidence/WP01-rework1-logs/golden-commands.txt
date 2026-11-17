@@ -1,0 +1,5 @@
+Build/current evaluation and unchanged old-baseline driver evaluation: all exit0. Exact paths/commands in handoff; build output in golden-build.txt.
+/tmp/rrule-rework1-golden-current -out /tmp/rrule-rework1-current-dst.json
+/tmp/rrule-dst-golden-baseline -corpus ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a/docs/repro/05-07-backlog/golden/corpus-dst.json -out ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a/docs/repro/05-07-backlog/golden/baseline-dst.json
+/tmp/rrule-rework1-golden-current -baseline docs/repro/05-07-backlog/golden/baseline-dst.json -current /tmp/rrule-rework1-current-dst.json
+EXIT0; rows811 changed114 unexplained0 timeouts0/0

@@ -1,0 +1,51 @@
+//go:build ignore
+// +build ignore
+
+package main
+
+import (
+	"fmt"
+
+	"github.com/kentonium3/rrule-go"
+)
+
+func run(rule string, n int) (res string) {
+	defer func() {
+		if r := recover(); r != nil {
+			res = fmt.Sprint("PANIC: ", r)
+		}
+	}()
+	r, err := rrule.StrToRRule(rule)
+	if err != nil {
+		return "err: " + err.Error()
+	}
+	next := r.Iterator()
+	c := 0
+	for i := 0; i < n; i++ {
+		if _, ok := next(); !ok {
+			break
+		}
+		c++
+	}
+	return fmt.Sprint("ok, ", c, " occurrences")
+}
+
+func main() {
+	for _, s := range []string{
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=MONTHLY;BYDAY=6MO",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=MONTHLY;BYDAY=-6MO",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=MONTHLY;BYDAY=-7MO",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=WEEKLY;BYDAY=53MO",
+		"DTSTART:16000101T100000Z\nRRULE:FREQ=YEARLY;BYEASTER=-80;UNTIL=25000101T000000Z",
+		"DTSTART:16000101T100000Z\nRRULE:FREQ=YEARLY;BYEASTER=-81;UNTIL=25000101T000000Z",
+		"DTSTART:16000101T100000Z\nRRULE:FREQ=YEARLY;BYEASTER=257;UNTIL=25000101T000000Z",
+		"DTSTART:16000101T100000Z\nRRULE:FREQ=YEARLY;BYEASTER=258;UNTIL=25000101T000000Z",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=MONTHLY;INTERVAL=1000000000000000000",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=WEEKLY;INTERVAL=9223372036854775807",
+		"DTSTART:20260105T100000Z\nRRULE:FREQ=HOURLY;INTERVAL=9223372036854775807",
+	} {
+		fmt.Printf("%-75q %s\n", s, run(s, 1000))
+	}
+	r, _ := rrule.StrToRRule("DTSTART:20260105T100000Z\nRRULE:FREQ=DAILY;INTERVAL=9223372036854775807;COUNT=4")
+	fmt.Println("DAILY;INTERVAL=MaxInt64;COUNT=4 ->", r.All())
+}

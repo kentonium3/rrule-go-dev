@@ -1,0 +1,121 @@
+work_packages:
+- id: WP01
+  title: Adopt the fork module identity in active source
+  dependencies: []
+  owned_files:
+  - go.mod
+  - example_test.go
+  - str_timeforms_api_test.go
+  - docs/repro/01-iterator-panics/main.go
+  - docs/repro/02-unreachable-byset-hang/main.go
+  - docs/repro/03-until-scan/main.go
+  - docs/repro/05-07-backlog/main.go
+  - docs/repro/05-07-backlog/golden/main.go
+  - docs/repro/edge-cases/main.go
+  - docs/repro/matrix/main.go
+  - docs/repro/05-07-backlog/golden/README.md
+  requirement_refs:
+  - FR-001
+  - FR-002
+  - NFR-002
+  - C-001
+  - C-002
+  - C-003
+  - C-006
+  plan_concern_refs:
+  - IC-01
+  - IC-02
+  subtasks:
+  - T001
+  - T002
+  - T003
+  - T004
+  - T005
+  execution_mode: code_change
+  authoritative_surface: go.mod
+  create_intent: []
+  agent_profile: implementer-ivan
+  role: implementer
+  agent: codex
+  prompt_file: tasks/WP01-module-identity.md
+- id: WP02
+  title: Document safe consumer migration and release notes
+  dependencies:
+  - WP01
+  owned_files:
+  - README.md
+  - CHANGELOG.md
+  - MIGRATION.md
+  requirement_refs:
+  - FR-003
+  - FR-004
+  - FR-007
+  - NFR-003
+  - C-001
+  - C-002
+  - C-004
+  - C-005
+  plan_concern_refs:
+  - IC-03
+  subtasks:
+  - T006
+  - T007
+  - T008
+  - T009
+  - T010
+  execution_mode: code_change
+  authoritative_surface: README.md
+  create_intent:
+  - MIGRATION.md
+  agent_profile: comms-cleo
+  role: communicator
+  agent: codex
+  prompt_file: tasks/WP02-consumer-migration.md
+- id: WP03
+  title: Verify the migration and complete private handoff packets
+  dependencies:
+  - WP02
+  owned_files:
+  - kitty-specs/module-path-v1-9-0-01M62K6W/drafts/release-communication.md
+  - kitty-specs/module-path-v1-9-0-01M62K6W/drafts/teambition-transition-pr.md
+  - kitty-specs/module-path-v1-9-0-01M62K6W/evidence/migration-verification.md
+  - kitty-specs/module-path-v1-9-0-01M62K6W/evidence/vikunja-handoff.md
+  requirement_refs:
+  - FR-003
+  - FR-004
+  - FR-005
+  - FR-006
+  - FR-007
+  - FR-008
+  - NFR-001
+  - NFR-002
+  - NFR-003
+  - C-001
+  - C-002
+  - C-003
+  - C-004
+  - C-005
+  - C-006
+  - SC-001
+  - SC-002
+  - SC-003
+  - SC-004
+  plan_concern_refs:
+  - IC-02
+  - IC-03
+  subtasks:
+  - T011
+  - T012
+  - T013
+  - T014
+  - T015
+  - T016
+  execution_mode: planning_artifact
+  authoritative_surface: kitty-specs/module-path-v1-9-0-01M62K6W/
+  create_intent:
+  - kitty-specs/module-path-v1-9-0-01M62K6W/evidence/migration-verification.md
+  - kitty-specs/module-path-v1-9-0-01M62K6W/evidence/vikunja-handoff.md
+  agent_profile: implementer-ivan
+  role: implementer
+  agent: codex
+  prompt_file: tasks/WP03-verification-handoff.md

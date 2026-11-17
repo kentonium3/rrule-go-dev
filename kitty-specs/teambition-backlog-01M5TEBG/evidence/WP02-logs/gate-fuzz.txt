@@ -1,0 +1,27 @@
+fuzz: elapsed: 0s, gathering baseline coverage: 0/357 completed
+fuzz: elapsed: 0s, gathering baseline coverage: 357/357 completed, now fuzzing with 2 workers
+fuzz: elapsed: 3s, execs: 139879 (46624/sec), new interesting: 5 (total: 362)
+fuzz: elapsed: 6s, execs: 298049 (52718/sec), new interesting: 8 (total: 365)
+fuzz: elapsed: 9s, execs: 443619 (48524/sec), new interesting: 12 (total: 369)
+fuzz: elapsed: 12s, execs: 591756 (49373/sec), new interesting: 18 (total: 375)
+fuzz: elapsed: 15s, execs: 737829 (48697/sec), new interesting: 21 (total: 378)
+fuzz: elapsed: 18s, execs: 886725 (49636/sec), new interesting: 22 (total: 379)
+fuzz: elapsed: 21s, execs: 1040617 (51293/sec), new interesting: 22 (total: 379)
+fuzz: elapsed: 24s, execs: 1192075 (50486/sec), new interesting: 22 (total: 379)
+fuzz: elapsed: 27s, execs: 1337030 (48316/sec), new interesting: 22 (total: 379)
+fuzz: elapsed: 30s, execs: 1481680 (48217/sec), new interesting: 23 (total: 380)
+fuzz: elapsed: 33s, execs: 1626541 (48290/sec), new interesting: 23 (total: 380)
+fuzz: elapsed: 36s, execs: 1774408 (49290/sec), new interesting: 23 (total: 380)
+fuzz: elapsed: 39s, execs: 1933103 (52888/sec), new interesting: 23 (total: 380)
+fuzz: elapsed: 42s, execs: 2083603 (50165/sec), new interesting: 23 (total: 380)
+fuzz: elapsed: 45s, execs: 2229152 (48517/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 48s, execs: 2377041 (49300/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 51s, execs: 2527168 (50037/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 54s, execs: 2677183 (50005/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 57s, execs: 2828759 (50527/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 1m0s, execs: 2980037 (50434/sec), new interesting: 25 (total: 382)
+fuzz: elapsed: 1m0s, execs: 2980037 (0/sec), new interesting: 25 (total: 382)
+PASS
+ok  	github.com/teambition/rrule-go	60.077s
+
+exit=0

@@ -1,0 +1,29 @@
+{
+  "rows": {
+    "#5": {
+      "evidence_ref": "Public kentonium3/rrule-go#5: ef373a5872dba30063a6a706275a28e46508af77 independently approved by gpt-6-astra 2026-10-25; reviews/WP01-rereview.md, evidence/WP01-rework1.md",
+      "fr": "FR-001, FR-002, FR-007, FR-008",
+      "nfr": null,
+      "repo": "kentonium3/rrule-go",
+      "sc": null,
+      "scope": "Public kentonium3/rrule-go#5 is in mission teambition-backlog; private development only.",
+      "source_file": "docs/issues/05-dst-sub-daily.md",
+      "title": "Public kentonium3/rrule-go#5: RFC civil times across DST",
+      "verdict": "fixed",
+      "wp": "WP01"
+    },
+    "#6": {
+      "evidence_ref": "Public kentonium3/rrule-go#6: 0f7154e7bdb98b7e2de3e22ed2db78b8bfe0ce53 independently approved by gpt-6-astra 2026-10-25; reviews/WP02-review.md and evidence/WP02-implementation.md",
+      "fr": "FR-003, FR-004, FR-005, FR-007, FR-008",
+      "nfr": null,
+      "repo": "kentonium3/rrule-go",
+      "sc": null,
+      "scope": "Public kentonium3/rrule-go#6 is in mission teambition-backlog; private development only.",
+      "source_file": "docs/issues/06-floating-until.md",
+      "title": "Public kentonium3/rrule-go#6: Floating DTSTART and UNTIL forms",
+      "verdict": "fixed",
+      "wp": "WP02"
+    }
+  },
+  "schema_version": 1
+}

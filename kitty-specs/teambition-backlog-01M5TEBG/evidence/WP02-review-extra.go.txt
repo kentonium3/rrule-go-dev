@@ -1,0 +1,19 @@
+package main
+import("fmt";"os";"strings";"time";r "github.com/teambition/rrule-go")
+var failures int
+func ck(n string,b bool,v interface{}){fmt.Printf("%s pass=%v %v\n",n,b,v);if !b{failures++}}
+func vals(ts []time.Time)string{var x []string;for _,t:=range ts{x=append(x,t.UTC().Format(time.RFC3339))};return strings.Join(x,",")}
+func main(){ny,_:=time.LoadLocation("America/New_York")
+for _,kind:=range []string{"RRULE","EXRULE"}{for _,z:=range []bool{false,true}{
+ u:="20260309T090000";if z{u+="Z"};_,e:=r.StrToRRuleSet("DTSTART;TZID=UTC:20260307T090000\n"+kind+":FREQ=DAILY;UNTIL="+u);ck(fmt.Sprintf("TZID UTC/%s/Z=%v",kind,z),(e==nil)==z,e)
+}}
+for _,inline:=range []string{"20201228","20201228T000000","20201229"}{_,e:=r.StrToRRuleSet("RRULE:FREQ=DAILY;DTSTART="+inline+";UNTIL=20201230\nDTSTART;VALUE=DATE:20201228");ck("sharedDATE/"+inline,(e==nil)==(inline=="20201228"),e)}
+for _,value:=range []string{"20260308T023000","20260308T033000"}{_,e:=r.StrSliceToRRuleSetInLoc([]string{"RRULE:FREQ=DAILY;DTSTART="+value+";UNTIL=20260310T023000","DTSTART:20260308T023000"},ny);ck("gap nominal shared/"+value,(e==nil)==(value=="20260308T023000"),e)}
+set,e:=r.StrSliceToRRuleSetInLoc([]string{"DTSTART:20260307T090000"},ny);if e!=nil{panic(e)};rule,_:=r.StrToRRule("FREQ=DAILY;COUNT=3");set.RRule(rule)
+ck("shared-only private transfer",set.String()=="DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",set.String());ck("shared-only pointer",set.GetDTStart().Location()==ny&&rule.GetDTStart().Location()==ny,ny);ck("shared-only values",vals(set.All())=="2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z",vals(set.All()));set.DTStart(set.GetDTStart());ck("public set replaces form",strings.HasPrefix(set.String(),"DTSTART;TZID=America/New_York:"),set.String())
+input:="DTSTART:20260307T023000\nRRULE:FREQ=DAILY;UNTIL=20260310T023000";o,e:=r.StrToROptionInLocation(input,ny);if e!=nil{panic(e)};rr,_:=r.NewRRule(*o);want:="2026-03-07T07:30:00Z,2026-03-09T06:30:00Z,2026-03-10T06:30:00Z";ck("floating DST",vals(rr.All())==want,vals(rr.All()));again,e:=r.StrToROptionInLocation(rr.String(),ny);if e!=nil{panic(e)};r2,_:=r.NewRRule(*again);ck("floating reparse",vals(r2.All())==want&&r2.String()==input,r2.String())
+copy:=*o;copy.Until=time.Time{};ck("cleared Until",copy.String()=="DTSTART:20260307T023000\nRRULE:FREQ=DAILY",copy.String());copy=*o;copy.Dtstart=time.Time{};ck("cleared start perpart",copy.String()=="FREQ=DAILY;UNTIL=20260310T023000",copy.String());ck("source unchanged",o.String()==input,o.String())
+// Late shared placement also determines local RDATE/EXDATE interpretation.
+s,e:=r.StrSliceToRRuleSetInLoc([]string{"RDATE:20260310T090000","RRULE:FREQ=DAILY;UNTIL=20260309T130000Z","EXDATE:20260308T090000","DTSTART;TZID=America/New_York:20260307T090000"},time.UTC);if e!=nil{panic(e)};ck("late shared date properties",vals(s.All())=="2026-03-07T14:00:00Z,2026-03-09T13:00:00Z,2026-03-10T13:00:00Z",vals(s.All()))
+fmt.Printf("failures=%d\n",failures);if failures>0{os.Exit(1)}
+}

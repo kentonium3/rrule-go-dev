@@ -1,0 +1,19 @@
+go1.25.14 linux/amd64
+FREQ=MONTHLY;BYDAY=5MO                                  ok: [2026-03-30 2026-06-29 2026-08-31] (0.00s, 0 MB allocated)
+FREQ=MONTHLY;BYDAY=-5MO                                 ok: [2026-03-02 2026-06-01 2026-08-03] (0.00s, 0 MB allocated)
+FREQ=MONTHLY;BYDAY=-6MO                                 PANIC: runtime error: index out of range [-5]
+FREQ=MONTHLY;BYDAY=7MO                                  ok: [] (0.04s, 280 MB allocated)
+FREQ=MONTHLY;BYDAY=8MO                                  PANIC: runtime error: index out of range [383] with length 382
+FREQ=MONTHLY;BYDAY=10MO                                 PANIC: runtime error: index out of range [397] with length 382
+FREQ=MONTHLY;BYDAY=53MO                                 PANIC: runtime error: index out of range [395] with length 382
+FREQ=MONTHLY;BYDAY=-53MO                                PANIC: runtime error: index out of range [-334]
+FREQ=YEARLY;BYMONTH=12;BYDAY=8MO                        PANIC: runtime error: index out of range [383] with length 382
+FREQ=YEARLY;BYMONTH=1;BYDAY=-6MO                        PANIC: runtime error: index out of range [-5]
+FREQ=YEARLY;BYDAY=53MO                                  ok: [2029-12-31 2035-12-31 2040-12-31] (0.00s, 0 MB allocated)
+FREQ=YEARLY;BYDAY=-53MO                                 ok: [2029-01-01 2035-01-01 2040-01-02] (0.00s, 0 MB allocated)
+FREQ=YEARLY;BYEASTER=0                                  ok: [2026-04-05 2027-03-28 2028-04-16] (0.00s, 0 MB allocated)
+FREQ=YEARLY;BYEASTER=-100                               PANIC: runtime error: index out of range [-6]
+FREQ=YEARLY;BYEASTER=300                                PANIC: runtime error: index out of range [394] with length 372
+FREQ=MONTHLY;INTERVAL=9223372036854775807               PANIC: runtime error: index out of range [9223372036854775807] with length 13
+FREQ=YEARLY;INTERVAL=9223372036854775807                ok: [2026-01-05] (0.00s, 0 MB allocated)
+FREQ=DAILY;INTERVAL=9223372036854775807                 ok: [2026-01-05 2026-12-31 2026-12-30] (0.00s, 0 MB allocated)

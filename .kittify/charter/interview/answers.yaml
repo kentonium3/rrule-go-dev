@@ -1,0 +1,54 @@
+schema_version: 1.0.0
+mission: software-dev
+profile: minimal
+answers:
+  project_intent: >-
+    Maintain Kent Gale's patched rrule-go copy to fix accepted RRULE inputs
+    that panic, hang, or return impossible results. Prioritize iterator panics,
+    then unreachable sub-daily BY-list hangs. UNTIL scan optimization is optional
+    and requires Kent's scope decision. Vikunja adoption belongs in its own repo.
+  languages_frameworks: >-
+    Go standard library, no new dependencies. Preserve the exported API and
+    occurrence sequences of rules that work correctly. Kent authorizes raising the minimum Go version
+    if needed for fuzzing; choose and justify the version during mission planning.
+  testing_requirements: >-
+    Demonstrate each regression test fails on unfixed code before implementing
+    the fix. Use plain Go tests and add bounded fuzzing over BY* and INTERVAL
+    domains in the panic mission; settle compiler compatibility in its plan.
+  quality_gates: >-
+    Run go test ./..., go test -race ./..., go vet ./..., and gofmt -l .;
+    run targeted fuzzing for 60 seconds. Preserve existing correct occurrences.
+  review_policy: >-
+    Each work package must be reviewed by a different model from its implementer.
+    Record both model identities and the date. Same-model review is degraded
+    and cannot silently substitute for the required independent review.
+  performance_targets: >-
+    Eliminate crashes and nonterminating iterator loops on accepted input.
+    Prefer the smallest root-cause fix. State every finding's chain of conditions
+    and likelihood. Treat rare cosmetic oddities as known limits; do not invent
+    exotic mechanisms or arbitrary performance budgets.
+  deployment_constraints: >-
+    Keep the repo private until at least 2026-11-13 unless Kent explicitly revises
+    that decision. No upstream pushes. Any public posting or upstream PR requires
+    Kent's sign-off on the exact copy. Prepare a tested private patch promptly;
+    send it only with explicit messaging authorization. Coordinate an installable
+    fix with public disclosure. Keep Vikunja guards as defence in depth.
+  documentation_policy: >-
+    Read AGENTS.md, docs/CONTEXT.md, and the relevant docs/issues file before mission
+    work. Preserve MIT LICENSE and the existing README modified-copy notice.
+    Keep reproductions and validation evidence tied to actual behavior.
+  risk_boundaries: >-
+    Accepted input that can crash or hang a service is in scope. Never change
+    correct occurrence sequences or exported API signatures. No new dependencies.
+    Stop on a misbehaving Spec Kitty command; capture exact command/output and
+    report to Kent without a silent workaround.
+  amendment_process: >-
+    Kent decides scope and policy amendments. Record accepted decisions in
+    AGENTS.md and the structured charter with a matching human-readable companion.
+  exception_policy: >-
+    Require explicit Kent authorization for policy exceptions. Use Conventional
+    Commits, scoped staging, no force-push and no git stash. Commit bootstrap on
+    kittify; merge into master only when Kent agrees.
+selected_paradigms: []
+selected_directives: []
+available_tools: []

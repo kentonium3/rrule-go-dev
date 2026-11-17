@@ -1,0 +1,320 @@
+matrix/floating/floating/reverse=false/option pass=true detail=<nil>
+matrix/floating/floating/reverse=false/optionInNY pass=true detail=<nil>
+matrix/floating/floating/reverse=false/rule pass=true detail=<nil>
+matrix/floating/floating/reverse=false/set pass=true detail=<nil>
+matrix/floating/floating/reverse=false/slice pass=true detail=<nil>
+matrix/floating/floating/reverse=false/sliceInNY pass=true detail=<nil>
+matrix/floating/floating/reverse=true/option pass=true detail=<nil>
+matrix/floating/floating/reverse=true/optionInNY pass=true detail=<nil>
+matrix/floating/floating/reverse=true/rule pass=true detail=<nil>
+matrix/floating/floating/reverse=true/set pass=true detail=<nil>
+matrix/floating/floating/reverse=true/slice pass=true detail=<nil>
+matrix/floating/floating/reverse=true/sliceInNY pass=true detail=<nil>
+matrix/floating/UTC/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/UTC/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/floating/DATE/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/floating/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/UTC/reverse=false/option pass=true detail=<nil>
+matrix/UTC/UTC/reverse=false/optionInNY pass=true detail=<nil>
+matrix/UTC/UTC/reverse=false/rule pass=true detail=<nil>
+matrix/UTC/UTC/reverse=false/set pass=true detail=<nil>
+matrix/UTC/UTC/reverse=false/slice pass=true detail=<nil>
+matrix/UTC/UTC/reverse=false/sliceInNY pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/option pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/optionInNY pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/rule pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/set pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/slice pass=true detail=<nil>
+matrix/UTC/UTC/reverse=true/sliceInNY pass=true detail=<nil>
+matrix/UTC/DATE/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/UTC/DATE/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/floating/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/UTC/reverse=false/option pass=true detail=<nil>
+matrix/TZID/UTC/reverse=false/optionInNY pass=true detail=<nil>
+matrix/TZID/UTC/reverse=false/rule pass=true detail=<nil>
+matrix/TZID/UTC/reverse=false/set pass=true detail=<nil>
+matrix/TZID/UTC/reverse=false/slice pass=true detail=<nil>
+matrix/TZID/UTC/reverse=false/sliceInNY pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/option pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/optionInNY pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/rule pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/set pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/slice pass=true detail=<nil>
+matrix/TZID/UTC/reverse=true/sliceInNY pass=true detail=<nil>
+matrix/TZID/DATE/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/TZID/DATE/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/floating/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=false/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/option pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/option/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/optionInNY pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/optionInNY/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/rule pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/rule/part pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/set pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/set/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/slice pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/slice/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/sliceInNY pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/UTC/reverse=true/sliceInNY/part pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+matrix/DATE/DATE/reverse=false/option pass=true detail=<nil>
+matrix/DATE/DATE/reverse=false/optionInNY pass=true detail=<nil>
+matrix/DATE/DATE/reverse=false/rule pass=true detail=<nil>
+matrix/DATE/DATE/reverse=false/set pass=true detail=<nil>
+matrix/DATE/DATE/reverse=false/slice pass=true detail=<nil>
+matrix/DATE/DATE/reverse=false/sliceInNY pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/option pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/optionInNY pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/rule pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/set pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/slice pass=true detail=<nil>
+matrix/DATE/DATE/reverse=true/sliceInNY pass=true detail=<nil>
+TZID forbidden/20201228T090000Z pass=true detail=DTSTART: TZID must not be applied to DATE or UTC DTSTART
+TZID forbidden/20201228 pass=true detail=DTSTART: TZID must not be applied to DATE or UTC DTSTART
+shared/RRULE/late=false/valid=false pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+shared/RRULE/late=false/valid=true pass=true detail=<nil>
+shared/RRULE/late=false/valid=true/values pass=true detail=2020-12-28T14:00:00Z,2020-12-29T14:00:00Z,2020-12-30T14:00:00Z
+shared/RRULE/late=true/valid=false pass=true detail=StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+shared/RRULE/late=true/valid=true pass=true detail=<nil>
+shared/RRULE/late=true/valid=true/values pass=true detail=2020-12-28T14:00:00Z,2020-12-29T14:00:00Z,2020-12-30T14:00:00Z
+shared/EXRULE/late=false/valid=false pass=true detail=EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+shared/EXRULE/late=false/valid=true pass=true detail=<nil>
+shared/EXRULE/late=false/valid=true/values pass=true detail=2020-12-28T14:00:00Z,2020-12-29T14:00:00Z,2020-12-30T14:00:00Z
+shared/EXRULE/late=true/valid=false pass=true detail=EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+shared/EXRULE/late=true/valid=true pass=true detail=<nil>
+shared/EXRULE/late=true/valid=true/values pass=true detail=2020-12-28T14:00:00Z,2020-12-29T14:00:00Z,2020-12-30T14:00:00Z
+inline/reverse=false/valid=false pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+inline/reverse=false/valid=true pass=true detail=<nil>
+inline/reverse=true/valid=false pass=true detail=UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+inline/reverse=true/valid=true pass=true detail=<nil>
+location/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+location/pointer pass=true detail=America/New_York
+location/values pass=true detail=2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z
+set transfer/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+set transfer/values pass=true detail=2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z
+copy start invalidation pass=true detail=DTSTART:20260307T140000Z
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+copy until invalidation pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+location/no-until pass=true detail=2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z
+copy immutable source pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time start replacement pass=true detail=DTSTART;TZID=America/New_York:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time until replacement pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+location/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+location/pointer pass=true detail=America/New_York
+location/values pass=true detail=2026-03-07T14:00:00Z,2026-03-08T14:00:00Z,2026-03-09T14:00:00Z
+set transfer/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+set transfer/values pass=true detail=2026-03-07T14:00:00Z,2026-03-08T14:00:00Z,2026-03-09T14:00:00Z
+copy start invalidation pass=true detail=DTSTART:20260307T140000Z
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+copy until invalidation pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T140000Z
+location/no-until pass=true detail=2026-03-07T14:00:00Z,2026-03-08T14:00:00Z,2026-03-09T14:00:00Z
+copy immutable source pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time start replacement pass=true detail=DTSTART;TZID=America/New_York:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time until replacement pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T140000Z
+location/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+location/pointer pass=true detail=America/New_York
+location/values pass=true detail=2026-03-07T07:00:00Z,2026-03-08T07:00:00Z,2026-03-09T07:00:00Z
+set transfer/string pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+set transfer/values pass=true detail=2026-03-07T07:00:00Z,2026-03-08T07:00:00Z,2026-03-09T07:00:00Z
+copy start invalidation pass=true detail=DTSTART:20260307T070000Z
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+copy until invalidation pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T070000Z
+location/no-until pass=true detail=2026-03-07T07:00:00Z,2026-03-08T07:00:00Z,2026-03-09T07:00:00Z
+copy immutable source pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time start replacement pass=true detail=DTSTART;TZID=America/New_York:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T090000
+public same-time until replacement pass=true detail=DTSTART:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T070000Z
+DATE roundtrip pass=true detail=DTSTART;VALUE=DATE:20260307
+RRULE:FREQ=DAILY;UNTIL=20260309
+DATE instants pass=true detail=2026-03-07T05:00:00Z,2026-03-08T05:00:00Z,2026-03-09T04:00:00Z
+bare UTC-Z/20260309T090000 pass=true detail=FREQ=DAILY;UNTIL=20260309T130000Z
+bare UTC-Z/20260309 pass=true detail=FREQ=DAILY;UNTIL=20260309T040000Z
+programmatic UTC-Z pass=true detail=DTSTART;TZID=America/New_York:20260307T090000
+RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+failures=0

@@ -1,0 +1,11 @@
+id: go-style-guide
+principles:
+- Use the Go standard library and introduce no new dependencies.
+- Preserve exported API signatures and the occurrence sequences of rules that 
+  already iterate correctly.
+- Prefer the smallest root-cause fix and format Go code with gofmt.
+- Kent authorizes a minimum Go version increase if needed for fuzzing; choose 
+  and justify it in mission planning.
+schema_version: '1.0'
+scope: code
+title: Go library maintenance

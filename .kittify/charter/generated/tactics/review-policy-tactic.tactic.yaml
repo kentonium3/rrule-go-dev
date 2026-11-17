@@ -1,0 +1,14 @@
+id: review-policy-tactic
+schema_version: '1.0'
+name: Independent model review
+purpose: Verify each work package through a model different from its implementer.
+steps:
+- title: Assign independent review
+  description: Record the implementing model, reviewing model, and date. The reviewing model must 
+    differ from the implementing model.
+- title: Inspect behavior and evidence
+  description: Review root-cause correctness, preserved exported API and correct occurrences, and 
+    actual red/green and Go validation evidence.
+- title: Persist the verdict
+  description: Keep substantive review findings and resolution evidence. A same-model review is 
+    degraded and cannot silently substitute for the required independent review.

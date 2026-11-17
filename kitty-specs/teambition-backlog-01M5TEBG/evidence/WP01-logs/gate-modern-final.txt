@@ -1,0 +1,4 @@
+CWD: ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test ./...
+EXIT: 0
+ok  	github.com/teambition/rrule-go	0.478s

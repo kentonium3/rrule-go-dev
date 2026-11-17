@@ -1,0 +1,129 @@
+{
+  "mission_slug": "iterator-panics-01M5RT9D",
+  "mission_number": null,
+  "mission_type": "software-dev",
+  "branch": "fix/iterator-panics",
+  "repo_root": "~/repos/rrule-go",
+  "feature_dir": "~/repos/rrule-go/kitty-specs/iterator-panics-01M5RT9D",
+  "tasks_dir": "~/repos/rrule-go/kitty-specs/iterator-panics-01M5RT9D/tasks",
+  "worktree_root": "~/repos/rrule-go",
+  "primary_repo_root": "~/repos/rrule-go",
+  "lanes": {
+    "planned": [
+      "WP02"
+    ],
+    "claimed": [],
+    "in_progress": [
+      "WP01"
+    ],
+    "for_review": [],
+    "in_review": [],
+    "approved": [],
+    "done": [],
+    "blocked": [],
+    "canceled": []
+  },
+  "work_packages": [
+    {
+      "id": "WP01",
+      "lane": "in_progress",
+      "title": "Safe iterator arithmetic and masks",
+      "path": "kitty-specs/iterator-panics-01M5RT9D/tasks/WP01-safe-iterator.md",
+      "latest_lane": "in_progress",
+      "has_lane_entry": true,
+      "metadata": {
+        "lane": "in_progress",
+        "agent": "codex",
+        "assignee": null,
+        "shell_pid": "3568"
+      }
+    },
+    {
+      "id": "WP02",
+      "lane": "planned",
+      "title": "Bounded fuzz coverage",
+      "path": "kitty-specs/iterator-panics-01M5RT9D/tasks/WP02-bounded-fuzz.md",
+      "latest_lane": "planned",
+      "has_lane_entry": true,
+      "metadata": {
+        "lane": "planned",
+        "agent": null,
+        "assignee": null,
+        "shell_pid": null
+      }
+    }
+  ],
+  "metadata_issues": [
+    "WP01: missing assignee in canonical runtime state",
+    "WP02: missing agent in canonical runtime state (never claimed; run `spec-kitty agent tasks move-task WP02 --to planned --agent <name>` to repair)"
+  ],
+  "activity_issues": [
+    "WP01: canonical lane is 'in_progress', expected 'approved' or 'done'",
+    "WP02: canonical lane is 'planned', expected 'approved' or 'done'",
+    "Acceptance matrix verdict is 'pending' \u2014 criteria or invariants have not been verified"
+  ],
+  "unchecked_tasks": [],
+  "needs_clarification": [],
+  "missing_artifacts": [],
+  "optional_missing": [],
+  "git_dirty": [],
+  "path_violations": [
+    "Path Convention Errors:\n  - Software Dev Kitty expects workspace path: src/ (not found)\n  - Software Dev Kitty expects tests path: tests/ (not found)\n\nRun `accept --lenient` to treat these as warnings instead of blocking errors for this mission run - or, if you want to adopt the convention, see the commands below:\n\nRequired Actions:\n  - Create directories in one go: mkdir -p src/ tests/\n  - mkdir -p src/\n  - mkdir -p tests/"
+  ],
+  "warnings": [
+    "Path conventions not satisfied."
+  ],
+  "failed_checks": [
+    {
+      "check": "not_done",
+      "detail": "WP02"
+    },
+    {
+      "check": "not_done",
+      "detail": "WP01"
+    },
+    {
+      "check": "metadata",
+      "detail": "WP01: missing assignee in canonical runtime state"
+    },
+    {
+      "check": "metadata",
+      "detail": "WP02: missing agent in canonical runtime state (never claimed; run `spec-kitty agent tasks move-task WP02 --to planned --agent <name>` to repair)"
+    },
+    {
+      "check": "activity",
+      "detail": "WP01: canonical lane is 'in_progress', expected 'approved' or 'done'"
+    },
+    {
+      "check": "activity",
+      "detail": "WP02: canonical lane is 'planned', expected 'approved' or 'done'"
+    },
+    {
+      "check": "activity",
+      "detail": "Acceptance matrix verdict is 'pending' \u2014 criteria or invariants have not been verified"
+    },
+    {
+      "check": "path_violations",
+      "detail": "Path Convention Errors:\n  - Software Dev Kitty expects workspace path: src/ (not found)\n  - Software Dev Kitty expects tests path: tests/ (not found)\n\nRun `accept --lenient` to treat these as warnings instead of blocking errors for this mission run - or, if you want to adopt the convention, see the commands below:\n\nRequired Actions:\n  - Create directories in one go: mkdir -p src/ tests/\n  - mkdir -p src/\n  - mkdir -p tests/"
+    }
+  ],
+  "skipped_checks": [],
+  "blocked_checks": [],
+  "recommended_fix_order": [
+    "Fix work-package metadata issues.",
+    "Move all work packages to approved or done.",
+    "Resolve pending or failing acceptance matrix criteria and negative invariants.",
+    "Fix mission path convention violations."
+  ],
+  "canceled_wps": [],
+  "all_done": false,
+  "ok": false,
+  "accepted_wps": [],
+  "approved_wps": [],
+  "done_wps": [],
+  "merge_pending_wps": [],
+  "diagnose": true,
+  "advisories": [
+    "ORIGIN_UNREACHABLE: kitty/mission-iterator-panics-01M5RT9D is unreachable (remote origin unreachable: fatal: unable to access 'https://github.com/kentonium3/rrule-go.git/': Could not resolve host: github.com) (origin check is warn, source: read-only; continuing)"
+  ]
+}

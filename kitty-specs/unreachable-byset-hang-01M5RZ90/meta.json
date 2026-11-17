@@ -1,0 +1,37 @@
+{
+  "accept_commit": "942f4bfdf4ade46870b5e26724e5626299d49a44",
+  "acceptance_history": [
+    {
+      "accept_commit": "942f4bfdf4ade46870b5e26724e5626299d49a44",
+      "acceptance_mode": "local",
+      "accepted_at": "2026-10-25T07:46:58.716678+00:00",
+      "accepted_by": "codex",
+      "accepted_from_commit": "4b00df9455ca1e48b2f63894b797a80d452a90d5"
+    }
+  ],
+  "acceptance_mode": "local",
+  "accepted_at": "2026-10-25T07:46:58.716678+00:00",
+  "accepted_by": "codex",
+  "accepted_from_commit": "4b00df9455ca1e48b2f63894b797a80d452a90d5",
+  "baseline_merge_commit": "b2b2690ea66ee4fe72a4cbd55bcd0816d0814531",
+  "contracts": "none",
+  "contracts_rationale": "Internal iterator repair preserves existing exported interfaces and introduces no new API or wire contract. Existing public behavior is specified in spec.md and plan.md.",
+  "created_at": "2026-10-25T07:26:52.342514+00:00",
+  "flattened": true,
+  "friendly_name": "Bound unreachable sub-daily recurrence iteration",
+  "merged_at": "2026-10-25T07:47:40.154709+00:00",
+  "merged_commit": "4555221dd555d7cf35da202fe5fde1fd2635b87e",
+  "mid8": "01M5RZ90",
+  "mission_id": "01M5RZ906D003V6HNGXV4B8ZNF",
+  "mission_number": 2,
+  "mission_slug": "unreachable-byset-hang-01M5RZ90",
+  "mission_type": "software-dev",
+  "pr_bound": true,
+  "purpose_context": "Address private issue 5 after the iterator-panic repair. Preserve exported APIs and correct occurrence sequences, including after DTSTART and UNTIL setters, with timeout-safe red-first regression coverage.",
+  "purpose_tldr": "Prevent accepted sub-daily recurrence rules from spinning forever on unreachable BY-lists.",
+  "slug": "unreachable-byset-hang-01M5RZ90",
+  "status_phase": "1",
+  "target_branch": "fix/unreachable-byset-hang",
+  "vcs": "git",
+  "vcs_locked_at": "2026-10-25T07:39:08.401737+00:00"
+}

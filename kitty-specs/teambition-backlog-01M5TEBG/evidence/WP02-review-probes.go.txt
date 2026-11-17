@@ -1,0 +1,84 @@
+package main
+
+import (
+ "encoding/binary"
+ "fmt"
+ "os"
+ "strings"
+ "time"
+ r "github.com/teambition/rrule-go"
+)
+var fails int
+func check(name string, ok bool, detail interface{}) { fmt.Printf("%s pass=%v detail=%v\n", name, ok, detail); if !ok { fails++ } }
+func stamps(ts []time.Time) string { var x []string; for _,t:=range ts {x=append(x,t.UTC().Format(time.RFC3339))}; return strings.Join(x,",") }
+func mustOption(s string,loc *time.Location) *r.ROption { o,e:=r.StrToROptionInLocation(s,loc); if e!=nil { panic(e) };return o }
+func mustRule(o r.ROption) *r.RRule { x,e:=r.NewRRule(o);if e!=nil {panic(e)};return x }
+func main(){
+ ny,e:=time.LoadLocation("America/New_York");if e!=nil {panic(e)}
+ starts:=[]struct{name,line string}{{"floating","DTSTART:20201228T090000"},{"UTC","DTSTART:20201228T090000Z"},{"TZID","DTSTART;TZID=America/New_York:20201228T090000"},{"DATE","DTSTART;VALUE=DATE:20201228"}}
+ untils:=[]struct{name,value string}{{"floating","20201230T090000"},{"UTC","20201230T140000Z"},{"DATE","20201230"}}
+ for _,s:=range starts {for _,u:=range untils {
+  valid:=s.name==u.name || s.name=="TZID"&&u.name=="UTC"
+  line:="RRULE:FREQ=DAILY;UNTIL="+u.value
+  for _,rev:=range []bool{false,true} {
+   lines:=[]string{s.line,line};if rev {lines=[]string{line,s.line}}
+   in:=strings.Join(lines,"\n")
+   parsers:=[]struct{name string; call func()error}{
+    {"option",func()error{_,e:=r.StrToROption(in);return e}},
+    {"optionInNY",func()error{_,e:=r.StrToROptionInLocation(in,ny);return e}},
+    {"rule",func()error{_,e:=r.StrToRRule(in);return e}},
+    {"set",func()error{_,e:=r.StrToRRuleSet(in);return e}},
+    {"slice",func()error{_,e:=r.StrSliceToRRuleSet(lines);return e}},
+    {"sliceInNY",func()error{_,e:=r.StrSliceToRRuleSetInLoc(lines,ny);return e}},
+   }
+   for _,p:=range parsers {err:=p.call();name:=fmt.Sprintf("matrix/%s/%s/reverse=%v/%s",s.name,u.name,rev,p.name);check(name,(err==nil)==valid,err);if err!=nil&&!valid {check(name+"/part",strings.Contains(err.Error(),"UNTIL")||strings.Contains(err.Error(),"DTSTART"),err)}}
+  }
+ }}
+ for _,value:=range []string{"20201228T090000Z","20201228"} {
+  _,e:=r.StrToRRule("DTSTART;TZID=America/New_York:"+value+"\nRRULE:FREQ=DAILY;COUNT=3")
+  check("TZID forbidden/"+value,e!=nil&&strings.Contains(e.Error(),"TZID"),e)
+ }
+ // A syntactically valid but incompatible first rule must be checked before last-wins/ignore.
+ for _,kind:=range []string{"RRULE","EXRULE"} {for _,sharedLast:=range []bool{false,true} {
+  for _,valid:=range []bool{false,true} {
+   until:="20201230T090000";if valid {until="20201230T140000Z"}
+   lines:=[]string{"DTSTART;TZID=America/New_York:20201228T090000",kind+":FREQ=DAILY;UNTIL="+until,"RRULE:FREQ=DAILY;UNTIL=20201230T140000Z"}
+   if sharedLast {lines=append(lines[1:],lines[0])}
+   set,e:=r.StrSliceToRRuleSet(lines)
+   name:=fmt.Sprintf("shared/%s/late=%v/valid=%v",kind,sharedLast,valid)
+   check(name,(e==nil)==valid,e)
+   if e==nil&&valid {check(name+"/values",stamps(set.All())=="2020-12-28T14:00:00Z,2020-12-29T14:00:00Z,2020-12-30T14:00:00Z",stamps(set.All()))}
+  }
+ }}
+ for _,reverse:=range []bool{false,true} {for _,valid:=range []bool{false,true} {
+  dt:="DTSTART=20201228T090000";until:="UNTIL=20201230T090000";if !valid {until+="Z"}
+  parts:=[]string{dt,until};if reverse {parts=[]string{until,dt}}
+  _,e:=r.StrToROption("FREQ=DAILY;"+strings.Join(parts,";"));check(fmt.Sprintf("inline/reverse=%v/valid=%v",reverse,valid),(e==nil)==valid,e)
+ }}
+ // Floating evaluation is in the supplied exact location; syntax remains floating.
+ floating:="DTSTART:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T090000"
+ data:=make([]byte,54);copy(data,"TZif");binary.BigEndian.PutUint32(data[36:40],1);binary.BigEndian.PutUint32(data[40:44],4);binary.BigEndian.PutUint32(data[44:48],2*3600);copy(data[50:],"XTZ\x00");custom,e:=time.LoadLocationFromTZData("America/New_York",data);if e!=nil {panic(e)}
+ for _,loc:=range []*time.Location{ny,time.FixedZone("America/New_York",-5*3600),custom} {
+  o:=mustOption(floating,loc);original:=o.String();rule:=mustRule(*o)
+  expected:="2026-03-07T14:00:00Z,2026-03-08T14:00:00Z,2026-03-09T14:00:00Z";if loc==ny {expected="2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z"}
+  if loc==custom {expected="2026-03-07T07:00:00Z,2026-03-08T07:00:00Z,2026-03-09T07:00:00Z"}
+  check("location/string",original==floating,original)
+  check("location/pointer",o.Dtstart.Location()==loc&&o.Until.Location()==loc,loc)
+  check("location/values",stamps(rule.All())==expected,stamps(rule.All()))
+  var set r.Set;set.RRule(rule);check("set transfer/string",set.String()==floating,set.String());check("set transfer/values",stamps(set.All())==expected,stamps(set.All()))
+  copyStart:=*o;copyStart.Dtstart=copyStart.Dtstart.UTC();s:=copyStart.String()
+  check("copy start invalidation",strings.HasPrefix(s,"DTSTART:"+copyStart.Dtstart.Format("20060102T150405Z")+"\n")&&strings.Contains(s,"UNTIL=20260309T090000")&&!strings.Contains(s,"UNTIL=20260309T090000Z"),s)
+  copyUntil:=*o;copyUntil.Until=copyUntil.Until.UTC();s=copyUntil.String();expectedUntil:=copyUntil.Until.Format("20060102T150405Z")
+  check("copy until invalidation",strings.HasPrefix(s,"DTSTART:20260307T090000\n")&&strings.HasSuffix(s,"UNTIL="+expectedUntil),s)
+  noUntil:=mustOption("DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",loc);check("location/no-until",stamps(mustRule(*noUntil).All())==expected,stamps(mustRule(*noUntil).All()))
+  check("copy immutable source",o.String()==original,o.String())
+  setter:=mustRule(*o);setter.DTStart(o.Dtstart);s=setter.String();check("public same-time start replacement",strings.Contains(s,"DTSTART;TZID=America/New_York:")&&strings.HasSuffix(s,"UNTIL=20260309T090000"),s)
+  setter=mustRule(*o);setter.Until(o.Until);s=setter.String();check("public same-time until replacement",strings.HasPrefix(s,"DTSTART:20260307T090000\n")&&strings.HasSuffix(s,"UNTIL="+o.Until.UTC().Format("20060102T150405Z")),s)
+ }
+ date:="DTSTART;VALUE=DATE:20260307\nRRULE:FREQ=DAILY;UNTIL=20260309"
+ d:=mustOption(date,ny);check("DATE roundtrip",d.String()==date,d.String());check("DATE instants",stamps(mustRule(*d).All())=="2026-03-07T05:00:00Z,2026-03-08T05:00:00Z,2026-03-09T04:00:00Z",stamps(mustRule(*d).All()))
+ for _,until:=range []string{"20260309T090000","20260309"} {o:=mustOption("FREQ=DAILY;UNTIL="+until,ny);check("bare UTC-Z/"+until,strings.HasSuffix(o.String(),"UNTIL="+o.Until.UTC().Format("20060102T150405Z")),o.String())}
+ prog:=r.ROption{Freq:r.DAILY,Dtstart:time.Date(2026,3,7,9,0,0,0,ny),Until:time.Date(2026,3,9,9,0,0,0,ny)}
+ check("programmatic UTC-Z",strings.HasSuffix(mustRule(prog).String(),"UNTIL=20260309T130000Z"),mustRule(prog).String())
+ fmt.Printf("failures=%d\n",fails);if fails>0 {os.Exit(1)}
+}

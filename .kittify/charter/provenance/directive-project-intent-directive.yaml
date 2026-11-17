@@ -1,0 +1,21 @@
+adapter_id: generated
+adapter_notes: 
+  generated-artifact:.kittify/charter/generated/directives/001-project-intent-directive.directive.yaml
+adapter_version: 1.0.0
+artifact_content_hash: 
+  1752a3a5e1483304d0d6bebd4d4a49a161f25fe04477528e4cd8fda3aeb5ce5e
+artifact_kind: directive
+artifact_slug: project-intent-directive
+artifact_urn: directive:PROJECT_001
+corpus_snapshot_id: generic-v1.0.0
+evidence_bundle_hash: 
+  4dd8f64ae139b33d1f468ec617857ef78b2a0c2ad9b9f181b58bab231ff91547
+generated_at: '2026-10-25T06:16:49.715521+00:00'
+inputs_hash: da67fff33a6625a33a8d706a59057f2e7d18e5e61ad9bf6e7897a90eaa19056a
+produced_at: '2026-10-25T06:17:04.126845+00:00'
+schema_version: '2'
+source_input_ids: []
+source_section: mission_type
+source_urns: []
+synthesis_run_id: 44AA0EFBCC2040E592D62C9142
+synthesizer_version: 4.0.0rc8

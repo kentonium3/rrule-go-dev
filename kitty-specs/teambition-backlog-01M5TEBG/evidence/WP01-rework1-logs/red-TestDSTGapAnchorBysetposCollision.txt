@@ -1,0 +1,128 @@
+Production HEAD:af862491333c8a06fdb30bb60a58619e65e9baa6 (tests added; no production edits)
+COMMAND:GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTGapAnchorBysetposCollision$ -v -count=1
+EXIT:1
+=== RUN   TestDSTGapAnchorBysetposCollision
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/All
+    rrule_dst_test.go:508: [1] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+    rrule_dst_test.go:508: [2] got 2007-03-12 03:30:00 -0400 EDT (2007-03-12 07:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:508: [3] got 2007-03-13 02:30:00 -0400 EDT (2007-03-13 06:30:00 +0000 UTC), want 2007-03-12T07:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Iterator
+    rrule_dst_test.go:519: [1] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+    rrule_dst_test.go:519: [2] got 2007-03-12 03:30:00 -0400 EDT (2007-03-12 07:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:519: [3] got 2007-03-13 02:30:00 -0400 EDT (2007-03-13 06:30:00 +0000 UTC), want 2007-03-12T07:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Set
+    rrule_dst_test.go:521: [1] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+    rrule_dst_test.go:521: [2] got 2007-03-12 03:30:00 -0400 EDT (2007-03-12 07:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:521: [3] got 2007-03-13 02:30:00 -0400 EDT (2007-03-13 06:30:00 +0000 UTC), want 2007-03-12T07:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Between
+    rrule_dst_test.go:522: got [2007-03-11 03:30:00 -0400 EDT 2007-03-12 02:30:00 -0400 EDT 2007-03-12 03:30:00 -0400 EDT] (3), want [2007-03-11T07:30:00Z 2007-03-11T08:30:00Z 2007-03-12T06:30:00Z 2007-03-12T07:30:00Z] (4)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/BetweenExclusive
+    rrule_dst_test.go:524: got [2007-03-12 02:30:00 -0400 EDT] (1), want [2007-03-11T08:30:00Z 2007-03-12T06:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/After
+    rrule_dst_test.go:526: [0] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Before
+    rrule_dst_test.go:527: [0] got 2007-03-11 03:30:00 -0400 EDT (2007-03-11 07:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until0
+    rrule_dst_test.go:537: got [2007-03-11 03:30:00 -0400 EDT] (1), want [2007-03-11T07:30:00Z 2007-03-11T08:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until1
+    rrule_dst_test.go:537: got [2007-03-11 03:30:00 -0400 EDT] (1), want [2007-03-11T07:30:00Z 2007-03-11T08:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/All
+    rrule_dst_test.go:508: [1] got 2007-03-11 04:30:00 -0400 EDT (2007-03-11 08:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:508: [2] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-12T08:30:00Z
+    rrule_dst_test.go:508: [3] got 2007-03-12 04:30:00 -0400 EDT (2007-03-12 08:30:00 +0000 UTC), want 2007-03-13T06:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Iterator
+    rrule_dst_test.go:519: [1] got 2007-03-11 04:30:00 -0400 EDT (2007-03-11 08:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:519: [2] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-12T08:30:00Z
+    rrule_dst_test.go:519: [3] got 2007-03-12 04:30:00 -0400 EDT (2007-03-12 08:30:00 +0000 UTC), want 2007-03-13T06:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Set
+    rrule_dst_test.go:521: [1] got 2007-03-11 04:30:00 -0400 EDT (2007-03-11 08:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:521: [2] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-12T08:30:00Z
+    rrule_dst_test.go:521: [3] got 2007-03-12 04:30:00 -0400 EDT (2007-03-12 08:30:00 +0000 UTC), want 2007-03-13T06:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Between
+    rrule_dst_test.go:522: [1] got 2007-03-11 04:30:00 -0400 EDT (2007-03-11 08:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+    rrule_dst_test.go:522: [2] got 2007-03-12 02:30:00 -0400 EDT (2007-03-12 06:30:00 +0000 UTC), want 2007-03-12T08:30:00Z
+    rrule_dst_test.go:522: [3] got 2007-03-12 04:30:00 -0400 EDT (2007-03-12 08:30:00 +0000 UTC), want 2007-03-13T06:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/BetweenExclusive
+    rrule_dst_test.go:524: got [2007-03-11 04:30:00 -0400 EDT 2007-03-12 02:30:00 -0400 EDT 2007-03-12 04:30:00 -0400 EDT] (3), want [2007-03-12T06:30:00Z 2007-03-12T08:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/After
+    rrule_dst_test.go:526: [0] got 2007-03-11 04:30:00 -0400 EDT (2007-03-11 08:30:00 +0000 UTC), want 2007-03-12T06:30:00Z
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until-1
+    rrule_dst_test.go:537: got [2007-03-11 03:30:00 -0400 EDT 2007-03-11 04:30:00 -0400 EDT] (2), want [2007-03-11T07:30:00Z] (1)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until0
+    rrule_dst_test.go:537: got [2007-03-11 03:30:00 -0400 EDT 2007-03-11 04:30:00 -0400 EDT 2007-03-12 02:30:00 -0400 EDT] (3), want [2007-03-11T07:30:00Z 2007-03-12T06:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until1
+    rrule_dst_test.go:537: got [2007-03-11 03:30:00 -0400 EDT 2007-03-11 04:30:00 -0400 EDT 2007-03-12 02:30:00 -0400 EDT] (3), want [2007-03-11T07:30:00Z 2007-03-12T06:30:00Z] (2)
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/All
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/After
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until1
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/All
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/After
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until1
+--- FAIL: TestDSTGapAnchorBysetposCollision (0.00s)
+    --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/All (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Iterator (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Set (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Between (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/BetweenExclusive (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/After (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until-1 (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until0 (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until1 (0.00s)
+    --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/All (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Iterator (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Set (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Between (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/BetweenExclusive (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Before (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until-1 (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until0 (0.00s)
+        --- FAIL: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until1 (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until1 (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until1 (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.003s

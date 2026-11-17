@@ -1,0 +1,14 @@
+Date: 2026-10-28
+Authorized recovery: omit --target-branch, create rrule-go-dev-xfer from main; eventual private PR target main. Nothing public.
+
+Resume probe: SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty agent mission check-prerequisites --mission module-path-v1-9-0 --resume-probe --json
+Result: success, resume_state=not_found.
+
+Read-only CLI source inspection showed --start-branch creates its new branch from current HEAD, so selecting main first was required to honor the user's chosen base.
+git switch main initially failed: fatal: Unable to create '~/repos/rrule-go-dev/.git/index.lock': Read-only file system
+Normal sandbox escalation of the same command succeeded:
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 19 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Stopped before any mission create retry or main update. Need user choice to fast-forward local main to the already-fetched origin/main or intentionally use stale local main. No public writes or pushes.

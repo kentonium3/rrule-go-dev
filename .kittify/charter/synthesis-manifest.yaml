@@ -1,0 +1,62 @@
+adapter_id: generated
+adapter_version: 1.0.0
+artifacts:
+- content_hash: 1752a3a5e1483304d0d6bebd4d4a49a161f25fe04477528e4cd8fda3aeb5ce5e
+  kind: directive
+  path: 
+    .kittify/charter-packs/directive/001-project-intent-directive.directive.yaml
+  provenance_path: 
+    .kittify/charter/provenance/directive-project-intent-directive.yaml
+  slug: project-intent-directive
+- content_hash: 2857cff050e6e77690bd9007ac55727c867b0a3e00076a8cb4edee176ab228e9
+  kind: directive
+  path: 
+    .kittify/charter-packs/directive/002-risk-appetite-directive.directive.yaml
+  provenance_path: 
+    .kittify/charter/provenance/directive-risk-appetite-directive.yaml
+  slug: risk-appetite-directive
+- content_hash: 27ebd5e8ba910afaab8086f228a275bb74b440c188ad2445cef407260ce60f13
+  kind: styleguide
+  path: 
+    .kittify/charter-packs/styleguide/documentation-policy-style-guide.styleguide.yaml
+  provenance_path: 
+    .kittify/charter/provenance/styleguide-documentation-policy-style-guide.yaml
+  slug: documentation-policy-style-guide
+- content_hash: 0afa9462cebb56f20c633c6566fc029236293b7e486858b0a11cdea94d0130cc
+  kind: styleguide
+  path: .kittify/charter-packs/styleguide/go-style-guide.styleguide.yaml
+  provenance_path: .kittify/charter/provenance/styleguide-go-style-guide.yaml
+  slug: go-style-guide
+- content_hash: 0096c2dfe9173621b40e04434a5fdd22592b6d2c16db49a991b8b4c5df40043a
+  kind: styleguide
+  path: 
+    .kittify/charter-packs/styleguide/quality-gates-style-guide.styleguide.yaml
+  provenance_path: 
+    .kittify/charter/provenance/styleguide-quality-gates-style-guide.yaml
+  slug: quality-gates-style-guide
+- content_hash: 786ceb1c466f54058e680a188b8dcfdefe936376588befd3166b2b1721632880
+  kind: styleguide
+  path: .kittify/charter-packs/styleguide/testing-style-guide.styleguide.yaml
+  provenance_path: 
+    .kittify/charter/provenance/styleguide-testing-style-guide.yaml
+  slug: testing-style-guide
+- content_hash: e403081863024c508b18b93a95c79e926f0fdb19c55984f61ecff9d11e16cacd
+  kind: tactic
+  path: .kittify/charter-packs/tactic/review-policy-tactic.tactic.yaml
+  provenance_path: .kittify/charter/provenance/tactic-review-policy-tactic.yaml
+  slug: review-policy-tactic
+- content_hash: a070ef41c164d0bded4e8d45aae223e02205ac7f5178c89427dec2185437b096
+  kind: tactic
+  path: .kittify/charter-packs/tactic/testing-philosophy-tactic.tactic.yaml
+  provenance_path: 
+    .kittify/charter/provenance/tactic-testing-philosophy-tactic.yaml
+  slug: testing-philosophy-tactic
+built_in_only: false
+bundle_content_hash: 
+  sha256:73b3fe943accfd35567a9d3fc0864552b220f4dbc10a5489a030fdfb81aedc6f
+created_at: '2026-10-25T06:17:04.142794+00:00'
+manifest_hash: 01206e5d7224fc2fce728c83f5e03949a8a3f4a626f65faca9144b43de412fa1
+mission_id:
+run_id: 44AA0EFBCC2040E592D62C9142
+schema_version: '3'
+synthesizer_version: 4.0.0rc8

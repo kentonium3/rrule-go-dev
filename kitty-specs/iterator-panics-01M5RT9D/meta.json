@@ -1,0 +1,36 @@
+{
+  "accept_commit": "8d48363b1daebb7accd318ad2745a280d6489411",
+  "acceptance_history": [
+    {
+      "accept_commit": "8d48363b1daebb7accd318ad2745a280d6489411",
+      "acceptance_mode": "local",
+      "accepted_at": "2026-10-25T06:39:22.098194+00:00",
+      "accepted_by": "codex",
+      "accepted_from_commit": "d19bf360e823a0ab96dffc3912a142d2620319be"
+    }
+  ],
+  "acceptance_mode": "local",
+  "accepted_at": "2026-10-25T06:39:22.098194+00:00",
+  "accepted_by": "codex",
+  "accepted_from_commit": "d19bf360e823a0ab96dffc3912a142d2620319be",
+  "baseline_merge_commit": "26d739cdb92b49b2d487a793a288ca15c27d1299",
+  "created_at": "2026-10-25T05:59:42.990736+00:00",
+  "flattened": true,
+  "friendly_name": "Prevent iterator panics on accepted RRULE input",
+  "merged_at": "2026-10-25T06:39:47.329724+00:00",
+  "merged_commit": "ac594a57eb78304141e1944e94fc3ebf980afd05",
+  "mid8": "01M5RT9D",
+  "mission_id": "01M5RT9DGEB2WGW4A8TC5FZR4T",
+  "mission_number": 1,
+  "mission_slug": "iterator-panics-01M5RT9D",
+  "mission_type": "software-dev",
+  "pr_bound": true,
+  "purpose_context": "Address private issue #4: BYDAY ordinals outside the month, BYEASTER offsets outside the mask, and INTERVAL overflow. Preserve the exported API and correct occurrence sequences; add regression tests and bounded fuzzing. Unreachable sub-daily hangs remain a separate mission.",
+  "purpose_tldr": "Prevent accepted recurrence rules from crashing consuming Go services.",
+  "slug": "iterator-panics-01M5RT9D",
+  "status_phase": "1",
+  "target_branch": "fix/iterator-panics",
+  "topology": "lanes",
+  "vcs": "git",
+  "vcs_locked_at": "2026-10-25T06:17:59.862663+00:00"
+}

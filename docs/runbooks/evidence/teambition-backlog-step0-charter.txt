@@ -1,0 +1,483 @@
+2026-10-25: Step 0 capability hard stop; no charter mutation attempted.
+
+$ git status --short --branch
+## main...origin/main
+
+Exit: 0
+
+$ git rev-parse HEAD
+9c248fd2de5503bbd049a10456db64b33cf2538e
+
+Exit: 0
+
+$ git remote -v
+origin	https://github.com/kentonium3/rrule-go-dev.git (fetch)
+origin	https://github.com/kentonium3/rrule-go-dev.git (push)
+upstream	https://github.com/teambition/rrule-go.git (fetch)
+upstream	no_push (push)
+
+Exit: 0
+
+$ env SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter interview --help
+                                                                                
+ Usage: spec-kitty charter interview [OPTIONS]                                  
+                                                                                
+ Capture charter interview answers for later generation.                        
+                                                                                
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --mission-type                 <str>  Mission type for charter defaults      │
+│                                       (default: software-dev)                │
+│ --profile                      <str>  Interview profile: minimal or          │
+│                                       comprehensive                          │
+│                                       [default: minimal]                     │
+│ --defaults                            Use deterministic defaults without     │
+│                                       prompts                                │
+│ --selected-paradigms           <str>  Comma-separated paradigm IDs override  │
+│ --selected-directives          <str>  Comma-separated directive IDs override │
+│ --available-tools              <str>  Comma-separated tool IDs override      │
+│ --narrow-activation                   Replace (not append to) activated      │
+│                                       directives, tactics and paradigms with │
+│                                       the selection plus org-required ids    │
+│ --json                                Output JSON                            │
+│ --mission-slug                 <str>  Mission slug for Decision Moment paper │
+│                                       trail (optional)                       │
+│ --help                 -h             Show this message and exit.            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+Exit: 0
+
+$ env SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter generate --help
+                                                                                
+ Usage: spec-kitty charter generate [OPTIONS]                                   
+                                                                                
+ Generate charter bundle from interview answers + doctrine references.          
+                                                                                
+ Behavior contract (issue #841 / WP06 T029-T030):                               
+                                                                                
+ - On success in a git working tree, the produced                               
+ ``.kittify/charter/charter.md``                                                
+   is auto-staged via ``git add`` so a subsequent ``charter bundle validate``   
+   finds it tracked without any operator ``git add`` between the two            
+   commands. Staging (not committing) matches the parity contract — the         
+   ``bundle validate`` tracked-files check keys on ``git ls-files``.            
+ - When the cwd is not inside a git working tree, ``generate`` exits            
+   non-zero before any side effect with an actionable error message that        
+   names the remediation (``git init``).                                        
+ - When ``.kittify/charter/charter.md`` is a symlink, ``generate`` exits        
+   non-zero before interview/default loading, compilation, sync,                
+   gitignore updates, or staging. Update the symlink target directly or         
+   replace it with a regular runtime charter.                                   
+                                                                                
+╭─ Options ────────────────────────────────────────────────────────────────────╮
+│ --mission-type                               <str>   Mission type for        │
+│                                                      template-set defaults   │
+│ --template-set                               <str>   Override charter        │
+│                                                      offering template set   │
+│                                                      (must exist in packaged │
+│                                                      charter offering        │
+│                                                      missions)               │
+│ --from-interview      --no-from-interview            Load interview answers  │
+│                                                      if present              │
+│                                                      [default:               │
+│                                                      from-interview]         │
+│ --profile                                    <str>   Default profile when no │
+│                                                      interview is available  │
+│                                                      [default: minimal]      │
+│ --force           -f                                 Overwrite existing      │
+│                                                      charter bundle          │
+│ --json                                               Output JSON             │
+│ --owned-checkout                             <path>  Run against an owned    │
+│                                                      checkout: a linked      │
+│                                                      checkout that owns this │
+│                                                      mission. Refuses the    │
+│                                                      repository root         │
+│                                                      checkout, lane          │
+│                                                      worktrees and           │
+│                                                      coordination worktrees. │
+│ --mission-handle                             <str>   Mission identity owned  │
+│                                                      by the explicitly       │
+│                                                      selected checkout       │
+│ --help            -h                                 Show this message and   │
+│                                                      exit.                   │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+Exit: 0
+
+$ env SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter status --json
+{
+  "result": "success",
+  "charter_sync": {
+    "available": true,
+    "charter_path": ".kittify/charter/charter.md",
+    "status": "synced",
+    "current_hash": "",
+    "stored_hash": "",
+    "last_sync": null,
+    "library_docs": 0,
+    "files": [
+      {
+        "name": "charter.yaml",
+        "exists": true,
+        "size_kb": 6.4169921875
+      },
+      {
+        "name": "charter.md",
+        "exists": true,
+        "size_kb": 1.7802734375
+      }
+    ]
+  },
+  "synthesis": {
+    "generation_state": "promoted",
+    "generated_inputs": {
+      "path": ".kittify/charter/generated",
+      "exists": true,
+      "counts": {
+        "directive": 2,
+        "tactic": 2,
+        "styleguide": 4
+      },
+      "total": 8
+    },
+    "manifest": {
+      "path": ".kittify/charter/synthesis-manifest.yaml",
+      "exists": true,
+      "state": "valid",
+      "artifact_count": 8,
+      "live_artifact_count": 8,
+      "live_provenance_count": 8,
+      "run_id": "44AA0EFBCC2040E592D62C9142",
+      "created_at": "2026-10-25T06:17:04.142794+00:00",
+      "adapter_id": "generated",
+      "adapter_version": "1.0.0",
+      "missing_provenance_paths": [],
+      "error": null
+    },
+    "provenance": {
+      "path": ".kittify/charter/provenance",
+      "count": 8,
+      "parsed_count": 8,
+      "manifest_artifact_count": 8,
+      "missing_for_manifest_count": 0,
+      "missing_for_manifest": [],
+      "corpus_snapshot_ids": [
+        "generic-v1.0.0"
+      ],
+      "adapters": [
+        "generated@1.0.0"
+      ],
+      "warnings": [],
+      "entries": []
+    },
+    "evidence": {
+      "warnings": [],
+      "code": {
+        "stack_id": "go",
+        "primary_language": "go",
+        "languages": [
+          "go"
+        ],
+        "frameworks": [],
+        "test_frameworks": [],
+        "representative_files_count": 5,
+        "representative_files_preview": [
+          ".gitignore",
+          "LICENSE",
+          "str.go",
+          "util.go",
+          "rruleset_test.go"
+        ]
+      },
+      "configured_urls": [],
+      "configured_url_count": 0,
+      "corpus_snapshot_id": "generic-v1.0.0",
+      "corpus_entry_count": 3
+    }
+  },
+  "org_layer": {
+    "has_built_in": true,
+    "packs": [],
+    "collision_warnings": [],
+    "errors": []
+  },
+  "governance_references": {
+    "available": true,
+    "references": [
+      {
+        "path": "AGENTS.md",
+        "exists": true,
+        "safe": true,
+        "warning": null
+      },
+      {
+        "path": "docs/CONTEXT.md",
+        "exists": true,
+        "safe": true,
+        "warning": null
+      }
+    ],
+    "warnings": []
+  },
+  "freshness": {
+    "charter_source": {
+      "state": "fresh",
+      "last_change": "2026-10-25T05:56:33.429304+00:00",
+      "remediation": null,
+      "detail": null
+    },
+    "synced_bundle": {
+      "state": "fresh",
+      "last_change": "2026-10-25T05:56:33.429304+00:00",
+      "remediation": null,
+      "detail": null
+    },
+    "synthesized_drg": {
+      "state": "fresh",
+      "last_change": "2026-10-25T06:17:04.161378+00:00",
+      "remediation": null,
+      "detail": null
+    }
+  }
+}
+
+Exit: 0
+
+Installed source: ~/.local/share/uv/tools/spec-kitty-cli/lib/python3.13/site-packages/specify_cli/cli/commands/charter/interview.py:327-440
+327:         # The settlement writes nothing; it is stored with the answers below (#6542).
+328:         language_settlement = _settle_languages(repo_root, interactive=not use_defaults and is_interactive())
+329: 
+330:         # Resolve actor for Decision Moment events (non-fatal fallback)
+331:         actor = _resolve_actor()
+332: 
+333:         if not use_defaults:
+334:             question_order = MINIMAL_QUESTION_ORDER if normalized_profile == "minimal" else QUESTION_ORDER
+335:             answers_override: dict[str, str] = {}
+336:             for question_id in question_order:
+337:                 prompt_text = QUESTION_PROMPTS.get(question_id, question_id.replace("_", " ").title())
+338:                 default_value = interview_data.answers.get(question_id, "")
+339: 
+340:                 # Open a Decision Moment before presenting the question (non-fatal)
+341:                 current_decision_id: str | None = None
+342:                 if mission_slug is not None:
+343:                     with contextlib.suppress(_DecisionError):
+344:                         dm_response = _charter_pkg._dm_service.open_decision(
+345:                             repo_root=repo_root,
+346:                             mission_slug=mission_slug,
+347:                             origin_flow=_DmOriginFlow.CHARTER,
+348:                             step_id=f"charter.{question_id}",
+349:                             input_key=question_id,
+350:                             question=prompt_text,
+351:                             options=(),
+352:                             actor=actor,
+353:                         )
+354:                         current_decision_id = dm_response.decision_id
+355: 
+356:                 hint_line = "[enter]=accept default | [text]=type answer | [d]efer | [!cancel]"
+357: 
+358:                 # Prompt the question (local Decision-Moment loop)
+359:                 actual_answer = _prompt_one_question(
+360:                     question_id=question_id,
+361:                     prompt_text=prompt_text,
+362:                     default_value=default_value,
+363:                     hint_line=hint_line,
+364:                     console=console,
+365:                     answers_override=answers_override,
+366:                 )
+367: 
+368:                 # Terminal DM event (non-fatal)
+369:                 if current_decision_id is not None and mission_slug is not None:
+370:                     _resolve_dm_terminal(
+371:                         repo_root=repo_root,
+372:                         mission_slug=mission_slug,
+373:                         decision_id=current_decision_id,
+374:                         actual_answer=actual_answer,
+375:                         actor=actor,
+376:                     )
+377: 
+378:             paradigms_default = ", ".join(interview_data.selected_paradigms)
+379:             directives_default = ", ".join(interview_data.selected_directives)
+380:             tools_default = ", ".join(interview_data.available_tools)
+381: 
+382:             selected_paradigms = typer.prompt(
+383:                 "Selected paradigms (comma-separated)",
+384:                 default=selected_paradigms or paradigms_default,
+385:             )
+386:             selected_directives = typer.prompt(
+387:                 "Selected directives (comma-separated)",
+388:                 default=selected_directives or directives_default,
+389:             )
+390:             available_tools = typer.prompt(
+391:                 "Available tools (comma-separated)",
+392:                 default=available_tools or tools_default,
+393:             )
+394: 
+395:             interview_data = apply_answer_overrides(
+396:                 interview_data,
+397:                 answers=answers_override,
+398:                 selected_paradigms=_parse_csv_option(selected_paradigms),
+399:                 selected_directives=_parse_csv_option(selected_directives),
+400:                 available_tools=_parse_csv_option(available_tools),
+401:             )
+402:         else:
+403:             # --defaults path: no interactive prompt, but we still record a
+404:             # Decision Moment per question so the paper trail matches the
+405:             # interactive flow.  Each defaulted answer becomes a resolved
+406:             # decision (or deferred when the default is empty).
+407:             if mission_slug is not None:
+408:                 question_order = MINIMAL_QUESTION_ORDER if normalized_profile == "minimal" else QUESTION_ORDER
+409:                 for question_id in question_order:
+410:                     prompt_text = QUESTION_PROMPTS.get(question_id, question_id.replace("_", " ").title())
+411:                     default_answer = interview_data.answers.get(question_id, "")
+412:                     with contextlib.suppress(_DecisionError):
+413:                         dm_response = _charter_pkg._dm_service.open_decision(
+414:                             repo_root=repo_root,
+415:                             mission_slug=mission_slug,
+416:                             origin_flow=_DmOriginFlow.CHARTER,
+417:                             step_id=f"charter.{question_id}",
+418:                             input_key=question_id,
+419:                             question=prompt_text,
+420:                             options=(),
+421:                             actor=actor,
+422:                         )
+423:                         _resolve_dm_terminal(
+424:                             repo_root=repo_root,
+425:                             mission_slug=mission_slug,
+426:                             decision_id=dm_response.decision_id,
+427:                             actual_answer=default_answer,
+428:                             actor=actor,
+429:                         )
+430: 
+431:             interview_data = apply_answer_overrides(
+432:                 interview_data,
+433:                 selected_paradigms=_parse_csv_option(selected_paradigms),
+434:                 selected_directives=_parse_csv_option(selected_directives),
+435:                 available_tools=_parse_csv_option(available_tools),
+436:             )
+437: 
+438:         answers_path = _interview_path(repo_root)
+439:         write_interview_answers(answers_path, interview_data)
+440: 
+
+Installed source: ~/.local/share/uv/tools/spec-kitty-cli/lib/python3.13/site-packages/charter/activation/interview.py:241-274
+241: @dataclass(frozen=True)
+242: class CharterInterview:
+243:     """Persisted interview answers used to compile charter artifacts."""
+244: 
+245:     mission: str
+246:     profile: str
+247:     answers: dict[str, str]
+248:     selected_paradigms: list[str]
+249:     selected_directives: list[str]
+250:     available_tools: list[str]
+251:     agent_profile: str | None = None
+252:     agent_role: str | None = None
+253:     local_supporting_files: list[LocalSupportDeclaration] | None = None
+254:     selected_tactics: list[str] = field(default_factory=list)
+255: 
+256:     def __post_init__(self) -> None:
+257:         # Normalize None to empty list for local_supporting_files (frozen dataclass workaround)
+258:         if self.local_supporting_files is None:
+259:             object.__setattr__(self, "local_supporting_files", [])
+260: 
+261:     def to_dict(self) -> dict[str, object]:
+262:         d: dict[str, object] = {
+263:             "schema_version": "1.0.0",
+264:             "mission": self.mission,
+265:             "profile": self.profile,
+266:             "answers": dict(self.answers),
+267:             "selected_paradigms": list(self.selected_paradigms),
+268:             "selected_directives": list(self.selected_directives),
+269:             "selected_tactics": list(self.selected_tactics),
+270:             "available_tools": list(self.available_tools),
+271:             "agent_profile": self.agent_profile,
+272:             "agent_role": self.agent_role,
+273:         }
+274:         if self.local_supporting_files:
+
+Installed source: ~/.local/share/uv/tools/spec-kitty-cli/lib/python3.13/site-packages/charter/activation/interview.py:483-521
+483: def write_interview_answers(
+484:     path: Path,
+485:     interview: CharterInterview,
+486:     *,
+487:     fail_closed_on_regression: bool = False,
+488: ) -> None:
+489:     """Persist interview answers to YAML.
+490: 
+491:     Merges onto whatever is already at ``path`` rather than overwriting it
+492:     wholesale: ``CharterInterview`` models only a subset of the file's keys
+493:     (e.g. ``selected_styleguides``/``template_set`` have no dataclass
+494:     field), so a naive re-serialize would silently drop them on every write
+495:     that round-trips through :func:`read_interview_answers`. This merge is
+496:     unconditional and always on.
+497: 
+498:     ``fail_closed_on_regression`` additionally raises :class:`
+499:     InterviewAnswersRegressionError` instead of persisting a change that
+500:     would drop or reset a previously-recorded *modeled* selection or answer
+501:     (see :func:`_guard_against_regression`). It defaults to ``False``
+502:     because the interactive interview flow legitimately starts each session
+503:     from :func:`default_interview` and may intentionally narrow a prior
+504:     selection (e.g. a user deselecting a tactic) -- callers that want the
+505:     stricter round-trip contract (the answers-migration tooling, in
+506:     particular) opt in explicitly.
+507:     """
+508:     new_data = interview.to_dict()
+509:     existing_data = _read_raw_answers_dict(path)
+510:     if fail_closed_on_regression:
+511:         _guard_against_regression(existing_data, new_data)
+512: 
+513:     merged: dict[str, Any] = {**existing_data, **new_data}
+514: 
+515:     path.parent.mkdir(parents=True, exist_ok=True)
+516:     yaml = YAML()
+517:     yaml.default_flow_style = False
+518:     with path.open("w", encoding="utf-8") as handle:
+519:         yaml.dump(merged, handle)
+520: 
+521: 
+
+Installed source: ~/.local/share/uv/tools/spec-kitty-cli/lib/python3.13/site-packages/charter/activation/compiler.py:569-608
+569: ) -> WriteBundleResult:
+570:     """Refresh ``charter.yaml``'s DERIVED sections (``catalog`` + ``metadata``).
+571: 
+572:     ``charter.md`` is a curated companion and is NEVER written by this
+573:     function (data-model.md Landmine 3 -- the #2772 clobber, one level
+574:     down, on a now-*tracked* file). Only ``catalog``/``metadata`` -- the
+575:     DERIVED sections of ``charter.yaml`` -- are refreshed, through the
+576:     shared INV-9 write helper (:mod:`charter.activation.charter_yaml_io`), which
+577:     round-trips the document so the AUTHORED ``governance``/``directives``/
+578:     activation/``overrides`` sections survive byte-for-byte. When
+579:     ``charter.yaml`` does not exist yet there is nothing authored to
+580:     preserve, so this is a one-time bootstrap (not the Landmine 3 clobber)
+581:     rather than a merge.
+582: 
+583:     ``force`` no longer gates a destructive overwrite -- there is none left
+584:     to gate, which is the entire point of the Landmine 3 fix. It is
+585:     accepted for CLI/back-compat call-site stability and logged for
+586:     diagnostic visibility only.
+587:     """
+588:     logger.debug(
+589:         "write_compiled_charter(force=%s): charter.yaml writes are always "
+590:         "either a safe partial merge (file exists) or a bootstrap create "
+591:         "(file absent) -- force no longer gates a destructive overwrite.",
+592:         force,
+593:     )
+594:     _assert_safe_charter_output_dir(output_dir, repo_root=repo_root)
+595:     output_dir.mkdir(parents=True, exist_ok=True)
+596:     _assert_safe_charter_output_dir(output_dir, repo_root=repo_root)
+597: 
+598:     charter_yaml_path = output_dir / "charter.yaml"
+599:     catalog = _build_catalog_dict(compiled)
+600: 
+601:     if charter_yaml_path.exists():
+602:         preserved_generated_at = _preserved_generated_at(charter_yaml_path, catalog)
+603:         metadata = _build_metadata_dict(preserved_generated_at=preserved_generated_at)
+604:         update_charter_yaml_section(charter_yaml_path, "catalog", catalog)
+605:         update_charter_yaml_section(charter_yaml_path, "metadata", metadata)
+606:     else:
+607:         metadata = _build_metadata_dict()
+608:         _bootstrap_charter_yaml(charter_yaml_path, catalog=catalog, metadata=metadata, repo_root=repo_root)
+
+Installed build: ~/.local/share/uv/tools/spec-kitty-cli/lib/python3.13/site-packages/spec_kitty_cli-4.0.0rc8.dist-info/direct_url.json
+{"url":"https://github.com/spec-kitty/spec-kitty","vcs_info":{"vcs":"git","commit_id":"1a0c8b467af253eb0185fa19d0d50880b2b6475e","requested_revision":"1a0c8b467af253eb0185fa19d0d50880b2b6475e"}}

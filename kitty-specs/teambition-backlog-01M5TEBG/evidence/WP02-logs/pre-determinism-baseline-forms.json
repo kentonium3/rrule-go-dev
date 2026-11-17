@@ -1,0 +1,1512 @@
+[
+  {
+    "id": "pair-date-date-reverse0-set0",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-date-reverse0-set1",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-date-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-date-date-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-floating-reverse0-set0",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-floating-reverse0-set1",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-floating-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-date-floating-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-utc-reverse0-set0",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-utc-reverse0-set1",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-date-utc-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-date-utc-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-date-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-date-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-date-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-floating-date-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-floating-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-floating-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-floating-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-floating-floating-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-utc-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-utc-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-floating-utc-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-floating-utc-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-date-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-date-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-date-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-utc-date-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-floating-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-floating-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-floating-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-utc-floating-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-utc-reverse0-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-utc-reverse0-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-utc-utc-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-utc-utc-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-date-reverse0-set0",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z",
+      "2020-12-29T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-date-reverse0-set1",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201229T130000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-date-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-tzid-date-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-floating-reverse0-set0",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z",
+      "2020-12-29T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-floating-reverse0-set1",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201229T220000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z",
+      "2020-12-29T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-floating-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-tzid-floating-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-utc-reverse0-set0",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z",
+      "2020-12-29T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-utc-reverse0-set1",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T22:00:00Z",
+      "2020-12-28T22:00:00Z",
+      "2020-12-29T22:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "pair-tzid-utc-reverse1-set0",
+    "string": "",
+    "error": "expect DTSTART but: RRULE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "pair-tzid-utc-reverse1-set1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "parameter-00-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-00-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-01-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-01-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-02-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-02-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-03-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-03-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-04-set0",
+    "string": "",
+    "error": "StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-04-set1",
+    "string": "",
+    "error": "StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-05-set0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "parameter-05-set1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "parameter-06-set0",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T000000\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T13:00:00Z",
+      "2020-12-28T13:00:00Z",
+      "2020-12-29T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "parameter-06-set1",
+    "string": "DTSTART;TZID=Australia/Sydney:20201228T000000\nRRULE:FREQ=DAILY;UNTIL=20201229T130000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-27T13:00:00Z",
+      "2020-12-28T13:00:00Z",
+      "2020-12-29T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "parameter-07-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-07-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-08-set0",
+    "string": "",
+    "error": "StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-08-set1",
+    "string": "",
+    "error": "StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-09-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-09-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-10-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "parameter-10-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "inline-reverse0-bad0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "inline-reverse0-bad1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "inline-reverse1-bad0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "inline-reverse1-bad1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-overwritten-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-overwritten-pos1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-overwritten-pos2",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-pos1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-pos2",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-bypass-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-bypass-pos1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-bypass-pos2",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-anchor-pos0",
+    "string": "DTSTART:20201229T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-anchor-pos1",
+    "string": "DTSTART:20201229T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-inline-anchor-pos2",
+    "string": "DTSTART:20201229T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-valid-last-wins-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-valid-last-wins-pos1",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-valid-last-wins-pos2",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "shared-matching-inline-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-matching-inline-pos1",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-matching-inline-pos2",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-unknown-pos0",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-unknown-pos1",
+    "string": "RRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-10-25T22:28:04Z",
+      "2026-10-26T22:28:04Z",
+      "2026-10-27T22:28:04Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "shared-ignored-unknown-pos2",
+    "string": "RRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "copy-floating-copy",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-floating-set-after-copy",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-floating-start-setter",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-floating-until-setter",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-floating-programmatic",
+    "string": "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T09:00:00Z",
+      "2020-12-29T09:00:00Z",
+      "2020-12-30T09:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-date-copy",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-date-set-after-copy",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-date-start-setter",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-date-until-setter",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "copy-date-programmatic",
+    "string": "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T00:00:00Z",
+      "2020-12-29T00:00:00Z",
+      "2020-12-30T00:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until0-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until0-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until0-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until0-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until0-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T130000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T130000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T130000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-until-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T130000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T130000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-iana-until1-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T13:00:00Z",
+      "2026-03-09T13:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-iana-20201230",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T050000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T14:00:00Z",
+      "2020-12-29T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-iana-20201230T090000",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T140000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T14:00:00Z",
+      "2020-12-29T14:00:00Z",
+      "2020-12-30T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until0-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until0-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until0-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until0-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until0-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T140000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T140000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T140000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-until-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T140000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T140000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-fixed-until1-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T14:00:00Z",
+      "2026-03-08T14:00:00Z",
+      "2026-03-09T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-fixed-20201230",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T050000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T14:00:00Z",
+      "2020-12-29T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-fixed-20201230T090000",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T140000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T14:00:00Z",
+      "2020-12-29T14:00:00Z",
+      "2020-12-30T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until0-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until0-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until0-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until0-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until0-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T070000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-set-after-copy",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T070000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-start-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T070000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-until-setter",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T070000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-set",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;UNTIL=20260309T070000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "location-tzif-until1-replace-rule",
+    "string": "DTSTART;TZID=America/New_York:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T07:00:00Z",
+      "2026-03-09T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-tzif-20201230",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201229T220000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T07:00:00Z",
+      "2020-12-29T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "fragment-tzif-20201230T090000",
+    "string": "DTSTART;TZID=America/New_York:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T070000Z",
+    "error": "",
+    "occurrences": [
+      "2020-12-28T07:00:00Z",
+      "2020-12-29T07:00:00Z",
+      "2020-12-30T07:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "old-mixed-exrule",
+    "string": "DTSTART;TZID=America/New_York:20180101T090000\nRRULE:FREQ=WEEKLY;COUNT=2",
+    "error": "",
+    "occurrences": [
+      "2018-01-01T14:00:00Z",
+      "2018-01-08T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "old-mixed-exrule-valid",
+    "string": "DTSTART;TZID=America/New_York:20180101T090000\nRRULE:FREQ=WEEKLY;COUNT=2",
+    "error": "",
+    "occurrences": [
+      "2018-01-01T14:00:00Z",
+      "2018-01-08T14:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "old-LA-invalid",
+    "string": "DTSTART;TZID=America/Los_Angeles:20181115T000000\nRRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181118T075959Z",
+    "error": "",
+    "occurrences": [
+      "2018-11-15T08:00:00Z",
+      "2018-11-16T08:00:00Z",
+      "2018-11-17T08:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "old-LA-valid",
+    "string": "DTSTART;TZID=America/Los_Angeles:20181115T000000\nRRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181118T075959Z",
+    "error": "",
+    "occurrences": [
+      "2018-11-15T08:00:00Z",
+      "2018-11-16T08:00:00Z",
+      "2018-11-17T08:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "integrated-gap-bysetpos-set0",
+    "string": "DTSTART;TZID=America/New_York:20260307T020000\nRRULE:FREQ=DAILY;UNTIL=20260309T060000Z;BYSETPOS=1;BYHOUR=2,3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T06:00:00Z",
+      "2026-03-09T06:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "integrated-date-set0",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "explicit-gap-until-set0",
+    "string": "DTSTART;TZID=America/New_York:20260308T003000\nRRULE:FREQ=HOURLY;UNTIL=20260308T063000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-08T05:30:00Z",
+      "2026-03-08T06:30:00Z",
+      "2026-03-08T06:30:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "explicit-gap-anchor-set0",
+    "string": "DTSTART;TZID=America/New_York:20070311T013000\nRRULE:FREQ=DAILY;COUNT=2",
+    "error": "",
+    "occurrences": [
+      "2007-03-11T06:30:00Z",
+      "2007-03-12T05:30:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "effectiveUTC-short-until-set0",
+    "string": "DTSTART:20260105T100000Z\nRRULE:FREQ=DAILY;UNTIL=20260201T000000Z;BYMONTH=2;BYMONTHDAY=30",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  },
+  {
+    "id": "integrated-gap-bysetpos-set1",
+    "string": "DTSTART;TZID=America/New_York:20260307T020000\nRRULE:FREQ=DAILY;UNTIL=20260309T060000Z;BYSETPOS=1;BYHOUR=2,3",
+    "error": "",
+    "occurrences": [
+      "2026-03-07T07:00:00Z",
+      "2026-03-08T06:00:00Z",
+      "2026-03-09T06:00:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "integrated-date-set1",
+    "string": "",
+    "error": "StrToDtStart failed: bad TZID parameter format",
+    "occurrences": [],
+    "exhausted": false
+  },
+  {
+    "id": "explicit-gap-until-set1",
+    "string": "DTSTART;TZID=America/New_York:20260308T003000\nRRULE:FREQ=HOURLY;UNTIL=20260308T063000Z",
+    "error": "",
+    "occurrences": [
+      "2026-03-08T05:30:00Z",
+      "2026-03-08T06:30:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "explicit-gap-anchor-set1",
+    "string": "DTSTART;TZID=America/New_York:20070311T013000\nRRULE:FREQ=DAILY;COUNT=2",
+    "error": "",
+    "occurrences": [
+      "2007-03-11T06:30:00Z",
+      "2007-03-12T05:30:00Z"
+    ],
+    "exhausted": true
+  },
+  {
+    "id": "effectiveUTC-short-until-set1",
+    "string": "DTSTART:20260105T100000Z\nRRULE:FREQ=DAILY;UNTIL=20260201T000000Z;BYMONTH=2;BYMONTHDAY=30",
+    "error": "",
+    "occurrences": [],
+    "exhausted": true
+  }
+]

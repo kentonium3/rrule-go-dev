@@ -1,0 +1,382 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/hourly/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/string/All elapsed=29.776µs
+=== RUN   TestClockReachability/hourly/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/string/After elapsed=28.234µs
+=== RUN   TestClockReachability/hourly/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/string/Iterator elapsed=13.816µs
+=== RUN   TestClockReachability/hourly/string/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=hourly/string/Setters elapsed=16.801µs
+=== RUN   TestClockReachability/hourly/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/option/All elapsed=14.948µs
+=== RUN   TestClockReachability/hourly/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/option/After elapsed=14.628µs
+=== RUN   TestClockReachability/hourly/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/option/Iterator elapsed=15.039µs
+=== RUN   TestClockReachability/hourly/option/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=hourly/option/Setters elapsed=15.82µs
+=== RUN   TestClockReachability/minutely/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/string/All elapsed=30.567µs
+=== RUN   TestClockReachability/minutely/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/string/After elapsed=31.149µs
+=== RUN   TestClockReachability/minutely/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/string/Iterator elapsed=33.353µs
+=== RUN   TestClockReachability/minutely/string/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=minutely/string/Setters elapsed=55.846µs
+=== RUN   TestClockReachability/minutely/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/option/All elapsed=30.227µs
+=== RUN   TestClockReachability/minutely/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/option/After elapsed=30.698µs
+=== RUN   TestClockReachability/minutely/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minutely/option/Iterator elapsed=30.428µs
+=== RUN   TestClockReachability/minutely/option/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=minutely/option/Setters elapsed=61.456µs
+=== RUN   TestClockReachability/secondly/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/string/All elapsed=1.379359ms
+=== RUN   TestClockReachability/secondly/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/string/After elapsed=1.371104ms
+=== RUN   TestClockReachability/secondly/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/string/Iterator elapsed=1.373889ms
+=== RUN   TestClockReachability/secondly/string/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=secondly/string/Setters elapsed=2.703744ms
+=== RUN   TestClockReachability/secondly/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/option/All elapsed=1.376794ms
+=== RUN   TestClockReachability/secondly/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/option/After elapsed=1.373898ms
+=== RUN   TestClockReachability/secondly/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=secondly/option/Iterator elapsed=1.364782ms
+=== RUN   TestClockReachability/secondly/option/Setters
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:133: operation=secondly/option/Setters elapsed=2.698915ms
+=== RUN   TestClockReachability/until/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/string/All elapsed=10.069µs
+=== RUN   TestClockReachability/until/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/string/After elapsed=10.79µs
+=== RUN   TestClockReachability/until/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/string/Iterator elapsed=11.141µs
+=== RUN   TestClockReachability/until/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/option/All elapsed=11.271µs
+=== RUN   TestClockReachability/until/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/option/After elapsed=19.356µs
+=== RUN   TestClockReachability/until/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=until/option/Iterator elapsed=10.74µs
+=== RUN   TestClockReachability/hour-control/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/string/All elapsed=15.77µs
+=== RUN   TestClockReachability/hour-control/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/string/After elapsed=13.305µs
+=== RUN   TestClockReachability/hour-control/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/string/Iterator elapsed=12.484µs
+=== RUN   TestClockReachability/hour-control/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/option/All elapsed=11.501µs
+=== RUN   TestClockReachability/hour-control/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/option/After elapsed=15.359µs
+=== RUN   TestClockReachability/hour-control/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hour-control/option/Iterator elapsed=11.822µs
+=== RUN   TestClockReachability/minute-control/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/string/All elapsed=13.857µs
+=== RUN   TestClockReachability/minute-control/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/string/After elapsed=13.555µs
+=== RUN   TestClockReachability/minute-control/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/string/Iterator elapsed=10.68µs
+=== RUN   TestClockReachability/minute-control/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/option/All elapsed=12.373µs
+=== RUN   TestClockReachability/minute-control/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/option/After elapsed=14.577µs
+=== RUN   TestClockReachability/minute-control/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=minute-control/option/Iterator elapsed=21.341µs
+=== RUN   TestClockReachability/second-control/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/string/All elapsed=20.399µs
+=== RUN   TestClockReachability/second-control/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/string/After elapsed=22.332µs
+=== RUN   TestClockReachability/second-control/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/string/Iterator elapsed=18.024µs
+=== RUN   TestClockReachability/second-control/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/option/All elapsed=21.741µs
+=== RUN   TestClockReachability/second-control/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/option/After elapsed=24.436µs
+=== RUN   TestClockReachability/second-control/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=second-control/option/Iterator elapsed=12.334µs
+=== RUN   TestClockReachability/joint-minute/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/All elapsed=43.953µs
+=== RUN   TestClockReachability/joint-minute/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/After elapsed=42.43µs
+=== RUN   TestClockReachability/joint-minute/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/Iterator elapsed=44.865µs
+=== RUN   TestClockReachability/joint-minute/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/All elapsed=43.111µs
+=== RUN   TestClockReachability/joint-minute/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/After elapsed=31.4µs
+=== RUN   TestClockReachability/joint-minute/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/Iterator elapsed=43.743µs
+=== RUN   TestClockReachability/joint-second/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/All elapsed=1.942961ms
+=== RUN   TestClockReachability/joint-second/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/After elapsed=1.343681ms
+=== RUN   TestClockReachability/joint-second/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/Iterator elapsed=1.939204ms
+=== RUN   TestClockReachability/joint-second/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/All elapsed=1.945095ms
+=== RUN   TestClockReachability/joint-second/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/After elapsed=1.951417ms
+=== RUN   TestClockReachability/joint-second/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/Iterator elapsed=1.955034ms
+=== RUN   TestClockReachability/mixed/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/string/All elapsed=16.401µs
+=== RUN   TestClockReachability/mixed/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/string/After elapsed=16.271µs
+=== RUN   TestClockReachability/mixed/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/string/Iterator elapsed=18.365µs
+=== RUN   TestClockReachability/mixed/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/option/All elapsed=18.124µs
+=== RUN   TestClockReachability/mixed/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/option/After elapsed=17.042µs
+=== RUN   TestClockReachability/mixed/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=mixed/option/Iterator elapsed=15.159µs
+=== RUN   TestClockReachability/local/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/string/All elapsed=14.157µs
+=== RUN   TestClockReachability/local/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/string/After elapsed=16.09µs
+=== RUN   TestClockReachability/local/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/string/Iterator elapsed=17.113µs
+=== RUN   TestClockReachability/local/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/option/All elapsed=13.044µs
+=== RUN   TestClockReachability/local/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/option/After elapsed=15.579µs
+=== RUN   TestClockReachability/local/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=local/option/Iterator elapsed=20.278µs
+=== RUN   TestClockReachability/carry/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/string/All elapsed=20.248µs
+=== RUN   TestClockReachability/carry/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/string/After elapsed=19.968µs
+=== RUN   TestClockReachability/carry/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/string/Iterator elapsed=18.405µs
+=== RUN   TestClockReachability/carry/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/option/All elapsed=27.792µs
+=== RUN   TestClockReachability/carry/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/option/After elapsed=13.766µs
+=== RUN   TestClockReachability/carry/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=carry/option/Iterator elapsed=18.054µs
+=== RUN   TestClockReachability/filtered-hour/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/string/All elapsed=17.934µs
+=== RUN   TestClockReachability/filtered-hour/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/string/After elapsed=16.802µs
+=== RUN   TestClockReachability/filtered-hour/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/string/Iterator elapsed=13.004µs
+=== RUN   TestClockReachability/filtered-hour/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/option/All elapsed=13.656µs
+=== RUN   TestClockReachability/filtered-hour/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/option/After elapsed=12.894µs
+=== RUN   TestClockReachability/filtered-hour/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-hour/option/Iterator elapsed=18.605µs
+=== RUN   TestClockReachability/filtered-minute/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/string/All elapsed=11.231µs
+=== RUN   TestClockReachability/filtered-minute/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/string/After elapsed=12.103µs
+=== RUN   TestClockReachability/filtered-minute/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/string/Iterator elapsed=12.964µs
+=== RUN   TestClockReachability/filtered-minute/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/option/All elapsed=21.2µs
+=== RUN   TestClockReachability/filtered-minute/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/option/After elapsed=25.158µs
+=== RUN   TestClockReachability/filtered-minute/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-minute/option/Iterator elapsed=21.53µs
+=== RUN   TestClockReachability/filtered-second/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/string/All elapsed=13.846µs
+=== RUN   TestClockReachability/filtered-second/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/string/After elapsed=11.422µs
+=== RUN   TestClockReachability/filtered-second/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/string/Iterator elapsed=8.746µs
+=== RUN   TestClockReachability/filtered-second/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/option/All elapsed=12.264µs
+=== RUN   TestClockReachability/filtered-second/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/option/After elapsed=20.128µs
+=== RUN   TestClockReachability/filtered-second/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=filtered-second/option/Iterator elapsed=12.784µs
+=== RUN   TestClockReachability/last-hour/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/string/All elapsed=14.567µs
+=== RUN   TestClockReachability/last-hour/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/string/After elapsed=13.516µs
+=== RUN   TestClockReachability/last-hour/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/string/Iterator elapsed=12.163µs
+=== RUN   TestClockReachability/last-hour/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/option/All elapsed=10.52µs
+=== RUN   TestClockReachability/last-hour/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/option/After elapsed=13.946µs
+=== RUN   TestClockReachability/last-hour/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-hour/option/Iterator elapsed=12.323µs
+=== RUN   TestClockReachability/last-minute/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/string/All elapsed=32.031µs
+=== RUN   TestClockReachability/last-minute/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/string/After elapsed=73.288µs
+=== RUN   TestClockReachability/last-minute/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/string/Iterator elapsed=31.349µs
+=== RUN   TestClockReachability/last-minute/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/option/All elapsed=32.822µs
+=== RUN   TestClockReachability/last-minute/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/option/After elapsed=111.229µs
+=== RUN   TestClockReachability/last-minute/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-minute/option/Iterator elapsed=32.15µs
+=== RUN   TestClockReachability/last-second/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/string/All elapsed=1.353721ms
+=== RUN   TestClockReachability/last-second/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/string/After elapsed=4.040824ms
+=== RUN   TestClockReachability/last-second/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/string/Iterator elapsed=1.434393ms
+=== RUN   TestClockReachability/last-second/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/option/All elapsed=1.383798ms
+=== RUN   TestClockReachability/last-second/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/option/After elapsed=4.085268ms
+=== RUN   TestClockReachability/last-second/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=last-second/option/Iterator elapsed=1.377205ms
+=== RUN   TestClockReachability/buffered/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/string/All elapsed=14.367µs
+=== RUN   TestClockReachability/buffered/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/string/After elapsed=15.469µs
+=== RUN   TestClockReachability/buffered/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/string/Iterator elapsed=16.731µs
+=== RUN   TestClockReachability/buffered/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/option/All elapsed=17.422µs
+=== RUN   TestClockReachability/buffered/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/option/After elapsed=13.074µs
+=== RUN   TestClockReachability/buffered/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=buffered/option/Iterator elapsed=12.894µs
+=== RUN   TestClockReachability/horizon/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/string/All elapsed=13.536µs
+=== RUN   TestClockReachability/horizon/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/string/After elapsed=13.766µs
+=== RUN   TestClockReachability/horizon/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/string/Iterator elapsed=10.751µs
+=== RUN   TestClockReachability/horizon/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/option/All elapsed=9.918µs
+=== RUN   TestClockReachability/horizon/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/option/After elapsed=8.275µs
+=== RUN   TestClockReachability/horizon/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=horizon/option/Iterator elapsed=8.146µs
+--- PASS: TestClockReachability (0.30s)
+    --- PASS: TestClockReachability/hourly/string/All (0.00s)
+    --- PASS: TestClockReachability/hourly/string/After (0.00s)
+    --- PASS: TestClockReachability/hourly/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/hourly/string/Setters (0.00s)
+    --- PASS: TestClockReachability/hourly/option/All (0.00s)
+    --- PASS: TestClockReachability/hourly/option/After (0.00s)
+    --- PASS: TestClockReachability/hourly/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/hourly/option/Setters (0.00s)
+    --- PASS: TestClockReachability/minutely/string/All (0.00s)
+    --- PASS: TestClockReachability/minutely/string/After (0.00s)
+    --- PASS: TestClockReachability/minutely/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/minutely/string/Setters (0.00s)
+    --- PASS: TestClockReachability/minutely/option/All (0.00s)
+    --- PASS: TestClockReachability/minutely/option/After (0.00s)
+    --- PASS: TestClockReachability/minutely/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/minutely/option/Setters (0.00s)
+    --- PASS: TestClockReachability/secondly/string/All (0.00s)
+    --- PASS: TestClockReachability/secondly/string/After (0.00s)
+    --- PASS: TestClockReachability/secondly/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/secondly/string/Setters (0.00s)
+    --- PASS: TestClockReachability/secondly/option/All (0.00s)
+    --- PASS: TestClockReachability/secondly/option/After (0.00s)
+    --- PASS: TestClockReachability/secondly/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/secondly/option/Setters (0.00s)
+    --- PASS: TestClockReachability/until/string/All (0.00s)
+    --- PASS: TestClockReachability/until/string/After (0.00s)
+    --- PASS: TestClockReachability/until/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/until/option/All (0.00s)
+    --- PASS: TestClockReachability/until/option/After (0.00s)
+    --- PASS: TestClockReachability/until/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/hour-control/string/All (0.00s)
+    --- PASS: TestClockReachability/hour-control/string/After (0.00s)
+    --- PASS: TestClockReachability/hour-control/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/hour-control/option/All (0.00s)
+    --- PASS: TestClockReachability/hour-control/option/After (0.00s)
+    --- PASS: TestClockReachability/hour-control/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/minute-control/string/All (0.00s)
+    --- PASS: TestClockReachability/minute-control/string/After (0.00s)
+    --- PASS: TestClockReachability/minute-control/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/minute-control/option/All (0.00s)
+    --- PASS: TestClockReachability/minute-control/option/After (0.00s)
+    --- PASS: TestClockReachability/minute-control/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/second-control/string/All (0.00s)
+    --- PASS: TestClockReachability/second-control/string/After (0.00s)
+    --- PASS: TestClockReachability/second-control/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/second-control/option/All (0.00s)
+    --- PASS: TestClockReachability/second-control/option/After (0.00s)
+    --- PASS: TestClockReachability/second-control/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-minute/string/All (0.00s)
+    --- PASS: TestClockReachability/joint-minute/string/After (0.00s)
+    --- PASS: TestClockReachability/joint-minute/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/All (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/After (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/All (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/After (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/All (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/After (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/mixed/string/All (0.00s)
+    --- PASS: TestClockReachability/mixed/string/After (0.00s)
+    --- PASS: TestClockReachability/mixed/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/mixed/option/All (0.00s)
+    --- PASS: TestClockReachability/mixed/option/After (0.00s)
+    --- PASS: TestClockReachability/mixed/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/local/string/All (0.00s)
+    --- PASS: TestClockReachability/local/string/After (0.00s)
+    --- PASS: TestClockReachability/local/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/local/option/All (0.00s)
+    --- PASS: TestClockReachability/local/option/After (0.00s)
+    --- PASS: TestClockReachability/local/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/carry/string/All (0.00s)
+    --- PASS: TestClockReachability/carry/string/After (0.00s)
+    --- PASS: TestClockReachability/carry/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/carry/option/All (0.00s)
+    --- PASS: TestClockReachability/carry/option/After (0.00s)
+    --- PASS: TestClockReachability/carry/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/string/All (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/string/After (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/option/All (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/option/After (0.00s)
+    --- PASS: TestClockReachability/filtered-hour/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/string/All (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/string/After (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/option/All (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/option/After (0.00s)
+    --- PASS: TestClockReachability/filtered-minute/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-second/string/All (0.00s)
+    --- PASS: TestClockReachability/filtered-second/string/After (0.00s)
+    --- PASS: TestClockReachability/filtered-second/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/filtered-second/option/All (0.00s)
+    --- PASS: TestClockReachability/filtered-second/option/After (0.00s)
+    --- PASS: TestClockReachability/filtered-second/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-hour/string/All (0.00s)
+    --- PASS: TestClockReachability/last-hour/string/After (0.00s)
+    --- PASS: TestClockReachability/last-hour/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-hour/option/All (0.00s)
+    --- PASS: TestClockReachability/last-hour/option/After (0.00s)
+    --- PASS: TestClockReachability/last-hour/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-minute/string/All (0.00s)
+    --- PASS: TestClockReachability/last-minute/string/After (0.00s)
+    --- PASS: TestClockReachability/last-minute/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-minute/option/All (0.00s)
+    --- PASS: TestClockReachability/last-minute/option/After (0.00s)
+    --- PASS: TestClockReachability/last-minute/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-second/string/All (0.00s)
+    --- PASS: TestClockReachability/last-second/string/After (0.01s)
+    --- PASS: TestClockReachability/last-second/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/last-second/option/All (0.00s)
+    --- PASS: TestClockReachability/last-second/option/After (0.01s)
+    --- PASS: TestClockReachability/last-second/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/buffered/string/All (0.00s)
+    --- PASS: TestClockReachability/buffered/string/After (0.00s)
+    --- PASS: TestClockReachability/buffered/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/buffered/option/All (0.00s)
+    --- PASS: TestClockReachability/buffered/option/After (0.00s)
+    --- PASS: TestClockReachability/buffered/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/horizon/string/All (0.00s)
+    --- PASS: TestClockReachability/horizon/string/After (0.00s)
+    --- PASS: TestClockReachability/horizon/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/horizon/option/All (0.00s)
+    --- PASS: TestClockReachability/horizon/option/After (0.00s)
+    --- PASS: TestClockReachability/horizon/option/Iterator (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.305s

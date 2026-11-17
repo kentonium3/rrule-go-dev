@@ -1,0 +1,2 @@
+COMMAND: GOCACHE=/tmp/rrule-go-cache gofmt -l .
+EXIT: 0

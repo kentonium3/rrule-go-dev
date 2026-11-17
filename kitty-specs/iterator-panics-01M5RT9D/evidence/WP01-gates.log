@@ -1,0 +1,32 @@
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache go test ./...
+EXIT: 0
+ok  	github.com/teambition/rrule-go	0.359s
+
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache go test -race ./...
+EXIT: 0
+ok  	github.com/teambition/rrule-go	4.373s
+
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache go vet ./...
+EXIT: 0
+
+COMMAND: gofmt -l .
+EXIT: 0
+
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache GOARCH=386 go test ./...
+EXIT: 1
+signal: bad system call (core dumped)
+FAIL	github.com/teambition/rrule-go	0.057s
+FAIL
+
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache go build ./...
+EXIT: 0
+
+DIAGNOSED SANDBOX EXECUTION FAILURE
+COMMAND (require_escalated): timeout 180 env GOCACHE=/tmp/rrule-go-cache GOARCH=386 go test ./...
+EXIT: 0
+ok github.com/teambition/rrule-go 0.415s
+Same 32-bit suite passes outside sandbox syscall filter; initial failure retained above.
+
+COMMAND: timeout 180 env GOCACHE=/tmp/rrule-go-cache go build -gcflags=-lang=go1.16 ./...
+EXIT: 0
+(no output)

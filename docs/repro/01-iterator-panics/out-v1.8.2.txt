@@ -1,0 +1,9 @@
+FREQ=MONTHLY;BYDAY=5MO                        2026-03-30 2026-06-29 
+FREQ=MONTHLY;BYDAY=-6MO                       panic: runtime error: index out of range [-5]
+FREQ=MONTHLY;BYDAY=8MO                        panic: runtime error: index out of range [383] with length 382
+FREQ=MONTHLY;BYDAY=53MO                       panic: runtime error: index out of range [395] with length 382
+FREQ=YEARLY;BYMONTH=1;BYDAY=-6MO              panic: runtime error: index out of range [-5]
+FREQ=YEARLY;BYMONTH=12;BYDAY=8MO              panic: runtime error: index out of range [383] with length 382
+FREQ=YEARLY;BYEASTER=-100                     panic: runtime error: index out of range [-6]
+FREQ=YEARLY;BYEASTER=300                      panic: runtime error: index out of range [394] with length 372
+FREQ=MONTHLY;INTERVAL=9223372036854775807     panic: runtime error: index out of range [9223372036854775807] with length 13

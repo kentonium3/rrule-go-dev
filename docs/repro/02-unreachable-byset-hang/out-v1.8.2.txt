@@ -1,0 +1,5 @@
+FREQ=HOURLY;INTERVAL=2;BYHOUR=2                         After() = 2026-01-06 02:00:00 +0000 UTC
+FREQ=HOURLY;INTERVAL=2;BYHOUR=1                         After() did not return within 10s
+FREQ=MINUTELY;INTERVAL=2;BYMINUTE=1                     After() did not return within 10s
+FREQ=SECONDLY;INTERVAL=2;BYSECOND=1                     After() did not return within 10s
+FREQ=HOURLY;INTERVAL=2;BYHOUR=1;UNTIL=20260201T000000Z  After() did not return within 10s

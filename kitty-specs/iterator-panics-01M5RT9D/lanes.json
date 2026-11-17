@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "mission_slug": "iterator-panics-01M5RT9D",
+  "mission_id": "01M5RT9DGEB2WGW4A8TC5FZR4T",
+  "mission_branch": "kitty/mission-iterator-panics-01M5RT9D",
+  "target_branch": "fix/iterator-panics",
+  "lanes": [
+    {
+      "lane_id": "lane-a",
+      "wp_ids": [
+        "WP01"
+      ],
+      "write_scope": [
+        "docs/issues/01-iterator-panics.md",
+        "rrule.go",
+        "rrule_safety_test.go"
+      ],
+      "predicted_surfaces": [
+        "api",
+        "workspace"
+      ],
+      "depends_on_lanes": [],
+      "parallel_group": 0
+    },
+    {
+      "lane_id": "lane-b",
+      "wp_ids": [
+        "WP02"
+      ],
+      "write_scope": [
+        "rrule_fuzz_test.go"
+      ],
+      "predicted_surfaces": [
+        "api",
+        "workspace"
+      ],
+      "depends_on_lanes": [
+        "lane-a"
+      ],
+      "parallel_group": 1
+    }
+  ],
+  "computed_at": "2026-10-25T06:13:21.500976+00:00",
+  "computed_from": "dependency_graph+ownership",
+  "planning_artifact_wps": [],
+  "planning_commit_sha": "8ca3cfb04ca30803a1c0f920dd2cb1b761bb54f1"
+}

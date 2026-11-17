@@ -1,0 +1,55 @@
+{
+  "event_count": 14,
+  "last_event_id": "01M5RWJQRNSB31YAZD2Y95VZP5",
+  "materialized_at": "2026-10-25T06:39:44.917075+00:00",
+  "mission_number": "",
+  "mission_slug": "iterator-panics-01M5RT9D",
+  "mission_type": "",
+  "summary": {
+    "approved": 0,
+    "blocked": 0,
+    "canceled": 0,
+    "claimed": 0,
+    "done": 2,
+    "for_review": 0,
+    "in_progress": 0,
+    "in_review": 0,
+    "planned": 0
+  },
+  "work_packages": {
+    "WP01": {
+      "actor": "merge",
+      "agent": "codex",
+      "force_count": 0,
+      "implementer_of_record": "codex",
+      "lane": "done",
+      "last_event_id": "01M5RWJP2GQW58G82T83HQN4Q8",
+      "last_transition_at": "2026-10-25T06:39:43.184996+00:00",
+      "review_result": {
+        "feedback_path": "~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-coord/kitty-specs/iterator-panics-01M5RT9D/tasks/WP01-safe-iterator/review-cycle-1.md",
+        "reference": "review-cycle://iterator-panics-01M5RT9D/WP01-safe-iterator/review-cycle-1.md",
+        "reviewer": "gpt-6-astra",
+        "verdict": "approved"
+      },
+      "shell_pid": 3568,
+      "shell_pid_created_at": "1791989567.33"
+    },
+    "WP02": {
+      "actor": "merge",
+      "agent": "codex",
+      "force_count": 0,
+      "implementer_of_record": "codex",
+      "lane": "done",
+      "last_event_id": "01M5RWJQRNSB31YAZD2Y95VZP5",
+      "last_transition_at": "2026-10-25T06:39:44.917075+00:00",
+      "review_result": {
+        "feedback_path": "~/repos/rrule-go/.worktrees/iterator-panics-01M5RT9D-coord/kitty-specs/iterator-panics-01M5RT9D/tasks/WP02-bounded-fuzz/review-cycle-1.md",
+        "reference": "review-cycle://iterator-panics-01M5RT9D/WP02-bounded-fuzz/review-cycle-1.md",
+        "reviewer": "gpt-6-astra",
+        "verdict": "approved"
+      },
+      "shell_pid": 3568,
+      "shell_pid_created_at": "1791989567.33"
+    }
+  }
+}

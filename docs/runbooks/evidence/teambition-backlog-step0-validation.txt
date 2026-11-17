@@ -1,0 +1,369 @@
+$ SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter generate --json
+{
+  "result": "success",
+  "success": true,
+  "charter_path": ".kittify/charter/charter.md",
+  "interview_source": "interview",
+  "mission": "software-dev",
+  "template_set": "software-dev-default",
+  "selected_paradigms": [],
+  "selected_directives": [],
+  "available_tools": [],
+  "references_count": 10,
+  "library_files": [],
+  "files_written": [
+    "charter.yaml"
+  ],
+  "diagnostics": [
+    "Unresolved reference: toolguide/python-mutation-tools (scope_filtered): artifact 'python-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language').",
+    "Unresolved reference: toolguide/typescript-mutation-tools (scope_filtered): artifact 'typescript-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language')."
+  ],
+  "unresolved_references": [
+    {
+      "kind": "toolguide",
+      "id": "python-mutation-tools",
+      "cause": "scope_filtered",
+      "detail": "artifact 'python-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language')."
+    },
+    {
+      "kind": "toolguide",
+      "id": "typescript-mutation-tools",
+      "cause": "scope_filtered",
+      "detail": "artifact 'typescript-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language')."
+    }
+  ]
+}
+
+Exit: 0
+
+$ SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter validate .kittify/charter
+OK 
+.kittify/charter/generated/directives/001-project-intent-directive.directive.yam
+l
+OK 
+.kittify/charter/generated/directives/002-risk-appetite-directive.directive.yaml
+OK 
+.kittify/charter/generated/styleguides/documentation-policy-style-guide.stylegui
+de.yaml
+OK .kittify/charter/generated/styleguides/go-style-guide.styleguide.yaml
+OK 
+.kittify/charter/generated/styleguides/quality-gates-style-guide.styleguide.yaml
+OK .kittify/charter/generated/styleguides/testing-style-guide.styleguide.yaml
+OK .kittify/charter/generated/tactics/review-policy-tactic.tactic.yaml
+OK .kittify/charter/generated/tactics/testing-philosophy-tactic.tactic.yaml
+
+8 artifact(s) passed validation.
+
+Exit: 0
+
+$ SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter bundle validate --json
+{
+  "result": "success",
+  "canonical_root": "~/repos/rrule-go",
+  "manifest_schema_version": "2.0.0",
+  "bundle_compliant": true,
+  "tracked_files": {
+    "expected": [
+      ".kittify/charter/charter.md",
+      ".kittify/charter/charter.yaml"
+    ],
+    "present": [
+      ".kittify/charter/charter.md",
+      ".kittify/charter/charter.yaml"
+    ],
+    "missing": []
+  },
+  "optional_tracked_files": {
+    "expected": [
+      ".kittify/charter/activation.yaml"
+    ],
+    "present": [
+      ".kittify/charter/activation.yaml"
+    ],
+    "missing": []
+  },
+  "derived_files": {
+    "expected": [],
+    "present": [],
+    "missing": []
+  },
+  "gitignore": {
+    "expected_entries": [],
+    "present_entries": [],
+    "missing_entries": []
+  },
+  "out_of_scope_files": [
+    ".kittify/charter/context-state.json",
+    ".kittify/charter/generated/directives/001-project-intent-directive.directive.yaml",
+    ".kittify/charter/generated/directives/002-risk-appetite-directive.directive.yaml",
+    ".kittify/charter/generated/styleguides/documentation-policy-style-guide.styleguide.yaml",
+    ".kittify/charter/generated/styleguides/go-style-guide.styleguide.yaml",
+    ".kittify/charter/generated/styleguides/quality-gates-style-guide.styleguide.yaml",
+    ".kittify/charter/generated/styleguides/testing-style-guide.styleguide.yaml",
+    ".kittify/charter/generated/tactics/review-policy-tactic.tactic.yaml",
+    ".kittify/charter/generated/tactics/testing-philosophy-tactic.tactic.yaml",
+    ".kittify/charter/interview/answers.yaml",
+    ".kittify/charter/provenance/directive-project-intent-directive.yaml",
+    ".kittify/charter/provenance/directive-risk-appetite-directive.yaml",
+    ".kittify/charter/provenance/styleguide-documentation-policy-style-guide.yaml",
+    ".kittify/charter/provenance/styleguide-go-style-guide.yaml",
+    ".kittify/charter/provenance/styleguide-quality-gates-style-guide.yaml",
+    ".kittify/charter/provenance/styleguide-testing-style-guide.yaml",
+    ".kittify/charter/provenance/tactic-review-policy-tactic.yaml",
+    ".kittify/charter/provenance/tactic-testing-philosophy-tactic.yaml",
+    ".kittify/charter/synthesis-manifest.yaml",
+    ".kittify/charter/synthesized-artifacts.yaml"
+  ],
+  "warnings": [
+    "File '.kittify/charter/context-state.json' is present but out of v1.0.0 manifest scope (runtime state written by build_charter_context); leaving untouched.",
+    "File '.kittify/charter/generated/directives/001-project-intent-directive.directive.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/directives/002-risk-appetite-directive.directive.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/styleguides/documentation-policy-style-guide.styleguide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/styleguides/go-style-guide.styleguide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/styleguides/quality-gates-style-guide.styleguide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/styleguides/testing-style-guide.styleguide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/tactics/review-policy-tactic.tactic.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/generated/tactics/testing-philosophy-tactic.tactic.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/interview/answers.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/directive-project-intent-directive.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/directive-risk-appetite-directive.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/styleguide-documentation-policy-style-guide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/styleguide-go-style-guide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/styleguide-quality-gates-style-guide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/styleguide-testing-style-guide.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/tactic-review-policy-tactic.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/provenance/tactic-testing-philosophy-tactic.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/synthesis-manifest.yaml' is present but out of v1.0.0 manifest scope; leaving untouched.",
+    "File '.kittify/charter/synthesized-artifacts.yaml' is present but out of v1.0.0 manifest scope (the record of artifact ids written by charter synthesis, so a removed artifact stays removed); leaving untouched."
+  ],
+  "errors": [],
+  "synthesis_state": {
+    "present": true,
+    "passed": true,
+    "errors": [],
+    "warnings": []
+  },
+  "passed": true
+}
+
+Exit: 0
+
+$ SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter status --json
+{
+  "result": "success",
+  "charter_sync": {
+    "available": true,
+    "charter_path": ".kittify/charter/charter.md",
+    "status": "synced",
+    "current_hash": "",
+    "stored_hash": "",
+    "last_sync": null,
+    "library_docs": 0,
+    "files": [
+      {
+        "name": "charter.yaml",
+        "exists": true,
+        "size_kb": 7.3603515625
+      },
+      {
+        "name": "charter.md",
+        "exists": true,
+        "size_kb": 2.1962890625
+      }
+    ]
+  },
+  "synthesis": {
+    "generation_state": "promoted",
+    "generated_inputs": {
+      "path": ".kittify/charter/generated",
+      "exists": true,
+      "counts": {
+        "directive": 2,
+        "tactic": 2,
+        "styleguide": 4
+      },
+      "total": 8
+    },
+    "manifest": {
+      "path": ".kittify/charter/synthesis-manifest.yaml",
+      "exists": true,
+      "state": "valid",
+      "artifact_count": 8,
+      "live_artifact_count": 8,
+      "live_provenance_count": 8,
+      "run_id": "44AA0EFBCC2040E592D62C9142",
+      "created_at": "2026-10-25T06:17:04.142794+00:00",
+      "adapter_id": "generated",
+      "adapter_version": "1.0.0",
+      "missing_provenance_paths": [],
+      "error": null
+    },
+    "provenance": {
+      "path": ".kittify/charter/provenance",
+      "count": 8,
+      "parsed_count": 8,
+      "manifest_artifact_count": 8,
+      "missing_for_manifest_count": 0,
+      "missing_for_manifest": [],
+      "corpus_snapshot_ids": [
+        "generic-v1.0.0"
+      ],
+      "adapters": [
+        "generated@1.0.0"
+      ],
+      "warnings": [],
+      "entries": []
+    },
+    "evidence": {
+      "warnings": [],
+      "code": {
+        "stack_id": "go",
+        "primary_language": "go",
+        "languages": [
+          "go"
+        ],
+        "frameworks": [],
+        "test_frameworks": [],
+        "representative_files_count": 5,
+        "representative_files_preview": [
+          ".gitignore",
+          "LICENSE",
+          "str.go",
+          "util.go",
+          "rruleset_test.go"
+        ]
+      },
+      "configured_urls": [],
+      "configured_url_count": 0,
+      "corpus_snapshot_id": "generic-v1.0.0",
+      "corpus_entry_count": 3
+    }
+  },
+  "org_layer": {
+    "has_built_in": true,
+    "packs": [],
+    "collision_warnings": [],
+    "errors": []
+  },
+  "governance_references": {
+    "available": true,
+    "references": [
+      {
+        "path": "AGENTS.md",
+        "exists": true,
+        "safe": true,
+        "warning": null
+      },
+      {
+        "path": "docs/CONTEXT.md",
+        "exists": true,
+        "safe": true,
+        "warning": null
+      }
+    ],
+    "warnings": []
+  },
+  "freshness": {
+    "charter_source": {
+      "state": "fresh",
+      "last_change": "2026-10-25T21:07:07.867879+00:00",
+      "remediation": null,
+      "detail": null
+    },
+    "synced_bundle": {
+      "state": "fresh",
+      "last_change": "2026-10-25T21:07:07.867879+00:00",
+      "remediation": null,
+      "detail": null
+    },
+    "synthesized_drg": {
+      "state": "fresh",
+      "last_change": "2026-10-25T07:26:26.187318+00:00",
+      "remediation": null,
+      "detail": null
+    }
+  }
+}
+
+Exit: 0
+
+$ SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter context --action specify --json
+{
+  "result": "success",
+  "success": true,
+  "context_schema_version": "1.4.0",
+  "action": "specify",
+  "mode": "compact",
+  "first_load": false,
+  "references_count": 0,
+  "context": "Governance:\n  - Template set: software-dev-default\n  - Paradigms: (none)\n  - Tools: git, spec-kitty\nDirective IDs:\n  - RRULE-001\n  - RRULE-002\n  - RRULE-003\n  - RRULE-004\nTactic IDs:\n  - (none)\nSection Anchors:\n  - rrule-go project charter\n  - Diagnostics: No available_tools selection provided; using runtime tool registry fallback. | Merged 4 project-local directive(s) onto the activation set: RRULE-001, RRULE-002, RRULE-003, RRULE-004. | Template set not selected in charter; fallback 'software-dev-default' applied.\n  - Languages: go\n  - Advisory: No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language').\n  - Project layer root: ~/repos/rrule-go/.kittify/charter-packs\n\nProject authority paths:\n  - docs/issues/    (consult when you change content under this directory)\n\nRequired Governance Reading:\n  - AGENTS.md\n  - docs/CONTEXT.md",
+  "text": "Governance:\n  - Template set: software-dev-default\n  - Paradigms: (none)\n  - Tools: git, spec-kitty\nDirective IDs:\n  - RRULE-001\n  - RRULE-002\n  - RRULE-003\n  - RRULE-004\nTactic IDs:\n  - (none)\nSection Anchors:\n  - rrule-go project charter\n  - Diagnostics: No available_tools selection provided; using runtime tool registry fallback. | Merged 4 project-local directive(s) onto the activation set: RRULE-001, RRULE-002, RRULE-003, RRULE-004. | Template set not selected in charter; fallback 'software-dev-default' applied.\n  - Languages: go\n  - Advisory: No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language').\n  - Project layer root: ~/repos/rrule-go/.kittify/charter-packs\n\nProject authority paths:\n  - docs/issues/    (consult when you change content under this directory)\n\nRequired Governance Reading:\n  - AGENTS.md\n  - docs/CONTEXT.md",
+  "directives": [],
+  "all_directives": [
+    {
+      "id": "RRULE-001",
+      "source": "project",
+      "title": "Compatibility and minimal fixes",
+      "summary": "RFC 5545 is normative in all cases. Preserve exported types, functions, methods and signatures. Change behavior only where RFC 5545 requires it within the issue acceptance scope, or to prevent accepted input panics or hangs. Prove all other occurrences and String() output byte-identical to v1.8.3 with a golden comparison. No new dependencies. Prefer the smallest root-cause fix; state each finding's conditions and likelihood. Go 1.16 remains the minimum. Any exported addition needs plan justification and a minor release. Record RFC corrections and behavior changes in the spec and release notes."
+    },
+    {
+      "id": "RRULE-002",
+      "source": "project",
+      "title": "Test-first verification and independent review",
+      "summary": "Regression tests must fail before the fix and pass after. Run go test ./..., go test -race ./..., go vet ./..., and gofmt -l .; fuzz BY* and INTERVAL domains for 60 seconds in the panic mission. Review each work package with a different model from its implementer and record both identities and date. Same-model review is degraded and does not silently satisfy this requirement."
+    },
+    {
+      "id": "RRULE-003",
+      "source": "project",
+      "title": "Private development and coordinated release",
+      "summary": "The embargo has ended and the maintained fork kentonium3/rrule-go v1.8.3 is public. This development repository kentonium3/rrule-go-dev stays private. Never push upstream. Any public posting, push, PR, tag or release requires Kent's sign-off on the exact copy. This mission authorizes only private PRs; no public action. Sending messages requires explicit authorization. Preserve MIT LICENSE and README modified-copy notice."
+    },
+    {
+      "id": "RRULE-004",
+      "source": "project",
+      "title": "Scope and operational discipline",
+      "summary": "Scope is public issues kentonium3/rrule-go#5 (DST), #6 (floating UNTIL) and #7 (duplicate BY values), as one mission with one work package per issue. Follow docs/runbooks/teambition-backlog.md: specify, plan, independent post-plan review, tasks, analyze, implement/review, accept, consolidate and integrated final review. Apply the autonomous D-3 fault protocol: preserve evidence before mutation, diagnose, validate and record safe recovery; stop on unsafe failures or genuine scope decisions. Deliver a private PR to main without merging it. The separate charter-update PR is authorized to merge first. No public actions or issue-closing keywords in commits. Use scoped Conventional Commits; never force-push or stash."
+    }
+  ],
+  "diagnostics": [
+    "No available_tools selection provided; using runtime tool registry fallback.",
+    "Merged 4 project-local directive(s) onto the activation set: RRULE-001, RRULE-002, RRULE-003, RRULE-004.",
+    "Template set not selected in charter; fallback 'software-dev-default' applied."
+  ],
+  "directives_source": "activation+project_local",
+  "tactics": [],
+  "styleguides": [],
+  "toolguides": [],
+  "references": [],
+  "governance_references": [
+    {
+      "path": "AGENTS.md",
+      "exists": true,
+      "safe": true,
+      "warning": null
+    },
+    {
+      "path": "docs/CONTEXT.md",
+      "exists": true,
+      "safe": true,
+      "warning": null
+    }
+  ],
+  "project_charter": {
+    "present": true,
+    "path": ".kittify/charter/charter.yaml",
+    "charter_md_present": true,
+    "charter_md_path": ".kittify/charter/charter.md",
+    "bytes": 7537
+  },
+  "org_charter": {
+    "present": false,
+    "packs": []
+  }
+}
+
+Exit: 0
+
+PASS: authored governance/directives byte-identical before/after generate. SHA256 c8c9a5422448427ab25627973302ac9453d4064a8b18784d35776668dd62f97e
+
+PASS: interview/answers.yaml unchanged from HEAD.

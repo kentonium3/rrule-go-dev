@@ -1,0 +1,23 @@
+adapter_id: generated
+adapter_notes: 
+  generated-artifact:.kittify/charter/generated/styleguides/quality-gates-style-guide.styleguide.yaml
+adapter_version: 1.0.0
+artifact_content_hash: 
+  0096c2dfe9173621b40e04434a5fdd22592b6d2c16db49a991b8b4c5df40043a
+artifact_kind: styleguide
+artifact_slug: quality-gates-style-guide
+artifact_urn: styleguide:quality-gates-style-guide
+corpus_snapshot_id: generic-v1.0.0
+evidence_bundle_hash: 
+  4dd8f64ae139b33d1f468ec617857ef78b2a0c2ad9b9f181b58bab231ff91547
+generated_at: '2026-10-25T06:16:49.720351+00:00'
+inputs_hash: 0adb6ddeec5c8536383c488a933f05fd4f2cf6a4522c5d3657ef93219239f711
+produced_at: '2026-10-25T06:17:04.131805+00:00'
+schema_version: '2'
+source_input_ids:
+- directive:DIRECTIVE_030
+source_section: quality_gates
+source_urns:
+- directive:DIRECTIVE_030
+synthesis_run_id: 44AA0EFBCC2040E592D62C9142
+synthesizer_version: 4.0.0rc8

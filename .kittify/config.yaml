@@ -1,0 +1,17 @@
+project:
+  uuid: 024606dd-f6b7-4fbf-8e59-e6134b994a4c
+  slug: rrule-go
+  node_id: d44e464809bd
+  build_id: d0ced1c3-db97-5e81-95f8-a5dda8c2478a
+  path_conventions:
+    workspace: .
+    tests: .
+vcs:
+  type: git
+agents:
+  available:
+  - codex
+  auto_commit: true
+  lint_on_edit: false
+languages:
+- go

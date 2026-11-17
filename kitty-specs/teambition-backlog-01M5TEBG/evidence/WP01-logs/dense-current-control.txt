@@ -1,0 +1,7 @@
+CWD: ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTDenseAnnualArithmetic$ -v
+EXIT: 0
+=== RUN   TestDSTDenseAnnualArithmetic
+--- PASS: TestDSTDenseAnnualArithmetic (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.003s

@@ -1,0 +1,265 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/hourly/string/All
+    rrule_reachability_test.go:63: child failed (watchdog=<nil>): exit status 1
+        === RUN   TestClockReachability
+        === RUN   TestClockReachability/hourly/string/All
+            rrule_reachability_test.go:169: operation=hourly/string/All elapsed=3.708002073s
+            rrule_reachability_test.go:171: operation exceeded one second
+        === RUN   TestClockReachability/hourly/string/After
+        === RUN   TestClockReachability/hourly/string/Iterator
+        === RUN   TestClockReachability/hourly/string/Setters
+        === RUN   TestClockReachability/hourly/option/All
+        === RUN   TestClockReachability/hourly/option/After
+        === RUN   TestClockReachability/hourly/option/Iterator
+        === RUN   TestClockReachability/hourly/option/Setters
+        === RUN   TestClockReachability/minutely/string/All
+        === RUN   TestClockReachability/minutely/string/After
+        === RUN   TestClockReachability/minutely/string/Iterator
+        === RUN   TestClockReachability/minutely/string/Setters
+        === RUN   TestClockReachability/minutely/option/All
+        === RUN   TestClockReachability/minutely/option/After
+        === RUN   TestClockReachability/minutely/option/Iterator
+        === RUN   TestClockReachability/minutely/option/Setters
+        === RUN   TestClockReachability/secondly/string/All
+        === RUN   TestClockReachability/secondly/string/After
+        === RUN   TestClockReachability/secondly/string/Iterator
+        === RUN   TestClockReachability/secondly/string/Setters
+        === RUN   TestClockReachability/secondly/option/All
+        === RUN   TestClockReachability/secondly/option/After
+        === RUN   TestClockReachability/secondly/option/Iterator
+        === RUN   TestClockReachability/secondly/option/Setters
+        === RUN   TestClockReachability/until/string/All
+        === RUN   TestClockReachability/until/string/After
+        === RUN   TestClockReachability/until/string/Iterator
+        === RUN   TestClockReachability/until/option/All
+        === RUN   TestClockReachability/until/option/After
+        === RUN   TestClockReachability/until/option/Iterator
+        === RUN   TestClockReachability/hour-control/string/All
+        === RUN   TestClockReachability/hour-control/string/After
+        === RUN   TestClockReachability/hour-control/string/Iterator
+        === RUN   TestClockReachability/hour-control/option/All
+        === RUN   TestClockReachability/hour-control/option/After
+        === RUN   TestClockReachability/hour-control/option/Iterator
+        === RUN   TestClockReachability/minute-control/string/All
+        === RUN   TestClockReachability/minute-control/string/After
+        === RUN   TestClockReachability/minute-control/string/Iterator
+        === RUN   TestClockReachability/minute-control/option/All
+        === RUN   TestClockReachability/minute-control/option/After
+        === RUN   TestClockReachability/minute-control/option/Iterator
+        === RUN   TestClockReachability/second-control/string/All
+        === RUN   TestClockReachability/second-control/string/After
+        === RUN   TestClockReachability/second-control/string/Iterator
+        === RUN   TestClockReachability/second-control/option/All
+        === RUN   TestClockReachability/second-control/option/After
+        === RUN   TestClockReachability/second-control/option/Iterator
+        === RUN   TestClockReachability/joint-minute/string/All
+        === RUN   TestClockReachability/joint-minute/string/After
+        === RUN   TestClockReachability/joint-minute/string/Iterator
+        === RUN   TestClockReachability/joint-minute/option/All
+        === RUN   TestClockReachability/joint-minute/option/After
+        === RUN   TestClockReachability/joint-minute/option/Iterator
+        === RUN   TestClockReachability/joint-second/string/All
+        === RUN   TestClockReachability/joint-second/string/After
+        === RUN   TestClockReachability/joint-second/string/Iterator
+        === RUN   TestClockReachability/joint-second/option/All
+        === RUN   TestClockReachability/joint-second/option/After
+        === RUN   TestClockReachability/joint-second/option/Iterator
+        === RUN   TestClockReachability/mixed/string/All
+        === RUN   TestClockReachability/mixed/string/After
+        === RUN   TestClockReachability/mixed/string/Iterator
+        === RUN   TestClockReachability/mixed/option/All
+        === RUN   TestClockReachability/mixed/option/After
+        === RUN   TestClockReachability/mixed/option/Iterator
+        === RUN   TestClockReachability/local/string/All
+        === RUN   TestClockReachability/local/string/After
+        === RUN   TestClockReachability/local/string/Iterator
+        === RUN   TestClockReachability/local/option/All
+        === RUN   TestClockReachability/local/option/After
+        === RUN   TestClockReachability/local/option/Iterator
+        === RUN   TestClockReachability/carry/string/All
+        === RUN   TestClockReachability/carry/string/After
+        === RUN   TestClockReachability/carry/string/Iterator
+        === RUN   TestClockReachability/carry/option/All
+        === RUN   TestClockReachability/carry/option/After
+        === RUN   TestClockReachability/carry/option/Iterator
+        === RUN   TestClockReachability/filtered-hour/string/All
+        === RUN   TestClockReachability/filtered-hour/string/After
+        === RUN   TestClockReachability/filtered-hour/string/Iterator
+        === RUN   TestClockReachability/filtered-hour/option/All
+        === RUN   TestClockReachability/filtered-hour/option/After
+        === RUN   TestClockReachability/filtered-hour/option/Iterator
+        === RUN   TestClockReachability/filtered-minute/string/All
+        === RUN   TestClockReachability/filtered-minute/string/After
+        === RUN   TestClockReachability/filtered-minute/string/Iterator
+        === RUN   TestClockReachability/filtered-minute/option/All
+        === RUN   TestClockReachability/filtered-minute/option/After
+        === RUN   TestClockReachability/filtered-minute/option/Iterator
+        === RUN   TestClockReachability/filtered-second/string/All
+        === RUN   TestClockReachability/filtered-second/string/After
+        === RUN   TestClockReachability/filtered-second/string/Iterator
+        === RUN   TestClockReachability/filtered-second/option/All
+        === RUN   TestClockReachability/filtered-second/option/After
+        === RUN   TestClockReachability/filtered-second/option/Iterator
+        === RUN   TestClockReachability/last-hour/string/All
+        === RUN   TestClockReachability/last-hour/string/After
+        === RUN   TestClockReachability/last-hour/string/Iterator
+        === RUN   TestClockReachability/last-hour/option/All
+        === RUN   TestClockReachability/last-hour/option/After
+        === RUN   TestClockReachability/last-hour/option/Iterator
+        === RUN   TestClockReachability/last-minute/string/All
+        === RUN   TestClockReachability/last-minute/string/After
+        === RUN   TestClockReachability/last-minute/string/Iterator
+        === RUN   TestClockReachability/last-minute/option/All
+        === RUN   TestClockReachability/last-minute/option/After
+        === RUN   TestClockReachability/last-minute/option/Iterator
+        === RUN   TestClockReachability/last-second/string/All
+        === RUN   TestClockReachability/last-second/string/After
+        === RUN   TestClockReachability/last-second/string/Iterator
+        === RUN   TestClockReachability/last-second/option/All
+        === RUN   TestClockReachability/last-second/option/After
+        === RUN   TestClockReachability/last-second/option/Iterator
+        === RUN   TestClockReachability/buffered/string/All
+        === RUN   TestClockReachability/buffered/string/After
+        === RUN   TestClockReachability/buffered/string/Iterator
+        === RUN   TestClockReachability/buffered/option/All
+        === RUN   TestClockReachability/buffered/option/After
+        === RUN   TestClockReachability/buffered/option/Iterator
+        === RUN   TestClockReachability/horizon/string/All
+        === RUN   TestClockReachability/horizon/string/After
+        === RUN   TestClockReachability/horizon/string/Iterator
+        === RUN   TestClockReachability/horizon/option/All
+        === RUN   TestClockReachability/horizon/option/After
+        === RUN   TestClockReachability/horizon/option/Iterator
+        --- FAIL: TestClockReachability (3.71s)
+            --- FAIL: TestClockReachability/hourly/string/All (3.71s)
+            --- SKIP: TestClockReachability/hourly/string/After (0.00s)
+            --- SKIP: TestClockReachability/hourly/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/hourly/string/Setters (0.00s)
+            --- SKIP: TestClockReachability/hourly/option/All (0.00s)
+            --- SKIP: TestClockReachability/hourly/option/After (0.00s)
+            --- SKIP: TestClockReachability/hourly/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/hourly/option/Setters (0.00s)
+            --- SKIP: TestClockReachability/minutely/string/All (0.00s)
+            --- SKIP: TestClockReachability/minutely/string/After (0.00s)
+            --- SKIP: TestClockReachability/minutely/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/minutely/string/Setters (0.00s)
+            --- SKIP: TestClockReachability/minutely/option/All (0.00s)
+            --- SKIP: TestClockReachability/minutely/option/After (0.00s)
+            --- SKIP: TestClockReachability/minutely/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/minutely/option/Setters (0.00s)
+            --- SKIP: TestClockReachability/secondly/string/All (0.00s)
+            --- SKIP: TestClockReachability/secondly/string/After (0.00s)
+            --- SKIP: TestClockReachability/secondly/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/secondly/string/Setters (0.00s)
+            --- SKIP: TestClockReachability/secondly/option/All (0.00s)
+            --- SKIP: TestClockReachability/secondly/option/After (0.00s)
+            --- SKIP: TestClockReachability/secondly/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/secondly/option/Setters (0.00s)
+            --- SKIP: TestClockReachability/until/string/All (0.00s)
+            --- SKIP: TestClockReachability/until/string/After (0.00s)
+            --- SKIP: TestClockReachability/until/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/until/option/All (0.00s)
+            --- SKIP: TestClockReachability/until/option/After (0.00s)
+            --- SKIP: TestClockReachability/until/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/hour-control/string/All (0.00s)
+            --- SKIP: TestClockReachability/hour-control/string/After (0.00s)
+            --- SKIP: TestClockReachability/hour-control/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/hour-control/option/All (0.00s)
+            --- SKIP: TestClockReachability/hour-control/option/After (0.00s)
+            --- SKIP: TestClockReachability/hour-control/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/minute-control/string/All (0.00s)
+            --- SKIP: TestClockReachability/minute-control/string/After (0.00s)
+            --- SKIP: TestClockReachability/minute-control/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/minute-control/option/All (0.00s)
+            --- SKIP: TestClockReachability/minute-control/option/After (0.00s)
+            --- SKIP: TestClockReachability/minute-control/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/second-control/string/All (0.00s)
+            --- SKIP: TestClockReachability/second-control/string/After (0.00s)
+            --- SKIP: TestClockReachability/second-control/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/second-control/option/All (0.00s)
+            --- SKIP: TestClockReachability/second-control/option/After (0.00s)
+            --- SKIP: TestClockReachability/second-control/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/string/All (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/string/After (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/option/All (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/option/After (0.00s)
+            --- SKIP: TestClockReachability/joint-minute/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/joint-second/string/All (0.00s)
+            --- SKIP: TestClockReachability/joint-second/string/After (0.00s)
+            --- SKIP: TestClockReachability/joint-second/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/joint-second/option/All (0.00s)
+            --- SKIP: TestClockReachability/joint-second/option/After (0.00s)
+            --- SKIP: TestClockReachability/joint-second/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/mixed/string/All (0.00s)
+            --- SKIP: TestClockReachability/mixed/string/After (0.00s)
+            --- SKIP: TestClockReachability/mixed/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/mixed/option/All (0.00s)
+            --- SKIP: TestClockReachability/mixed/option/After (0.00s)
+            --- SKIP: TestClockReachability/mixed/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/local/string/All (0.00s)
+            --- SKIP: TestClockReachability/local/string/After (0.00s)
+            --- SKIP: TestClockReachability/local/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/local/option/All (0.00s)
+            --- SKIP: TestClockReachability/local/option/After (0.00s)
+            --- SKIP: TestClockReachability/local/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/carry/string/All (0.00s)
+            --- SKIP: TestClockReachability/carry/string/After (0.00s)
+            --- SKIP: TestClockReachability/carry/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/carry/option/All (0.00s)
+            --- SKIP: TestClockReachability/carry/option/After (0.00s)
+            --- SKIP: TestClockReachability/carry/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/string/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/string/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/option/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/option/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-hour/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/string/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/string/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/option/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/option/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-minute/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/string/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/string/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/option/All (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/option/After (0.00s)
+            --- SKIP: TestClockReachability/filtered-second/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-hour/string/All (0.00s)
+            --- SKIP: TestClockReachability/last-hour/string/After (0.00s)
+            --- SKIP: TestClockReachability/last-hour/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-hour/option/All (0.00s)
+            --- SKIP: TestClockReachability/last-hour/option/After (0.00s)
+            --- SKIP: TestClockReachability/last-hour/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-minute/string/All (0.00s)
+            --- SKIP: TestClockReachability/last-minute/string/After (0.00s)
+            --- SKIP: TestClockReachability/last-minute/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-minute/option/All (0.00s)
+            --- SKIP: TestClockReachability/last-minute/option/After (0.00s)
+            --- SKIP: TestClockReachability/last-minute/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-second/string/All (0.00s)
+            --- SKIP: TestClockReachability/last-second/string/After (0.00s)
+            --- SKIP: TestClockReachability/last-second/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/last-second/option/All (0.00s)
+            --- SKIP: TestClockReachability/last-second/option/After (0.00s)
+            --- SKIP: TestClockReachability/last-second/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/buffered/string/All (0.00s)
+            --- SKIP: TestClockReachability/buffered/string/After (0.00s)
+            --- SKIP: TestClockReachability/buffered/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/buffered/option/All (0.00s)
+            --- SKIP: TestClockReachability/buffered/option/After (0.00s)
+            --- SKIP: TestClockReachability/buffered/option/Iterator (0.00s)
+            --- SKIP: TestClockReachability/horizon/string/All (0.00s)
+            --- SKIP: TestClockReachability/horizon/string/After (0.00s)
+            --- SKIP: TestClockReachability/horizon/string/Iterator (0.00s)
+            --- SKIP: TestClockReachability/horizon/option/All (0.00s)
+            --- SKIP: TestClockReachability/horizon/option/After (0.00s)
+            --- SKIP: TestClockReachability/horizon/option/Iterator (0.00s)
+        FAIL
+--- FAIL: TestClockReachability (3.73s)
+    --- FAIL: TestClockReachability/hourly/string/All (3.72s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	3.742s

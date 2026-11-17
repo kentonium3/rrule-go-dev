@@ -1,0 +1,856 @@
+=== RUN   TestTimeFormsPairMatrix
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/floating
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/floating
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/floating
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/floating
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 00:00:00 +0000 UTC 2020-12-29 00:00:00 +0000 UTC 2020-12-30 00:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/UTC
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +0000 UTC 2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/DATE
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/floating
+    str_timeforms_test.go:97: expected named UNTIL rejection, got <nil> ([2020-12-28 09:00:00 +1100 AEDT 2020-12-29 09:00:00 +1100 AEDT 2020-12-30 09:00:00 +1100 AEDT])
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/UTC
+--- FAIL: TestTimeFormsPairMatrix (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRule/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROption/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/ROptionInLocation/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/RRuleSet/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSet/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/floating/floating (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/floating/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/UTC (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/DATE (0.00s)
+    --- FAIL: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/UTC (0.00s)
+=== RUN   TestTimeFormsRoundTrip
+=== RUN   TestTimeFormsRoundTrip/RRule/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/RRule/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/RRule/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/RRule/UTC
+=== RUN   TestTimeFormsRoundTrip/RRule/TZID
+=== RUN   TestTimeFormsRoundTrip/ROption/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/ROption/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/ROption/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/ROption/UTC
+=== RUN   TestTimeFormsRoundTrip/ROption/TZID
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/UTC
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/TZID
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/UTC
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/TZID
+=== RUN   TestTimeFormsRoundTrip/SliceSet/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/SliceSet/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/SliceSet/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/SliceSet/UTC
+=== RUN   TestTimeFormsRoundTrip/SliceSet/TZID
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/floating
+    str_timeforms_test.go:131: String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z" want "DTSTART:20201228T090000\nRRULE:FREQ=DAILY;UNTIL=20201230T090000"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/DATE
+    str_timeforms_test.go:128: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/legacyDATE
+    str_timeforms_test.go:131: String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z" want "DTSTART;VALUE=DATE:20201228\nRRULE:FREQ=DAILY;UNTIL=20201230"
+    str_timeforms_test.go:139: second String got "DTSTART:20201228T000000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T000000Z"
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/UTC
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/TZID
+--- FAIL: TestTimeFormsRoundTrip (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRule/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRule/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRule/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/TZID (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROption/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROption/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROption/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/TZID (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROptionInLocation/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROptionInLocation/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/ROptionInLocation/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/TZID (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRuleSet/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRuleSet/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/RRuleSet/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/TZID (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSet/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSet/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSet/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/TZID (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSetInLoc/floating (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSetInLoc/DATE (0.00s)
+    --- FAIL: TestTimeFormsRoundTrip/SliceSetInLoc/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/TZID (0.00s)
+=== RUN   TestTimeFormsParameters
+=== RUN   TestTimeFormsParameters/RRule/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRule/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRule/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRule/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/RRule/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRule/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROption/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROption/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROption/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROption/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/ROption/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROption/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/ROptionInLocation/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/ROptionInLocation/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/RRuleSet/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/RRuleSet/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/SliceSet/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSet/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-floating
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-UTC
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-TZID
+    str_timeforms_test.go:172: StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-TZID-reverse
+    str_timeforms_test.go:172: StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-Z
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-date
+    str_timeforms_test.go:169: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:169: want TZID error, got StrToDtStart failed: unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/DATE-declared-datetime
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/datetime-declared-DATE
+    str_timeforms_test.go:169: want DTSTART error, got StrToDtStart failed: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/standalone/explicit-floating
+    str_timeforms_test.go:185: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/standalone/explicit-UTC
+    str_timeforms_test.go:185: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/standalone/explicit-TZID
+    str_timeforms_test.go:185: bad TZID parameter format
+=== RUN   TestTimeFormsParameters/standalone/explicit-TZID-reverse
+    str_timeforms_test.go:185: unknown time zone Australia/Sydney;VALUE=DATE-TIME
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-Z
+    str_timeforms_test.go:182: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-date
+    str_timeforms_test.go:182: want TZID error, got <nil>
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-canonical-date-reverse
+    str_timeforms_test.go:182: want TZID error, got unknown time zone Australia/Sydney;VALUE=DATE
+=== RUN   TestTimeFormsParameters/standalone/DATE-declared-datetime
+    str_timeforms_test.go:182: want DTSTART error, got bad TZID parameter format
+=== RUN   TestTimeFormsParameters/standalone/datetime-declared-DATE
+    str_timeforms_test.go:182: want DTSTART error, got bad TZID parameter format
+--- FAIL: TestTimeFormsParameters (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRule/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROption/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/ROptionInLocation/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/RRuleSet/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSet/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/SliceSetInLoc/datetime-declared-DATE (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/explicit-floating (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/explicit-UTC (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/explicit-TZID (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/explicit-TZID-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/TZID-on-Z (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/TZID-on-canonical-date (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/TZID-on-canonical-date-reverse (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/DATE-declared-datetime (0.00s)
+    --- FAIL: TestTimeFormsParameters/standalone/datetime-declared-DATE (0.00s)
+=== RUN   TestTimeFormsOrder
+=== RUN   TestTimeFormsOrder/RRule/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/RRule/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/RRule/reverse=true/invalid=false
+    str_timeforms_test.go:211: expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/RRule/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/ROption/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/ROption/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/ROption/reverse=true/invalid=false
+    str_timeforms_test.go:211: expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/ROption/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=false
+    str_timeforms_test.go:211: expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got expect DTSTART but: RRULE
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=true/invalid=false
+    str_timeforms_test.go:214: []
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=true/invalid=false
+    str_timeforms_test.go:214: []
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=false
+    str_timeforms_test.go:214: []
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=true
+    str_timeforms_test.go:207: want UNTIL rejection, got <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/ROptionInLocation
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/RRule
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/ROption
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/ROptionInLocation
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/ROptionInLocation
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/RRule
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/ROption
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/ROptionInLocation
+    str_timeforms_test.go:238: want UNTIL rejection: <nil>
+--- FAIL: TestTimeFormsOrder (0.00s)
+    --- PASS: TestTimeFormsOrder/RRule/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRule/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRule/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRule/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROption/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROption/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROption/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROption/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/RRuleSet/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRuleSet/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRuleSet/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/RRuleSet/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSet/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSet/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSet/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSet/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=true (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=false (0.00s)
+    --- FAIL: TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/ROptionInLocation (0.00s)
+    --- FAIL: TestTimeFormsOrder/inline/reverse=false/invalid=true (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=false/invalid=true/RRule (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=false/invalid=true/ROption (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=false/invalid=true/ROptionInLocation (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/ROptionInLocation (0.00s)
+    --- FAIL: TestTimeFormsOrder/inline/reverse=true/invalid=true (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=true/invalid=true/RRule (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=true/invalid=true/ROption (0.00s)
+        --- FAIL: TestTimeFormsOrder/inline/reverse=true/invalid=true/ROptionInLocation (0.00s)
+=== RUN   TestTimeFormsSharedSetValidation
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos1
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos2
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos1
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos2
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos0
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos1
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos2
+    str_timeforms_test.go:278: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos0
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos1
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos2
+    str_timeforms_test.go:278: want DTSTART error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos1
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos2
+    str_timeforms_test.go:285: []
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+    str_timeforms_test.go:301: want UNTIL error, got <nil>
+--- FAIL: TestTimeFormsSharedSetValidation (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos2 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+    --- FAIL: TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+=== RUN   TestTimeFormsCopiesAndSetters
+=== RUN   TestTimeFormsCopiesAndSetters/copied
+    str_timeforms_test.go:322: got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== RUN   TestTimeFormsCopiesAndSetters/replace-start
+    str_timeforms_test.go:325: source changed: DTSTART:20201228T090000Z
+        RRULE:FREQ=DAILY;UNTIL=20201230T090000Z
+=== RUN   TestTimeFormsCopiesAndSetters/replace-until
+    str_timeforms_test.go:322: got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T100000Z"
+=== RUN   TestTimeFormsCopiesAndSetters/same-instant-other-start-location
+    str_timeforms_test.go:325: source changed: DTSTART:20201228T090000Z
+        RRULE:FREQ=DAILY;UNTIL=20201230T090000Z
+=== RUN   TestTimeFormsCopiesAndSetters/same-instant-other-until-location
+    str_timeforms_test.go:322: got "DTSTART:20201228T090000Z\nRRULE:FREQ=DAILY;UNTIL=20201230T090000Z"
+=== NAME  TestTimeFormsCopiesAndSetters
+    str_timeforms_test.go:346: public start: DTSTART:20201228T090000Z
+        RRULE:FREQ=DAILY;UNTIL=20201230T090000Z
+    str_timeforms_test.go:351: public until: DTSTART:20201228T090000Z
+        RRULE:FREQ=DAILY;UNTIL=20201230T090000Z
+    str_timeforms_test.go:360: private shared transfer: DTSTART:20201228T090000Z
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:367: shared mutation
+--- FAIL: TestTimeFormsCopiesAndSetters (0.00s)
+    --- FAIL: TestTimeFormsCopiesAndSetters/copied (0.00s)
+    --- FAIL: TestTimeFormsCopiesAndSetters/replace-start (0.00s)
+    --- FAIL: TestTimeFormsCopiesAndSetters/replace-until (0.00s)
+    --- FAIL: TestTimeFormsCopiesAndSetters/same-instant-other-start-location (0.00s)
+    --- FAIL: TestTimeFormsCopiesAndSetters/same-instant-other-until-location (0.00s)
+=== RUN   TestTimeFormsExactLocations
+=== RUN   TestTimeFormsExactLocations/IANA/until=false
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+=== RUN   TestTimeFormsExactLocations/IANA/until=true
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T130000Z
+=== RUN   TestTimeFormsExactLocations/fixed/until=false
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+=== RUN   TestTimeFormsExactLocations/fixed/until=true
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T140000Z
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T140000Z
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T140000Z
+=== RUN   TestTimeFormsExactLocations/TZif/until=false
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;COUNT=3
+=== RUN   TestTimeFormsExactLocations/TZif/until=true
+    str_timeforms_test.go:416: floating form: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T070000Z
+    str_timeforms_test.go:422: set lost descriptor/location: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T070000Z
+    str_timeforms_test.go:430: set parser: DTSTART;TZID=America/New_York:20260307T090000
+        RRULE:FREQ=DAILY;UNTIL=20260309T070000Z
+--- FAIL: TestTimeFormsExactLocations (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/IANA/until=false (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/IANA/until=true (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/fixed/until=false (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/fixed/until=true (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/TZif/until=false (0.00s)
+    --- FAIL: TestTimeFormsExactLocations/TZif/until=true (0.00s)
+=== RUN   TestTimeFormsFragmentsAndProgrammatic
+--- PASS: TestTimeFormsFragmentsAndProgrammatic (0.00s)
+=== RUN   TestTimeFormsIntegratedGapBysetpos
+    str_timeforms_test.go:487: DTSTART;TZID=America/New_York:20260307T020000
+        RRULE:FREQ=DAILY;UNTIL=20260309T060000Z;BYSETPOS=1;BYHOUR=2,3
+--- FAIL: TestTimeFormsIntegratedGapBysetpos (0.00s)
+=== RUN   TestTimeFormsKeyedPublicAPI
+--- PASS: TestTimeFormsKeyedPublicAPI (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.008s
+exit=1

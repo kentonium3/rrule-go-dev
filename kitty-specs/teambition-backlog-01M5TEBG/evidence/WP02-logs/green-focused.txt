@@ -1,0 +1,989 @@
+=== RUN   TestDSTSydney
+=== RUN   TestDSTSydney/HourlySpring
+=== RUN   TestDSTSydney/HourlyFold
+=== RUN   TestDSTSydney/MinutelySpring
+=== RUN   TestDSTSydney/DailyExpansionCompatibility
+=== RUN   TestDSTSydney/DailyExpansionAligned
+=== RUN   TestDSTSydney/DailyGap
+=== RUN   TestDSTSydney/DailyFold
+=== RUN   TestDSTSydney/BYHOUR9WallClockControl
+--- PASS: TestDSTSydney (0.00s)
+    --- PASS: TestDSTSydney/HourlySpring (0.00s)
+    --- PASS: TestDSTSydney/HourlyFold (0.00s)
+    --- PASS: TestDSTSydney/MinutelySpring (0.00s)
+    --- PASS: TestDSTSydney/DailyExpansionCompatibility (0.00s)
+    --- PASS: TestDSTSydney/DailyExpansionAligned (0.00s)
+    --- PASS: TestDSTSydney/DailyGap (0.00s)
+    --- PASS: TestDSTSydney/DailyFold (0.00s)
+    --- PASS: TestDSTSydney/BYHOUR9WallClockControl (0.00s)
+=== RUN   TestDSTAllFrequencies
+=== RUN   TestDSTAllFrequencies/YEARLYGap
+=== RUN   TestDSTAllFrequencies/YEARLYFold
+=== RUN   TestDSTAllFrequencies/MONTHLYGap
+=== RUN   TestDSTAllFrequencies/MONTHLYFold
+=== RUN   TestDSTAllFrequencies/WEEKLYGap
+=== RUN   TestDSTAllFrequencies/WEEKLYFold
+=== RUN   TestDSTAllFrequencies/DAILYGap
+=== RUN   TestDSTAllFrequencies/DAILYFold
+=== RUN   TestDSTAllFrequencies/HOURLYGap
+=== RUN   TestDSTAllFrequencies/HOURLYFold
+=== RUN   TestDSTAllFrequencies/MINUTELYGap
+=== RUN   TestDSTAllFrequencies/MINUTELYFold
+=== RUN   TestDSTAllFrequencies/SECONDLYGap
+=== RUN   TestDSTAllFrequencies/SECONDLYFold
+--- PASS: TestDSTAllFrequencies (0.00s)
+    --- PASS: TestDSTAllFrequencies/YEARLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/YEARLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/MONTHLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/MONTHLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/WEEKLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/WEEKLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/DAILYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/DAILYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/HOURLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/HOURLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/MINUTELYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/MINUTELYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/SECONDLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/SECONDLYFold (0.00s)
+=== RUN   TestDSTOtherZones
+=== RUN   TestDSTOtherZones/NewYorkGap
+=== RUN   TestDSTOtherZones/NewYorkFold
+=== RUN   TestDSTOtherZones/LordHoweGap
+=== RUN   TestDSTOtherZones/LordHoweFold
+--- PASS: TestDSTOtherZones (0.00s)
+    --- PASS: TestDSTOtherZones/NewYorkGap (0.00s)
+    --- PASS: TestDSTOtherZones/NewYorkFold (0.00s)
+    --- PASS: TestDSTOtherZones/LordHoweGap (0.00s)
+    --- PASS: TestDSTOtherZones/LordHoweFold (0.00s)
+=== RUN   TestDSTBysetposRanks
+=== RUN   TestDSTBysetposRanks/3
+=== RUN   TestDSTBysetposRanks/-3
+=== RUN   TestDSTBysetposRanks/HalfHour1
+=== RUN   TestDSTBysetposRanks/HalfHour2
+=== RUN   TestDSTBysetposRanks/HalfHour3
+=== RUN   TestDSTBysetposRanks/HalfHour-1
+=== RUN   TestDSTBysetposRanks/HalfHour-2
+=== RUN   TestDSTBysetposRanks/HalfHour-3
+=== RUN   TestDSTBysetposRanks/SignedOverlapDedup
+--- PASS: TestDSTBysetposRanks (0.00s)
+    --- PASS: TestDSTBysetposRanks/3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/-3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/SignedOverlapDedup (0.00s)
+=== RUN   TestDSTPublicQueries
+=== RUN   TestDSTPublicQueries/Iterator
+=== RUN   TestDSTPublicQueries/Between
+=== RUN   TestDSTPublicQueries/After
+=== RUN   TestDSTPublicQueries/Before
+=== RUN   TestDSTPublicQueries/Set
+=== RUN   TestDSTPublicQueries/Until-1
+=== RUN   TestDSTPublicQueries/Until0
+=== RUN   TestDSTPublicQueries/Until1
+--- PASS: TestDSTPublicQueries (0.00s)
+    --- PASS: TestDSTPublicQueries/Iterator (0.00s)
+    --- PASS: TestDSTPublicQueries/Between (0.00s)
+    --- PASS: TestDSTPublicQueries/After (0.00s)
+    --- PASS: TestDSTPublicQueries/Before (0.00s)
+    --- PASS: TestDSTPublicQueries/Set (0.00s)
+    --- PASS: TestDSTPublicQueries/Until-1 (0.00s)
+    --- PASS: TestDSTPublicQueries/Until0 (0.00s)
+    --- PASS: TestDSTPublicQueries/Until1 (0.00s)
+=== RUN   TestDSTParsedAnchors
+=== RUN   TestDSTParsedAnchors/GapNominalCadence
+=== RUN   TestDSTParsedAnchors/NewYorkPregapOffset
+=== RUN   TestDSTParsedAnchors/FoldFirst
+=== RUN   TestDSTParsedAnchors/NewYorkGapSubdailyOverlap
+=== RUN   TestDSTParsedAnchors/GapSubdailyOverlap
+=== RUN   TestDSTParsedAnchors/StandaloneGap
+=== RUN   TestDSTParsedAnchors/StandaloneFold
+--- PASS: TestDSTParsedAnchors (0.00s)
+    --- PASS: TestDSTParsedAnchors/GapNominalCadence (0.00s)
+    --- PASS: TestDSTParsedAnchors/NewYorkPregapOffset (0.00s)
+    --- PASS: TestDSTParsedAnchors/FoldFirst (0.00s)
+    --- PASS: TestDSTParsedAnchors/NewYorkGapSubdailyOverlap (0.00s)
+    --- PASS: TestDSTParsedAnchors/GapSubdailyOverlap (0.00s)
+    --- PASS: TestDSTParsedAnchors/StandaloneGap (0.00s)
+    --- PASS: TestDSTParsedAnchors/StandaloneFold (0.00s)
+=== RUN   TestDSTAuthoritativeLaterFold
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Sydney
+=== RUN   TestDSTAuthoritativeLaterFold/America/New_York
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Lord_Howe
+--- PASS: TestDSTAuthoritativeLaterFold (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Sydney (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/America/New_York (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Lord_Howe (0.00s)
+=== RUN   TestDSTMetadataCopiesAndLocation
+=== RUN   TestDSTMetadataCopiesAndLocation/CopyRetainsNominal
+=== RUN   TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart
+=== RUN   TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal
+=== RUN   TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA
+--- PASS: TestDSTMetadataCopiesAndLocation (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/CopyRetainsNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA (0.00s)
+=== RUN   TestDSTEveryFrequencyEveryZone
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY
+--- PASS: TestDSTEveryFrequencyEveryZone (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY (0.00s)
+=== RUN   TestDSTCustomTZifIdentity
+--- PASS: TestDSTCustomTZifIdentity (0.00s)
+=== RUN   TestDSTAnnualTransitionRanks
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/7
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/-7
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/7
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/-7
+--- PASS: TestDSTAnnualTransitionRanks (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/YEARLY/7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/YEARLY/-7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/MONTHLY/7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/MONTHLY/-7 (0.00s)
+=== RUN   TestDSTUTCShortUntilFloatingControl
+--- PASS: TestDSTUTCShortUntilFloatingControl (0.00s)
+=== RUN   TestDSTDenseAnnualArithmetic
+--- PASS: TestDSTDenseAnnualArithmetic (0.00s)
+=== RUN   TestDSTParsedSetAnchors
+=== RUN   TestDSTParsedSetAnchors/SydneyGap
+=== RUN   TestDSTParsedSetAnchors/NYGap
+=== RUN   TestDSTParsedSetAnchors/SydneyFold
+--- PASS: TestDSTParsedSetAnchors (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/NYGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyFold (0.00s)
+=== RUN   TestDSTGapAnchorBysetposCollision
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/All
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/After
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveCollision/Until1
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/All
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/After
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until1
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/All
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/After
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/SignedControl/Until1
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/All
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Iterator
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Set
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Between
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/BetweenExclusive
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/After
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Before
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until-1
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until0
+=== RUN   TestDSTGapAnchorBysetposCollision/NegativeControl/Until1
+--- PASS: TestDSTGapAnchorBysetposCollision (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveCollision/Until1 (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/PositiveOutOfRange/Until1 (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/SignedControl/Until1 (0.00s)
+    --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/All (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Iterator (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Set (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Between (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/BetweenExclusive (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/After (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Before (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until-1 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until0 (0.00s)
+        --- PASS: TestDSTGapAnchorBysetposCollision/NegativeControl/Until1 (0.00s)
+=== RUN   TestDSTGapAnchorRankPeriods
+=== RUN   TestDSTGapAnchorRankPeriods/YEARLY
+=== RUN   TestDSTGapAnchorRankPeriods/MONTHLY
+=== RUN   TestDSTGapAnchorRankPeriods/WEEKLY
+=== RUN   TestDSTGapAnchorRankPeriods/HalfHour
+--- PASS: TestDSTGapAnchorRankPeriods (0.00s)
+    --- PASS: TestDSTGapAnchorRankPeriods/YEARLY (0.00s)
+    --- PASS: TestDSTGapAnchorRankPeriods/MONTHLY (0.00s)
+    --- PASS: TestDSTGapAnchorRankPeriods/WEEKLY (0.00s)
+    --- PASS: TestDSTGapAnchorRankPeriods/HalfHour (0.00s)
+=== RUN   TestDSTGapAnchorCrossDayRanks
+=== RUN   TestDSTGapAnchorCrossDayRanks/YEARLY/1,2
+=== RUN   TestDSTGapAnchorCrossDayRanks/YEARLY/1,3
+=== RUN   TestDSTGapAnchorCrossDayRanks/MONTHLY/1,2
+=== RUN   TestDSTGapAnchorCrossDayRanks/MONTHLY/1,3
+=== RUN   TestDSTGapAnchorCrossDayRanks/WEEKLY/1,2
+=== RUN   TestDSTGapAnchorCrossDayRanks/WEEKLY/1,3
+--- PASS: TestDSTGapAnchorCrossDayRanks (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/YEARLY/1,2 (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/YEARLY/1,3 (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/MONTHLY/1,2 (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/MONTHLY/1,3 (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/WEEKLY/1,2 (0.00s)
+    --- PASS: TestDSTGapAnchorCrossDayRanks/WEEKLY/1,3 (0.00s)
+=== RUN   TestDSTGapAnchorPeriodControls
+=== RUN   TestDSTGapAnchorPeriodControls/LaterDailyPeriodKeepsNormalRanks
+=== RUN   TestDSTGapAnchorPeriodControls/FilteredResolvedDayRetainsAnchor
+--- PASS: TestDSTGapAnchorPeriodControls (0.00s)
+    --- PASS: TestDSTGapAnchorPeriodControls/LaterDailyPeriodKeepsNormalRanks (0.00s)
+    --- PASS: TestDSTGapAnchorPeriodControls/FilteredResolvedDayRetainsAnchor (0.00s)
+=== RUN   TestTimeFormsPairMatrix
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/RRule/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/floating
+=== RUN   TestTimeFormsPairMatrix/RRule/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/RRule/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/RRule/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/ROption/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/floating
+=== RUN   TestTimeFormsPairMatrix/ROption/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/ROption/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/ROption/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/floating
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/ROptionInLocation/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/floating
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/RRuleSet/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSet/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSet/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSet/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSet/TZID/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/DATE/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/floating/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/UTC/UTC
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/DATE
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/floating
+=== RUN   TestTimeFormsPairMatrix/SliceSetInLoc/TZID/UTC
+--- PASS: TestTimeFormsPairMatrix (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRule/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROption/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/ROptionInLocation/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/RRuleSet/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSet/TZID/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/DATE/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/floating/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/floating/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/floating/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/UTC/UTC (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/DATE (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/floating (0.00s)
+    --- PASS: TestTimeFormsPairMatrix/SliceSetInLoc/TZID/UTC (0.00s)
+=== RUN   TestTimeFormsRoundTrip
+=== RUN   TestTimeFormsRoundTrip/RRule/floating
+=== RUN   TestTimeFormsRoundTrip/RRule/DATE
+=== RUN   TestTimeFormsRoundTrip/RRule/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/RRule/UTC
+=== RUN   TestTimeFormsRoundTrip/RRule/TZID
+=== RUN   TestTimeFormsRoundTrip/ROption/floating
+=== RUN   TestTimeFormsRoundTrip/ROption/DATE
+=== RUN   TestTimeFormsRoundTrip/ROption/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/ROption/UTC
+=== RUN   TestTimeFormsRoundTrip/ROption/TZID
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/floating
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/DATE
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/UTC
+=== RUN   TestTimeFormsRoundTrip/ROptionInLocation/TZID
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/floating
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/DATE
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/UTC
+=== RUN   TestTimeFormsRoundTrip/RRuleSet/TZID
+=== RUN   TestTimeFormsRoundTrip/SliceSet/floating
+=== RUN   TestTimeFormsRoundTrip/SliceSet/DATE
+=== RUN   TestTimeFormsRoundTrip/SliceSet/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/SliceSet/UTC
+=== RUN   TestTimeFormsRoundTrip/SliceSet/TZID
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/floating
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/DATE
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/legacyDATE
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/UTC
+=== RUN   TestTimeFormsRoundTrip/SliceSetInLoc/TZID
+--- PASS: TestTimeFormsRoundTrip (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRule/TZID (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROption/TZID (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/ROptionInLocation/TZID (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/RRuleSet/TZID (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSet/TZID (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/floating (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/DATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/legacyDATE (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/UTC (0.00s)
+    --- PASS: TestTimeFormsRoundTrip/SliceSetInLoc/TZID (0.00s)
+=== RUN   TestTimeFormsParameters
+=== RUN   TestTimeFormsParameters/RRule/explicit-floating
+=== RUN   TestTimeFormsParameters/RRule/explicit-UTC
+=== RUN   TestTimeFormsParameters/RRule/explicit-TZID
+=== RUN   TestTimeFormsParameters/RRule/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-Z
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-date
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/RRule/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/RRule/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/RRule/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/ROption/explicit-floating
+=== RUN   TestTimeFormsParameters/ROption/explicit-UTC
+=== RUN   TestTimeFormsParameters/ROption/explicit-TZID
+=== RUN   TestTimeFormsParameters/ROption/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-Z
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-date
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/ROption/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/ROption/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/ROption/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-floating
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-UTC
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-TZID
+=== RUN   TestTimeFormsParameters/ROptionInLocation/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-Z
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-date
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/ROptionInLocation/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/ROptionInLocation/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-floating
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-UTC
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-TZID
+=== RUN   TestTimeFormsParameters/RRuleSet/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-Z
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-date
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/RRuleSet/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/RRuleSet/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-floating
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-UTC
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-TZID
+=== RUN   TestTimeFormsParameters/SliceSet/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-Z
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-date
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/SliceSet/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/SliceSet/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/SliceSet/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-floating
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-UTC
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-TZID
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-Z
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-date
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/SliceSetInLoc/datetime-declared-DATE
+=== RUN   TestTimeFormsParameters/standalone/explicit-floating
+=== RUN   TestTimeFormsParameters/standalone/explicit-UTC
+=== RUN   TestTimeFormsParameters/standalone/explicit-TZID
+=== RUN   TestTimeFormsParameters/standalone/explicit-TZID-reverse
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-Z
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-date
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-canonical-date
+=== RUN   TestTimeFormsParameters/standalone/TZID-on-canonical-date-reverse
+=== RUN   TestTimeFormsParameters/standalone/DATE-declared-datetime
+=== RUN   TestTimeFormsParameters/standalone/datetime-declared-DATE
+--- PASS: TestTimeFormsParameters (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/RRule/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/ROption/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/ROptionInLocation/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/RRuleSet/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSet/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/SliceSetInLoc/datetime-declared-DATE (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/explicit-floating (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/explicit-UTC (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/explicit-TZID (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/explicit-TZID-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/TZID-on-Z (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/TZID-on-date (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/TZID-on-canonical-date (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/TZID-on-canonical-date-reverse (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/DATE-declared-datetime (0.00s)
+    --- PASS: TestTimeFormsParameters/standalone/datetime-declared-DATE (0.00s)
+=== RUN   TestTimeFormsOrder
+=== RUN   TestTimeFormsOrder/RRule/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/RRule/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/RRule/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/RRule/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/ROption/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/ROption/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/ROption/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/ROption/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/RRuleSet/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSet/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=false/ROptionInLocation
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=false/invalid=true/ROptionInLocation
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=false/ROptionInLocation
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/RRule
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/ROption
+=== RUN   TestTimeFormsOrder/inline/reverse=true/invalid=true/ROptionInLocation
+--- PASS: TestTimeFormsOrder (0.00s)
+    --- PASS: TestTimeFormsOrder/RRule/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/RRule/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/RRule/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/RRule/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROption/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/ROption/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROption/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/ROption/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/ROptionInLocation/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/ROptionInLocation/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/RRuleSet/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/RRuleSet/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/RRuleSet/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/RRuleSet/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSet/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSet/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSet/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSet/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSetInLoc/reverse=false/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=false (0.00s)
+    --- PASS: TestTimeFormsOrder/SliceSetInLoc/reverse=true/invalid=true (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=false/ROptionInLocation (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=true (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=true/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=true/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=false/invalid=true/ROptionInLocation (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=false/ROptionInLocation (0.00s)
+    --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=true (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=true/RRule (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=true/ROption (0.00s)
+        --- PASS: TestTimeFormsOrder/inline/reverse=true/invalid=true/ROptionInLocation (0.00s)
+=== RUN   TestTimeFormsSharedSetValidation
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos0
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos1
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos2
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3
+=== RUN   TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+=== RUN   TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+=== RUN   TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959
+--- PASS: TestTimeFormsSharedSetValidation (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/overwritten-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/ignored-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-bypass/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/matching-inline/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/overwritten-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/ignored-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-bypass/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/matching-inline/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/overwritten-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/ignored-invalid/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-bypass/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/inline-anchor/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/valid-last-wins-ignore/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos0 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos1 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/matching-inline/start-pos2 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/New_York:20180101T090000_RRULE:FREQ=WEEKLY;COUNT=2_EXRULE:FREQ=MONTHLY;UNTIL=20180520;BYMONTHDAY=1,2,3 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/RRuleSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSet/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+    --- PASS: TestTimeFormsSharedSetValidation/SliceSetInLoc/old-fixture/DTSTART;TZID=America/Los_Angeles:20181115T000000_RRULE:FREQ=DAILY;INTERVAL=1;WKST=SU;UNTIL=20181117T235959 (0.00s)
+=== RUN   TestTimeFormsCopiesAndSetters
+=== RUN   TestTimeFormsCopiesAndSetters/copied
+=== RUN   TestTimeFormsCopiesAndSetters/replace-start
+=== RUN   TestTimeFormsCopiesAndSetters/replace-until
+=== RUN   TestTimeFormsCopiesAndSetters/same-instant-other-start-location
+=== RUN   TestTimeFormsCopiesAndSetters/same-instant-other-until-location
+--- PASS: TestTimeFormsCopiesAndSetters (0.00s)
+    --- PASS: TestTimeFormsCopiesAndSetters/copied (0.00s)
+    --- PASS: TestTimeFormsCopiesAndSetters/replace-start (0.00s)
+    --- PASS: TestTimeFormsCopiesAndSetters/replace-until (0.00s)
+    --- PASS: TestTimeFormsCopiesAndSetters/same-instant-other-start-location (0.00s)
+    --- PASS: TestTimeFormsCopiesAndSetters/same-instant-other-until-location (0.00s)
+=== RUN   TestTimeFormsExactLocations
+=== RUN   TestTimeFormsExactLocations/IANA/until=false
+=== RUN   TestTimeFormsExactLocations/IANA/until=true
+=== RUN   TestTimeFormsExactLocations/fixed/until=false
+=== RUN   TestTimeFormsExactLocations/fixed/until=true
+=== RUN   TestTimeFormsExactLocations/TZif/until=false
+=== RUN   TestTimeFormsExactLocations/TZif/until=true
+--- PASS: TestTimeFormsExactLocations (0.00s)
+    --- PASS: TestTimeFormsExactLocations/IANA/until=false (0.00s)
+    --- PASS: TestTimeFormsExactLocations/IANA/until=true (0.00s)
+    --- PASS: TestTimeFormsExactLocations/fixed/until=false (0.00s)
+    --- PASS: TestTimeFormsExactLocations/fixed/until=true (0.00s)
+    --- PASS: TestTimeFormsExactLocations/TZif/until=false (0.00s)
+    --- PASS: TestTimeFormsExactLocations/TZif/until=true (0.00s)
+=== RUN   TestTimeFormsFragmentsAndProgrammatic
+--- PASS: TestTimeFormsFragmentsAndProgrammatic (0.00s)
+=== RUN   TestTimeFormsIntegratedGapBysetpos
+--- PASS: TestTimeFormsIntegratedGapBysetpos (0.00s)
+=== RUN   TestTimeFormsExplicitGapTextAndUntil
+=== RUN   TestTimeFormsExplicitGapTextAndUntil/start-text
+=== RUN   TestTimeFormsExplicitGapTextAndUntil/until-gap
+--- PASS: TestTimeFormsExplicitGapTextAndUntil (0.00s)
+    --- PASS: TestTimeFormsExplicitGapTextAndUntil/start-text (0.00s)
+    --- PASS: TestTimeFormsExplicitGapTextAndUntil/until-gap (0.00s)
+=== RUN   TestTimeFormsLegacyExruleUnknownControl
+--- PASS: TestTimeFormsLegacyExruleUnknownControl (0.00s)
+=== RUN   TestTimeFormsDateCopyAndSet
+--- PASS: TestTimeFormsDateCopyAndSet (0.00s)
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=true
+--- PASS: TestTimeFormsSeparateStartCannotBeOverridden (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=true (0.00s)
+=== RUN   TestTimeFormsKeyedPublicAPI
+--- PASS: TestTimeFormsKeyedPublicAPI (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.017s
+exit=0

@@ -1,0 +1,7 @@
+Independent focused post-plan rereview. DO NOT EDIT ANY FILES. Read only. No workflow commands, Git mutations, network/publication requests, contacts or subagents.
+
+Read kitty-specs/module-path-v1-9-0-01M62K6W/reviews/post-plan-review.md and post-plan-disposition.md, then updated spec.md, plan.md, research.md, data-model.md, quickstart.md, occurrence_map.yaml, contracts/module-migration.md and drafts/*.md. Verify both earlier findings are substantively fixed: (P1) dependency preflight before protective replacement removal, warning that retained old-path consumers can revert to unfixed upstream, coordinated migration or remaining pinned; (P2) golden driver header and adjacent README included in scope/map, correct old-snapshot and new-candidate drivers while preserving historical JSON.
+
+Also check coherent root MIGRATION.md choice and concrete later public-port allowlist. Respect Kent's simple verification decision: no synthetic proxy, no test framework for established Go semantics. Local consumer replacement plus explicit declaration inspection is accepted with public download verification deferred. No implementation or publication is authorized. Later Vikunja integration is deferred until readiness/authorization. Occurrence map approval can remain pending for implementation.
+
+Report unresolved significant findings only with conditions/likelihood and smallest fix, or explicitly state both findings resolved and no significant blockers to planning completion. Do not claim implementation or public release verification occurred.

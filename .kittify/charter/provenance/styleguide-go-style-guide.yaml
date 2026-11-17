@@ -1,0 +1,21 @@
+adapter_id: generated
+adapter_notes: 
+  generated-artifact:.kittify/charter/generated/styleguides/go-style-guide.styleguide.yaml
+adapter_version: 1.0.0
+artifact_content_hash: 
+  0afa9462cebb56f20c633c6566fc029236293b7e486858b0a11cdea94d0130cc
+artifact_kind: styleguide
+artifact_slug: go-style-guide
+artifact_urn: styleguide:go-style-guide
+corpus_snapshot_id: generic-v1.0.0
+evidence_bundle_hash: 
+  4dd8f64ae139b33d1f468ec617857ef78b2a0c2ad9b9f181b58bab231ff91547
+generated_at: '2026-10-25T06:16:49.719867+00:00'
+inputs_hash: 6eb9d91418ed00628b78481989a135df147cdfd055d1dbfa4ef916d448b96c4a
+produced_at: '2026-10-25T06:17:04.131154+00:00'
+schema_version: '2'
+source_input_ids: []
+source_section: language_scope
+source_urns: []
+synthesis_run_id: 44AA0EFBCC2040E592D62C9142
+synthesizer_version: 4.0.0rc8

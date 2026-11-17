@@ -1,0 +1,31 @@
+mission: teambition-backlog-01M5TEBG
+resolved write surface: ~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG
+target branch: fix/teambition-backlog
+canonical writer result: WriteSeamResult(status='committed', entry_id='codex', destination_surface='fix/teambition-backlog', commit_hash='2494441bc0ca1aac11bad486951faa8a12b5d8ae', diagnostic=None, surfaces=(SurfaceOutcome(surface='primary', branch='fix/teambition-backlog', status='committed', commit_hash='2494441bc0ca1aac11bad486951faa8a12b5d8ae', committed=('kitty-specs/teambition-backlog-01M5TEBG/issue-matrix.json',), skipped=(), refused=(), diagnostic=None),), commit_hashes=(('fix/teambition-backlog', '2494441bc0ca1aac11bad486951faa8a12b5d8ae'),), reason=None)
+readback PASS: public repo-qualified #5/#6 in-mission; all siblings preserved
+{
+  "#5": {
+    "verdict": "in-mission",
+    "evidence_ref": "Public kentonium3/rrule-go#5: WP01 implementation is under independent gpt-6-astra review; a defect was found and correction/re-review remains owed. No fixed verdict claimed.",
+    "title": "Public kentonium3/rrule-go#5: RFC civil times across DST",
+    "scope": "Public kentonium3/rrule-go#5 is in mission teambition-backlog; private development only.",
+    "wp": "WP01",
+    "fr": "FR-001, FR-002, FR-007, FR-008",
+    "nfr": null,
+    "sc": null,
+    "repo": "kentonium3/rrule-go",
+    "source_file": "docs/issues/05-dst-sub-daily.md"
+  },
+  "#6": {
+    "verdict": "in-mission",
+    "evidence_ref": "Public kentonium3/rrule-go#6: WP02 remains planned, dependent on WP01 approval. Implementation and independent review remain owed. No fixed verdict claimed.",
+    "title": "Public kentonium3/rrule-go#6: Floating DTSTART and UNTIL forms",
+    "scope": "Public kentonium3/rrule-go#6 is in mission teambition-backlog; private development only.",
+    "wp": "WP02",
+    "fr": "FR-003, FR-004, FR-005, FR-007, FR-008",
+    "nfr": null,
+    "sc": null,
+    "repo": "kentonium3/rrule-go",
+    "source_file": "docs/issues/06-floating-until.md"
+  }
+}

@@ -1,0 +1,3 @@
+Original799baseline rows exactly equal committedaf86249 artifact; all original799current rows exactly equal prioraccepted-output snapshot /tmp/rrule-current-dst.json. PASS
+Baseline artifact regenerated solely by /tmp/rrule-dst-golden-baseline (unchanged driver compiled against76c646d).
+New baseline SHA256:68fbd11d9cf3ca187dc473a543876196c23552ea5c2bb1b45f1ca561f75bd226

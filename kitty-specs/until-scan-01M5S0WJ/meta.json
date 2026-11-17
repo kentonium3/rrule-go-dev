@@ -1,0 +1,37 @@
+{
+  "accept_commit": "f01ed039f7954a87cb4a69563e22216bb4e91ace",
+  "acceptance_history": [
+    {
+      "accept_commit": "f01ed039f7954a87cb4a69563e22216bb4e91ace",
+      "acceptance_mode": "local",
+      "accepted_at": "2026-10-25T08:25:10.983933+00:00",
+      "accepted_by": "codex",
+      "accepted_from_commit": "aae3f8d184bd37932d741ded99dec85e8610fa02"
+    }
+  ],
+  "acceptance_mode": "local",
+  "accepted_at": "2026-10-25T08:25:10.983933+00:00",
+  "accepted_by": "codex",
+  "accepted_from_commit": "aae3f8d184bd37932d741ded99dec85e8610fa02",
+  "baseline_merge_commit": "b64e7e1ae66b732fac8ccad8306c3b2fad68137d",
+  "contracts": "none",
+  "contracts_rationale": "Internal iterator optimization only; no exported interfaces added or changed.",
+  "created_at": "2026-10-25T07:55:01.904649+00:00",
+  "flattened": true,
+  "friendly_name": "Bound recurrence scans by UNTIL",
+  "merged_at": "2026-10-25T08:26:00.785854+00:00",
+  "merged_commit": "4f81fc829b33ecb97c75e1fda98fc4d34de615e9",
+  "mid8": "01M5S0WJ",
+  "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+  "mission_number": 3,
+  "mission_slug": "until-scan-01M5S0WJ",
+  "mission_type": "software-dev",
+  "pr_bound": true,
+  "purpose_context": "Kent authorized the next optional priority after private PR 10 merged. Address issue 6 with early safe period exhaustion, preserving inclusive UNTIL, all correct recurrence sequences and exported APIs. Include DST and sub-daily compatibility controls and independent review.",
+  "purpose_tldr": "Stop never-matching recurrence scans at the effective UNTIL horizon without changing occurrences.",
+  "slug": "until-scan-01M5S0WJ",
+  "status_phase": "1",
+  "target_branch": "fix/until-scan",
+  "vcs": "git",
+  "vcs_locked_at": "2026-10-25T08:15:56.767554+00:00"
+}

@@ -1,0 +1,16 @@
+CWD:~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTParsedSetAnchors$ -v
+EXIT:1
+=== RUN   TestDSTParsedSetAnchors
+=== RUN   TestDSTParsedSetAnchors/SydneyGap
+    rrule_dst_test.go:486: [1] got 2022-10-03 03:30:00 +1100 AEDT (2022-10-02 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+=== RUN   TestDSTParsedSetAnchors/NYGap
+    rrule_dst_test.go:486: [1] got 2023-03-13 03:30:00 -0400 EDT (2023-03-13 07:30:00 +0000 UTC), want 2023-03-13T06:30:00Z
+=== RUN   TestDSTParsedSetAnchors/SydneyFold
+--- FAIL: TestDSTParsedSetAnchors (0.00s)
+    --- FAIL: TestDSTParsedSetAnchors/SydneyGap (0.00s)
+    --- FAIL: TestDSTParsedSetAnchors/NYGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyFold (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

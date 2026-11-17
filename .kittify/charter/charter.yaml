@@ -1,0 +1,148 @@
+governance:
+  testing:
+    tdd_required: true
+    framework: go test
+    type_checking: go vet
+  quality:
+    linting: gofmt -l .; go vet ./...
+    pr_approvals: 1
+    pre_commit_hooks: false
+  commits:
+    convention: conventional
+  branch_strategy:
+    main_branch: main
+    rules:
+    - Develop on scoped branches; merge to main only when Kent authorizes it.
+    - Scoped staging; never force-push or git stash; never push upstream.
+  charter:
+    selected_paradigms: []
+    selected_directives: []
+    governance_references:
+    - AGENTS.md
+    - docs/CONTEXT.md
+    authority_paths:
+    - docs/issues/
+directives:
+  directives:
+  - id: RRULE-001
+    title: Compatibility and minimal fixes
+    severity: error
+    description: >-
+      RFC 5545 is normative in all cases. Preserve exported types, functions,
+      methods and signatures. Change behavior only where RFC 5545 requires it
+      within the issue acceptance scope, or to prevent accepted input panics or
+      hangs. Prove all other occurrences and String() output byte-identical to
+      v1.8.3 plus inherited contributor fix76c646d with a golden comparison. No new dependencies. Prefer the smallest
+      root-cause fix; state each finding's conditions and likelihood. Go 1.16
+      remains the minimum. Any exported addition needs plan justification and
+      a minor release. Record RFC corrections and behavior changes in the spec
+      and release notes. Kent explicitly approved private ROption parse metadata
+      and targetv1.9.0 on2026-10-25: signatures and keyed callers remain, but
+      formerly valid external positional ROption literals break; disclose that
+      exception and migration to keyed literals.
+  - id: RRULE-002
+    title: Test-first verification and independent review
+    severity: error
+    description: >-
+      Regression tests must fail before the fix and pass after. Run go test ./...,
+      go test -race ./..., go vet ./..., and gofmt -l .; fuzz BY* and INTERVAL
+      domains for 60 seconds in the panic mission. Review each work package with a
+      different model from its implementer and record both identities and date.
+      Same-model review is degraded and does not silently satisfy this requirement.
+  - id: RRULE-003
+    title: Public development workspace and coordinated release
+    severity: error
+    description: >-
+      The maintained library is kentonium3/rrule-go; it alone carries release
+      tags, issues and contributions. This development repository
+      kentonium3/rrule-go-dev is public (since 2026-11-17; private history is
+      kept in a private archive) and holds Spec Kitty records and development
+      docs only. Never push upstream. Any public posting, push to the public
+      library repo, PR, tag or release requires Kent's sign-off on the exact
+      copy. Never commit content from private systems or other private
+      repositories here. Sending messages requires explicit authorization.
+      Preserve MIT LICENSE and README modified-copy notice.
+  - id: RRULE-004
+    title: Scope and operational discipline
+    severity: error
+    description: >-
+      Scope is public issues kentonium3/rrule-go#5 (DST) and #6 (floating
+      UNTIL), as one mission with two work packages, one per issue. Issue7 is
+      inherited contributor baseline at76c646d; do not assess or extend it. Follow docs/runbooks/teambition-backlog.md: specify, plan,
+      independent post-plan review, tasks, analyze, implement/review, accept,
+      consolidate and integrated final review. Apply the autonomous D-3 fault
+      protocol: preserve evidence before mutation, diagnose, validate and record
+      safe recovery; stop on unsafe failures or genuine scope decisions. Deliver
+      a PR to main without merging it. The separate charter-update PR
+      is authorized to merge first. No public actions or issue-closing keywords
+      in commits. Use scoped Conventional Commits; never force-push or stash.
+catalog:
+  mission: software-dev
+  template_set: software-dev-default
+  languages:
+  - go
+  references:
+  - id: TACTIC:acceptance-criteria-non-vacuity
+    kind: tactic
+    title: Acceptance Criteria Non-Vacuity
+    summary: "Prove that each acceptance criterion, and the test that stands in for it, could actually fail. A criterion a no-op change would satisfy proves nothing about the delivered behavior; a refusal or absence probe that could not have seen the thing it asserts is missing proves nothing about the production path. This tactic is the single canonical definition of the delivery labels, the no-op-passable mark, and the three rules that keep acceptance criteria and their tests non-vacuous.\n"
+    source_path: ''
+    local_path: _LIBRARY/tactic-acceptance-criteria-non-vacuity.md
+  - id: TACTIC:acceptance-test-first
+    kind: tactic
+    title: Acceptance Test Driven Development (ATDD)
+    summary: Anchor implementation work in externally observable behavior before internal coding begins.
+    source_path: ''
+    local_path: _LIBRARY/tactic-acceptance-test-first.md
+  - id: TACTIC:mutation-testing-workflow
+    kind: tactic
+    title: Mutation Testing Workflow
+    summary: "Verify that tests detect real bugs — not merely execute code. Mutation testing answers \"if I introduced a bug here, would my tests fail?\" where coverage only answers \"did my tests run this line?\".\n"
+    source_path: ''
+    local_path: _LIBRARY/tactic-mutation-testing-workflow.md
+  - id: TACTIC:review-policy-tactic
+    kind: tactic
+    title: Independent model review
+    summary: Verify each work package through a model different from its implementer.
+    source_path: ''
+    local_path: _LIBRARY/tactic-review-policy-tactic.md
+  - id: TACTIC:tdd-red-green-refactor
+    kind: tactic
+    title: Test Driven Development (TDD)
+    summary: Enforce short, verifiable coding loops that improve design while keeping behavior safe.
+    source_path: ''
+    local_path: _LIBRARY/tactic-tdd-red-green-refactor.md
+  - id: TACTIC:testing-philosophy-tactic
+    kind: tactic
+    title: Go regression-first development
+    summary: Demonstrate accepted-input failures before fixing them, then prove the fix and preserved behavior.
+    source_path: ''
+    local_path: _LIBRARY/tactic-testing-philosophy-tactic.md
+  - id: TEMPLATE_SET:software-dev-default
+    kind: template_set
+    title: software-dev-default
+    summary: Build high-quality software with structured workflows and test-driven development
+    source_path: ${SPEC_KITTY_PACKS_ROOT}/built-in/missions/software-dev/mission.yaml
+    local_path: _LIBRARY/template-set-software-dev-default.md
+  - id: TOOLGUIDE:python-mutation-tools
+    kind: toolguide
+    title: python-mutation-tools
+    summary: "Definition unavailable in bundled doctrine. Reason: scope_filtered — artifact 'python-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language')."
+    source_path: ''
+    local_path: _LIBRARY/toolguide-python-mutation-tools.md
+  - id: TOOLGUIDE:typescript-mutation-tools
+    kind: toolguide
+    title: typescript-mutation-tools
+    summary: "Definition unavailable in bundled doctrine. Reason: scope_filtered — artifact 'typescript-mutation-tools' is scoped to specific languages and does not apply to a project whose language Spec Kitty does not recognise. No specialist guidance exists for this project's language; add tech-specific guidelines to your local charter (see 'Extend your charter for an unsupported language')."
+    source_path: ''
+    local_path: _LIBRARY/toolguide-typescript-mutation-tools.md
+  - id: USER:PROJECT_PROFILE
+    kind: user_profile
+    title: User Project Profile
+    summary: Project-specific interview answers captured for charter compilation.
+    source_path: .kittify/charter/interview/answers.yaml
+    local_path: _LIBRARY/user-project-profile.md
+metadata:
+  generated_at: '2026-10-25T21:07:07Z'
+  bundle_schema_version: 2
+schema_version: 2.0.0

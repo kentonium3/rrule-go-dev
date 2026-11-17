@@ -1,0 +1,39 @@
+{
+  "mission_slug": "unreachable-byset-hang-01M5RZ90",
+  "mission_number": "",
+  "mission_type": "",
+  "overall_verdict": "pass",
+  "criteria": [
+    {
+      "criterion_id": "FR-001",
+      "description": "Verify FR-001 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "reviews/WP01-review.md; evidence/WP01-implementation.md; commit 78f4ed5; independent gpt-6-astra approval",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T07:46:41.332616+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    },
+    {
+      "criterion_id": "FR-002",
+      "description": "Verify FR-002 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "reviews/WP01-review.md; evidence/WP01-implementation.md; commit 78f4ed5; independent gpt-6-astra approval",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T07:46:45.414952+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    },
+    {
+      "criterion_id": "FR-003",
+      "description": "Verify FR-003 is satisfied",
+      "proof_type": "automated_test",
+      "evidence": "reviews/WP01-review.md; evidence/WP01-implementation.md; commit 78f4ed5; independent gpt-6-astra approval",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T07:46:49.227807+00:00",
+      "notes": "TODO: replace with a real acceptance criterion"
+    }
+  ],
+  "negative_invariants": []
+}

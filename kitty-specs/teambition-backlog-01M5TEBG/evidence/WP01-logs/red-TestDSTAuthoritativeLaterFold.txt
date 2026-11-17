@@ -1,0 +1,18 @@
+Baseline HEAD a0ea3af6 (source inherited76c646d)
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTAuthoritativeLaterFold$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTAuthoritativeLaterFold
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Sydney
+=== RUN   TestDSTAuthoritativeLaterFold/America/New_York
+    rrule_dst_test.go:261: [0] got 2023-11-06 01:30:00 -0500 EST (2023-11-06 06:30:00 +0000 UTC), want 2023-11-05T06:30:00Z
+    rrule_dst_test.go:261: [1] got 2023-11-07 01:30:00 -0500 EST (2023-11-07 06:30:00 +0000 UTC), want 2023-11-06T06:30:00Z
+    rrule_dst_test.go:263: [0] got 2023-11-06 01:30:00 -0500 EST (2023-11-06 06:30:00 +0000 UTC), want 2023-11-05T06:30:00Z
+    rrule_dst_test.go:263: [1] got 2023-11-07 01:30:00 -0500 EST (2023-11-07 06:30:00 +0000 UTC), want 2023-11-06T06:30:00Z
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Lord_Howe
+--- FAIL: TestDSTAuthoritativeLaterFold (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Sydney (0.00s)
+    --- FAIL: TestDSTAuthoritativeLaterFold/America/New_York (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Lord_Howe (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

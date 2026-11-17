@@ -1,0 +1,97 @@
+{
+  "event_count": 19,
+  "last_event_id": "01M5TKRBRZXMC3YDYA1MS69AV3",
+  "materialized_at": "2026-10-25T22:44:00.927232+00:00",
+  "mission_number": "4",
+  "mission_slug": "teambition-backlog-01M5TEBG",
+  "mission_type": "software-dev",
+  "schema_version": 2,
+  "summary": {
+    "approved": 0,
+    "blocked": 0,
+    "canceled": 0,
+    "claimed": 0,
+    "done": 2,
+    "for_review": 0,
+    "in_progress": 0,
+    "in_review": 0,
+    "planned": 0
+  },
+  "work_packages": {
+    "WP01": {
+      "actor": "merge",
+      "agent": "codex",
+      "agent_profile": "__resolved_profile_absent__",
+      "agent_profile_version": "__resolved_profile_version_absent__",
+      "assignee": "codex",
+      "force_count": 1,
+      "implementer_of_record": "codex",
+      "lane": "done",
+      "last_event_id": "01M5TKRB56XY821NJVWPFQN5AM",
+      "last_transition_at": "2026-10-25T22:44:00.294568+00:00",
+      "model": "__resolved_model_absent__",
+      "notes": [
+        "gpt-6.1-sol implementation af862491333c8a06fdb30bb60a58619e65e9baa6; red/green/golden/benchmark evidence persisted; independent gpt-6-astra review next, 2026-10-25",
+        "Independent gpt-6-astra review rejected af86249: deduplicate explicit gap-anchor collision before BYSETPOS rank selection; 2026-10-25",
+        "gpt-6.1-sol R1 correction ef373a5872dba30063a6a706275a28e46508af77; red/green/golden/performance evidence persisted; independent re-review next",
+        "gpt-6-astra independently approved ef373a5872dba30063a6a706275a28e46508af77 on 2026-10-25; durable reviews/WP01-rereview.md and rerun evidence"
+      ],
+      "provider": "__resolved_provider_absent__",
+      "review": null,
+      "review_result": {
+        "feedback_path": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG/tasks/WP01-civil-time/review-cycle-2.md",
+        "reference": "review-cycle://teambition-backlog-01M5TEBG/WP01-civil-time/review-cycle-2.md",
+        "reviewer": "codex",
+        "verdict": "approved"
+      },
+      "role": "reviewer",
+      "shell_pid": 3568,
+      "shell_pid_created_at": "1791989567.33",
+      "subtasks": {
+        "T001": "done",
+        "T002": "done",
+        "T003": "done",
+        "T004": "done",
+        "T005": "done",
+        "T006": "done",
+        "T007": "done"
+      }
+    },
+    "WP02": {
+      "actor": "merge",
+      "agent": "codex",
+      "agent_profile": "__resolved_profile_absent__",
+      "agent_profile_version": "__resolved_profile_version_absent__",
+      "assignee": "codex",
+      "force_count": 0,
+      "implementer_of_record": "codex",
+      "lane": "done",
+      "last_event_id": "01M5TKRBRZXMC3YDYA1MS69AV3",
+      "last_transition_at": "2026-10-25T22:44:00.927232+00:00",
+      "model": "__resolved_model_absent__",
+      "notes": [
+        "gpt-6.1-sol implementation 62b2527, final head 0f7154e7bdb98b7e2de3e22ed2db78b8bfe0ce53; red/green/fullrace/fuzz969golden evidence persisted, independent review next",
+        "gpt-6-astra approved exact 0f7154e7bdb98b7e2de3e22ed2db78b8bfe0ce53 on 2026-10-25; reviews/WP02-review.md. Implementer gpt-6.1-sol."
+      ],
+      "provider": "__resolved_provider_absent__",
+      "review_result": {
+        "feedback_path": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG/tasks/WP02-time-forms/review-cycle-1.md",
+        "reference": "review-cycle://teambition-backlog-01M5TEBG/WP02-time-forms/review-cycle-1.md",
+        "reviewer": "codex",
+        "verdict": "approved"
+      },
+      "role": "reviewer",
+      "shell_pid": 3568,
+      "shell_pid_created_at": "1791989567.33",
+      "subtasks": {
+        "T008": "done",
+        "T009": "done",
+        "T010": "done",
+        "T011": "done",
+        "T012": "done",
+        "T013": "done",
+        "T014": "done"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+CWD: ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go116-cache /tmp/rrule-go116-toolchain/go/bin/go version
+EXIT: 0
+go version go1.16.15 linux/amd64

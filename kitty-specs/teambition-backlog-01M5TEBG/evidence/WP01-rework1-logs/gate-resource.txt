@@ -1,0 +1,10 @@
+CWD:~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND:GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTDenseAnnualArithmetic$ -bench BenchmarkDSTAnnualBysetpos -benchmem -benchtime=1s -count=1
+EXIT:0
+goos: linux
+goarch: amd64
+pkg: github.com/teambition/rrule-go
+cpu: AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          
+BenchmarkDSTAnnualBysetpos-32    	     961	   1055523 ns/op	 2226026 B/op	      47 allocs/op
+PASS
+ok  	github.com/teambition/rrule-go	2.143s

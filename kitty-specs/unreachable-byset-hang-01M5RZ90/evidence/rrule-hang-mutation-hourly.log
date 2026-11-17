@@ -1,0 +1,9 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/hourly/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=hourly/string/All elapsed=496.943351ms
+--- PASS: TestClockReachability (0.50s)
+    --- PASS: TestClockReachability/hourly/string/All (0.50s)
+PASS
+ok  	github.com/teambition/rrule-go	0.503s
+
+EXIT=0

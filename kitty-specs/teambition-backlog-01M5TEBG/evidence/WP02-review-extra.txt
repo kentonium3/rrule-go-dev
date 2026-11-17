@@ -1,0 +1,25 @@
+TZID UTC/RRULE/Z=false pass=true StrToROption failed: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+TZID UTC/RRULE/Z=true pass=true <nil>
+TZID UTC/EXRULE/Z=false pass=true EXRULE: UNTIL value type/time form must match DTSTART (UTC UNTIL required for UTC/TZID DTSTART)
+TZID UTC/EXRULE/Z=true pass=true <nil>
+sharedDATE/20201228 pass=true <nil>
+sharedDATE/20201228T000000 pass=true StrToROption failed: DTSTART conflicts with shared DTSTART
+sharedDATE/20201229 pass=true StrToROption failed: DTSTART conflicts with shared DTSTART
+gap nominal shared/20260308T023000 pass=true <nil>
+gap nominal shared/20260308T033000 pass=true StrToROption failed: DTSTART conflicts with shared DTSTART
+shared-only private transfer pass=true DTSTART:20260307T090000
+RRULE:FREQ=DAILY;COUNT=3
+shared-only pointer pass=true America/New_York
+shared-only values pass=true 2026-03-07T14:00:00Z,2026-03-08T13:00:00Z,2026-03-09T13:00:00Z
+public set replaces form pass=true DTSTART;TZID=America/New_York:20260307T090000
+RRULE:FREQ=DAILY;COUNT=3
+floating DST pass=true 2026-03-07T07:30:00Z,2026-03-09T06:30:00Z,2026-03-10T06:30:00Z
+floating reparse pass=true DTSTART:20260307T023000
+RRULE:FREQ=DAILY;UNTIL=20260310T023000
+cleared Until pass=true DTSTART:20260307T023000
+RRULE:FREQ=DAILY
+cleared start perpart pass=true FREQ=DAILY;UNTIL=20260310T023000
+source unchanged pass=true DTSTART:20260307T023000
+RRULE:FREQ=DAILY;UNTIL=20260310T023000
+late shared date properties pass=true 2026-03-07T14:00:00Z,2026-03-09T13:00:00Z,2026-03-10T13:00:00Z
+failures=0

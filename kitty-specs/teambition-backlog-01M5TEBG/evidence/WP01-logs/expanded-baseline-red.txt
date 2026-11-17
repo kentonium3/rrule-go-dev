@@ -1,0 +1,141 @@
+CWD: /tmp/rrule-WP01-baseline-testing
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDST(EveryFrequencyEveryZone|AnnualTransitionRanks)$ -v
+EXIT: 1
+=== RUN   TestDSTEveryFrequencyEveryZone
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/YEARLY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-13T06:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-13T06:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-13T06:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/DAILY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-13T06:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/HOURLY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-12T07:15:00Z
+    rrule_dst_test.go:393: nonascending instances: [2023-03-12 01:15:00 -0500 EST 2023-03-12 01:15:00 -0500 EST]
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-12T07:15:00Z
+    rrule_dst_test.go:393: nonascending instances: [2023-03-12 01:15:00 -0500 EST 2023-03-12 01:15:00 -0500 EST]
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY
+    rrule_dst_test.go:393: [1] got 2023-03-12 01:15:00 -0500 EST (2023-03-12 06:15:00 +0000 UTC), want 2023-03-12T07:15:00Z
+    rrule_dst_test.go:393: nonascending instances: [2023-03-12 01:15:00 -0500 EST 2023-03-12 01:15:00 -0500 EST]
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY
+    rrule_dst_test.go:393: [1] got 2022-10-02 03:15:00 +1100 AEDT (2022-10-01 16:15:00 +0000 UTC), want 2022-10-02T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY
+    rrule_dst_test.go:393: [1] got 2022-10-02 03:15:00 +1100 AEDT (2022-10-01 16:15:00 +0000 UTC), want 2022-10-02T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY
+    rrule_dst_test.go:393: [1] got 2022-10-02 03:15:00 +1100 AEDT (2022-10-01 16:15:00 +0000 UTC), want 2022-10-02T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY
+    rrule_dst_test.go:393: [1] got 2022-10-02 03:15:00 +1100 AEDT (2022-10-01 16:15:00 +0000 UTC), want 2022-10-02T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 02:15:00 +1000 AEST (2023-04-01 16:15:00 +0000 UTC), want 2023-04-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-10-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-10-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-10-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-10-01T15:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-09-30T16:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-09-30T16:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY
+    rrule_dst_test.go:393: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-09-30T16:15:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY
+    rrule_dst_test.go:393: [1] got 2023-04-02 01:45:00 +1030 +1030 (2023-04-01 15:15:00 +0000 UTC), want 2023-04-01T14:45:00Z
+--- FAIL: TestDSTEveryFrequencyEveryZone (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/YEARLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/DAILY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/HOURLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY (0.00s)
+    --- FAIL: TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY (0.00s)
+=== RUN   TestDSTAnnualTransitionRanks
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/7
+    rrule_dst_test.go:440: [0] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/-7
+    rrule_dst_test.go:440: [0] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T15:00:00Z
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/7
+    rrule_dst_test.go:440: [0] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/-7
+    rrule_dst_test.go:440: [0] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T15:00:00Z
+--- FAIL: TestDSTAnnualTransitionRanks (0.00s)
+    --- FAIL: TestDSTAnnualTransitionRanks/YEARLY/7 (0.00s)
+    --- FAIL: TestDSTAnnualTransitionRanks/YEARLY/-7 (0.00s)
+    --- FAIL: TestDSTAnnualTransitionRanks/MONTHLY/7 (0.00s)
+    --- FAIL: TestDSTAnnualTransitionRanks/MONTHLY/-7 (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.003s

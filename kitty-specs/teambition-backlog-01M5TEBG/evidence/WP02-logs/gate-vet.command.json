@@ -1,0 +1,32 @@
+{
+  "command": [
+    "env",
+    "GOCACHE=/tmp/rrule-go-cache",
+    "go",
+    "vet",
+    "./..."
+  ],
+  "cwd": "~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-b",
+  "start_unix": 1792967391.073784,
+  "head": "ef373a5872dba30063a6a706275a28e46508af77",
+  "source_sha256": {
+    "civil_time.go": "73a7481016abc602cdb587a5a496660e857a597f708b1f6586ca009f29d6e45e",
+    "example_test.go": "ed85fd72e4d4ae57bec205179218fd86421d69d08b6b123875c7bbb00551542f",
+    "rrule.go": "ca821beee860da6019b94a40c5acde18e8d01cf3f97cc1f6ac94dea303886f08",
+    "rrule_dst_test.go": "3d9816c301d39e19bd7a449b238d4583d35c1832f50c065be4a6627d5ffb700d",
+    "rrule_fuzz_test.go": "b1ffba7c63285e58f17ea3433fd46c25de87cb3946e336e1771bf0fe5d75481d",
+    "rrule_reachability_test.go": "4932a6fe9828952cff8a3238b039aff8c16f57d83411fc763c72a8f9c12d6683",
+    "rrule_safety_test.go": "a3430d505b4b4a4285a26368ee094cd956c8db7e0d5de6d4ed1bd0a780aa6517",
+    "rrule_test.go": "53795e98ee5de81aa3e2ddc552bf133886ef9dea09c9a0267c50c5c117e2267a",
+    "rrule_until_test.go": "dd0aae6db64a9cfe172d12ec831dc99bb5601e3f2e7fea4032d1c671c00ea07f",
+    "rruleset.go": "5383446106db7a17a07a0e82d82e3cd86da79a7db7f38be636f22eaa96132836",
+    "rruleset_test.go": "b96381841498af74836fa30fb08d004ed63ead2e0a3eedb244ff15d48cdb53dd",
+    "str.go": "74a1b537e02b9ce9d03f8d01ac7763cdb4af88218143735006167d4efd184c59",
+    "str_test.go": "a31a0008fe0d4df814141a00052b96b6f18f1e1e191b5bb511288e1d3ea9881b",
+    "str_timeforms_api_test.go": "e716e6d6e28574a557f58c5275a23ece6c205b1fc10fa01645b2a4822638f562",
+    "str_timeforms_test.go": "9b2865d25cc4a43277421ce014a2259376c44ca096f8af3e9d6d3b433dabef18",
+    "util.go": "d95c565b665cf0a9c92851c1b32dd3390ca5fb350e8553cf55e48323f1bc0173"
+  },
+  "exit": 0,
+  "elapsed_seconds": 0.15033197402954102
+}

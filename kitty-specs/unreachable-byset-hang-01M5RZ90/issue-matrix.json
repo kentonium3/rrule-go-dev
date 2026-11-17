@@ -1,0 +1,17 @@
+{
+  "rows": {
+    "#5": {
+      "evidence_ref": "Commit 78f4ed5 independently approved by gpt-6-astra; reviews/WP01-review.md and evidence/WP01-implementation.md",
+      "fr": null,
+      "nfr": null,
+      "repo": null,
+      "sc": null,
+      "scope": null,
+      "source_file": null,
+      "title": null,
+      "verdict": "fixed",
+      "wp": "WP01"
+    }
+  },
+  "schema_version": 1
+}

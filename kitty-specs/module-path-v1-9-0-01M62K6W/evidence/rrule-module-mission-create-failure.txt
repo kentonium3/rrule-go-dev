@@ -1,0 +1,19 @@
+Date: 2026-10-28
+Repository: ~/repos/rrule-go-dev
+User-selected mission branch: rrule-go-dev-xfer
+Intended starting/base branch and eventual private PR target: main
+
+Preflight:
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty agent mission branch-context --json --target-branch main
+Returned current_branch=docs/rrule-server-semantic-review, planning_base_branch=main, merge_target_branch=main, branch_matches_target=false.
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty agent mission check-prerequisites --mission module-path-v1-9-0 --resume-probe --json
+Returned result=success, resume_state=not_found.
+
+Failing command:
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty agent mission create module-path-v1-9-0 --mission-type software-dev --friendly-name 'rrule-go v1.9.0 module path migration' --purpose-tldr 'Move the maintained library to github.com/kentonium3/rrule-go with clear consumer migration and release communication.' --purpose-context 'Prepare the v1.9.0 module identity transition in the private development repository, preserving recurrence behavior and historical releases, documenting migration from original imports and transitional replacements, and preparing an unposted teambition transition PR. No public publication is authorized.' --target-branch main --pr-bound --branch-strategy already-confirmed --start-branch rrule-go-dev-xfer --json
+
+Exact output:
+{"error_code": "START_BRANCH_TARGET_MISMATCH", "error": "--start-branch and --target-branch must match because mission creation stores one planning branch. Omit --target-branch for the recommended PR-bound feature-branch flow.", "start_branch": "rrule-go-dev-xfer", "target_branch": "main", "spec_kitty_version": "4.0.0rc8"}
+
+The reported version above is diagnostic output, not build provenance.
+No retry or manual branch/state workaround performed. Before an authorized retry, run the required resume probe again. CLI guidance proposes omitting --target-branch; the eventual private PR target main must remain distinct from the CLI planning branch contract. Verify the starting point before creation rather than assuming omitted target means main.

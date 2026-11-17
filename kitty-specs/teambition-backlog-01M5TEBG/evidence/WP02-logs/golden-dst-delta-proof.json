@@ -1,0 +1,141 @@
+{
+  "changes_from_approved_WP01": [
+    [
+      "literal-087",
+      [
+        "string"
+      ],
+      "RFC5545 3.3.5 floating DTSTART/UNTIL retain zone-free lexical form; TestTimeFormsRoundTrip."
+    ],
+    [
+      "literal-088",
+      [
+        "string",
+        "error",
+        "occurrences",
+        "exhausted"
+      ],
+      "RFC5545 3.3.10 TZID DTSTART requires UTC UNTIL; newly rejected floating UNTIL, TestTimeFormsPairMatrix."
+    ],
+    [
+      "anchor-sydney-gap",
+      [
+        "string"
+      ],
+      "RFC5545 section3.3.5 explicit-anchor interpretation: explicit gap first instance uses pre-gap offset and subsequent DAILY candidates keep nominal02:30. TestDSTParsedAnchors; first changed ordinal2: 2022-10-02T16:30:00Z -> 2022-10-02T15:30:00Z. String differences reflect corrected physical DTSTART public value; lexical serialization belongs to WP02. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-ny-gap",
+      [
+        "string"
+      ],
+      "RFC5545 section3.3.5 explicit-anchor interpretation: explicit02:30 gap uses pre-gap-05:00 offset, resolves07:30Z and keeps nominal02:30 cadence. TestDSTParsedAnchors; first changed ordinal1: 2023-03-12T06:30:00Z -> 2023-03-12T07:30:00Z. String differences reflect corrected physical DTSTART public value; lexical serialization belongs to WP02. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-ny-overlap",
+      [
+        "string"
+      ],
+      "RFC5545 section3.3.5 explicit-anchor interpretation: explicit02:30 gap uses pre-gap offset, first07:30Z; nominal subdaily candidates at/before that instant are skipped to preserve unique ascending COUNT. TestDSTParsedAnchors; first changed ordinal1: 2023-03-12T06:30:00Z -> 2023-03-12T07:30:00Z. String differences reflect corrected physical DTSTART public value; lexical serialization belongs to WP02. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "set-sydney-gap",
+      [
+        "string"
+      ],
+      "RFC5545 section3.3.5 explicit gap/pre-gap or first-fold interpretation, preserving the shared nominal DTSTART across Set parser handoff; section3.3.10 following generated candidates retain nominal cadence. TestDSTParsedSetAnchors/set-sydney-gap. Exact baseline and current row outputs are bound by hashes; corrected public DTSTART accounts for any String difference. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "set-ny-gap",
+      [
+        "string"
+      ],
+      "RFC5545 section3.3.5 explicit gap/pre-gap or first-fold interpretation, preserving the shared nominal DTSTART across Set parser handoff; section3.3.10 following generated candidates retain nominal cadence. TestDSTParsedSetAnchors/set-ny-gap. Exact baseline and current row outputs are bound by hashes; corrected public DTSTART accounts for any String difference. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-positive-collision",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/positive-collision. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "set-anchor-rank-positive-collision",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/positive-collision. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-positive-out-of-range",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/positive-out-of-range. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "set-anchor-rank-positive-out-of-range",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/positive-out-of-range. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-signed-control",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; paired signed/negative rank control, already correct onaf86249; oldbaseline differs in RFC pre-gap interpretation, not a new signed-rank defect. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/signed-control. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-negative-control",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; paired signed/negative rank control, already correct onaf86249; oldbaseline differs in RFC pre-gap interpretation, not a new signed-rank defect. WP01 independent review R1; TestDSTGapAnchorBysetposCollision/negative-control. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-half-hour",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. TestDSTGapAnchorRankPeriods/HalfHour; review R1 half-hour variant. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-yearly",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. TestDSTGapAnchorRankPeriods/YEARLY; review R1 coarse-period variant. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-apia-monthly-1,2",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. TestDSTGapAnchorCrossDayRanks/MONTHLY; same-period nominal/resolved date collision. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-apia-monthly-1,3",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; R1: the explicit gap anchor and normal resolved candidate count as one distinct instant before BYSETPOS ranks; positive slots retain later distinct values and positions beyond unique cardinality are absent. TestDSTGapAnchorCrossDayRanks/MONTHLY; same-period nominal/resolved date collision. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-apia-daily-control",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; paired period-boundary control: later DAILY periods retain normal BYSETPOS ranks while global duplicate output is suppressed. TestDSTGapAnchorPeriodControls/LaterDailyPeriodKeepsNormalRanks; preserve ranks in a later period. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ],
+    [
+      "anchor-rank-apia-filter-control",
+      [
+        "string"
+      ],
+      "RFC5545 sections3.3.5/3.3.10; paired selected-day control: a resolved date excluded by BYMONTHDAY cannot replace the explicit gap anchor slot. TestDSTGapAnchorPeriodControls/FilteredResolvedDayRetainsAnchor; actual resolved day excluded by selectors. Exact appended-row baseline/current values bound by output hashes; no geographic allowlist. WP02 additionally preserves the nominal explicit gap DTSTART text so a serialized rule retains the approved civil cadence; TestTimeFormsExplicitGapTextAndUntil (RFC5545 3.3.5)."
+    ]
+  ],
+  "baseline_sha256_unchanged": "68fbd11d9cf3ca187dc473a543876196c23552ea5c2bb1b45f1ca561f75bd226"
+}

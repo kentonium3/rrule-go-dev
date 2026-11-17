@@ -1,0 +1,88 @@
+=== RUN   TestDSTEveryFrequencyEveryZone
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY
+--- PASS: TestDSTEveryFrequencyEveryZone (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.003s

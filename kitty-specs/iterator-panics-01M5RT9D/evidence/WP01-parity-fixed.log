@@ -1,0 +1,5 @@
+=== RUN   TestReviewParity
+REVIEW_PARITY 1701 cf88f859b1e76297b2caeb39e5bdfbb3b03cffcdaf2657e12000d7ea8362ee58
+--- PASS: TestReviewParity (0.02s)
+PASS
+ok  	github.com/teambition/rrule-go	0.019s

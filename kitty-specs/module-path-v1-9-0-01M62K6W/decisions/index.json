@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "created_at": "2026-10-29T01:08:37.942307Z",
+      "decision_id": "01M62K7ADP565BH1469Q0VEJ12",
+      "final_answer": "Kent confirmed this scope: move to github.com/kentonium3/rrule-go for v1.9.0; update active imports and migration instructions; preserve recurrence behavior and historical releases; prepare release communication and an unposted teambition PR; verify maintenance evidence without claiming official succession or contacting anyone. All public actions remain excluded. Branch rrule-go-dev-xfer starts from main; eventual private PR target main.",
+      "input_key": "confirmed_intent",
+      "mission_id": "01M62K6WADRS86HE5GKZ1KKHEY",
+      "mission_slug": "module-path-v1-9-0-01M62K6W",
+      "opened_by": "cli",
+      "options": [],
+      "origin_flow": "specify",
+      "other_answer": false,
+      "question": "Confirm this mission changes the maintained fork module path to github.com/kentonium3/rrule-go for v1.9.0, updates active imports and consumer migration instructions, preserves recurrence behavior and historical releases, prepares release communications and an unposted teambition transition PR, and checks maintenance evidence without claiming an official succession or contacting anyone. All public actions remain excluded.",
+      "rationale": null,
+      "resolved_at": "2026-10-29T01:16:17.342996Z",
+      "resolved_by": null,
+      "slot_key": "specify.intent.confirm-migration-scope",
+      "status": "resolved",
+      "step_id": null,
+      "summary_json": null
+    },
+    {
+      "created_at": "2026-10-29T01:39:47.300290Z",
+      "decision_id": "01M62N0BZ44HJDCVQPNTC7D0F8",
+      "final_answer": "Kent approved simpler verification: explicitly inspect the module declaration and imports, build a small external consumer against local candidate source, exercise documented migration/replacement-removal steps, run existing checks and zero-difference golden comparison, and defer clean public-tag retrieval until an authorized release. No synthetic proxy. Direct rename without old-path shim; preserve algorithms, API declarations, historical evidence and attribution. Later, when ready and separately authorized, Vikunja core-change sessions can exercise adoption; do not contact them now. Keep all work private.",
+      "input_key": "engineering_alignment",
+      "mission_id": "01M62K6WADRS86HE5GKZ1KKHEY",
+      "mission_slug": "module-path-v1-9-0-01M62K6W",
+      "opened_by": "cli",
+      "options": [],
+      "origin_flow": "plan",
+      "other_answer": false,
+      "question": "Confirm the engineering approach: a direct module/import rename with no old-path shim; preserve algorithms, API declarations, historical evidence and attribution; migrate active examples/repro programs; verify three consumer migration fixtures plus golden equivalence; keep public porting and upstream deprecation as separately approved later actions.",
+      "rationale": null,
+      "resolved_at": "2026-10-29T01:58:41.045594Z",
+      "resolved_by": null,
+      "slot_key": "plan.alignment.minimal-identity-migration",
+      "status": "resolved",
+      "step_id": null,
+      "summary_json": null
+    }
+  ],
+  "mission_id": "01M62K6WADRS86HE5GKZ1KKHEY",
+  "version": 1
+}

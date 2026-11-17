@@ -1,0 +1,6 @@
+resolved write surface: ~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG
+operation: descriptions/notes only; all judgment/proof fields and siblings preserved
+canonical locked writer result: WriteSeamResult(status='committed', entry_id='codex', destination_surface='fix/teambition-backlog', commit_hash='eb9f7b9dd8138f74704eb32fc8f700f90c773d06', diagnostic=None, surfaces=(SurfaceOutcome(surface='primary', branch='fix/teambition-backlog', status='committed', commit_hash='eb9f7b9dd8138f74704eb32fc8f700f90c773d06', committed=('kitty-specs/teambition-backlog-01M5TEBG/acceptance-matrix.json',), skipped=(), refused=(), diagnostic=None),), commit_hashes=(('fix/teambition-backlog', 'eb9f7b9dd8138f74704eb32fc8f700f90c773d06'),), reason=None)
+readback PASS: all seven definitions authored; no verdict/proof changes made
+authoring-time verdicts: {"FR-001": "pending", "FR-002": "pending", "FR-003": "pending", "FR-004": "pending", "FR-005": "pending", "FR-007": "pending", "FR-008": "pending"}
+overall authoring-time verdict: pending

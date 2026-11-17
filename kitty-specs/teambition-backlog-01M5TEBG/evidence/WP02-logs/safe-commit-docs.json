@@ -1,0 +1,8 @@
+{
+  "result": "success",
+  "success": true,
+  "committed": true,
+  "files": [
+    "docs/repro/05-07-backlog/golden/README.md"
+  ]
+}

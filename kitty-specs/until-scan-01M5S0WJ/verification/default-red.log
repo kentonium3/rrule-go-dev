@@ -1,0 +1,5 @@
+--- FAIL: TestUntilEmptyStopsAtHorizon (0.15s)
+    rrule_until_test.go:439: empty iterator finished=true at 9999-12-31 00:00:00 +0000 UTC, want 2318-04-18 00:00:00 +0000 UTC
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.154s

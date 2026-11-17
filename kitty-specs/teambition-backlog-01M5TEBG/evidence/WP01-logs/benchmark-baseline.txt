@@ -1,0 +1,12 @@
+CWD: /tmp/rrule-WP01-baseline-testing
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^$ -bench BenchmarkDSTAnnualBysetpos -benchmem -benchtime=1s -count=3
+EXIT: 0
+goos: linux
+goarch: amd64
+pkg: github.com/teambition/rrule-go
+cpu: AMD RYZEN AI MAX+ 395 w/ Radeon 8060S          
+BenchmarkDSTAnnualBysetpos-32    	    1268	    947916 ns/op	 2095410 B/op	      37 allocs/op
+BenchmarkDSTAnnualBysetpos-32    	    1119	   1006571 ns/op	 2095411 B/op	      37 allocs/op
+BenchmarkDSTAnnualBysetpos-32    	    1258	    951866 ns/op	 2095410 B/op	      37 allocs/op
+PASS
+ok  	github.com/teambition/rrule-go	6.684s

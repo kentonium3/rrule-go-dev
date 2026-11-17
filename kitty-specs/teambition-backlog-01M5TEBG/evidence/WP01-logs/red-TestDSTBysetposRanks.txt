@@ -1,0 +1,21 @@
+Baseline HEAD a0ea3af6 (source inherited76c646d)
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTBysetposRanks$ -v -count=1
+EXIT: 0
+=== RUN   TestDSTBysetposRanks
+=== RUN   TestDSTBysetposRanks/2
+=== RUN   TestDSTBysetposRanks/-2
+=== RUN   TestDSTBysetposRanks/HalfHour1
+=== RUN   TestDSTBysetposRanks/HalfHour2
+=== RUN   TestDSTBysetposRanks/HalfHour-1
+=== RUN   TestDSTBysetposRanks/HalfHour-2
+=== RUN   TestDSTBysetposRanks/SignedOverlapDedup
+--- PASS: TestDSTBysetposRanks (0.00s)
+    --- PASS: TestDSTBysetposRanks/2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/-2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/SignedOverlapDedup (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.002s

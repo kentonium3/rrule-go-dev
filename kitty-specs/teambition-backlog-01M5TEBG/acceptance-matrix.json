@@ -1,0 +1,79 @@
+{
+  "mission_slug": "teambition-backlog-01M5TEBG",
+  "mission_number": "",
+  "mission_type": "software-dev",
+  "overall_verdict": "pass",
+  "criteria": [
+    {
+      "criterion_id": "FR-001",
+      "description": "All supported frequencies exclude nonexistent generated civil times before COUNT and BYSETPOS, choose the first repeated local-time instant, retain civil BY matching, unique ascending output and consistent iterator/query/Set behavior.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:09.130124+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-002",
+      "description": "Explicit parsed gap/fold DTSTART follows RFC5545 section3.3.5, preserves nominal recurrence cadence and first-instance counting; ordinary programmatic constructor/public-setter instants, including later folds, remain authoritative exactly once.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:11.011972+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-003",
+      "description": "Every relevant parser rejects forbidden DTSTART/UNTIL value-type or time-form pairings and TZID-on-DATE/UTC with named errors, independent of inline/line order and shared-set DTSTART placement; valid paired controls remain accepted.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:13.018269+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-004",
+      "description": "Explicit parsed floating and DATE forms retain their semantic syntax through option copies, construction, serialization and Set handoffs using immutable metadata and exact supplied locations; conformant TZID DTSTART plus UTC UNTIL remains accepted.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:14.903792+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-005",
+      "description": "Ordinary NewRRule Until serialization stays UTC-Z, bare no-DTSTART fragments retain legacy InLocation interpretation and UTC-Z output, and public value/setter replacement replaces only the supplied part semantics without corrupting immutable copies.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:16.772753+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-007",
+      "description": "All first-N occurrences, String/error outputs and inherited contributor behavior outside the enumerated RFC corrections match the exact v1.8.3-plus76c646d golden baseline, with classified differences and positive sensitivity controls.",
+      "proof_type": "automated_test",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:18.626996+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    },
+    {
+      "criterion_id": "FR-008",
+      "description": "Private v1.9.0 release notes enumerate all changed results/serialization and newly rejected forms, disclose the approved private ROption field and external positional-literal break with keyed migration, and credit retained independently verified prior-art ideas/tests.",
+      "proof_type": "manual_qa",
+      "evidence": "kitty-specs/teambition-backlog-01M5TEBG/evidence/acceptance-evidence.md",
+      "pass_fail": "pass",
+      "verified_by": "codex",
+      "verified_at": "2026-10-25T22:43:20.558104+00:00",
+      "notes": "Authored from current approved spec/plan; specification tables are the intent snapshot. Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring."
+    }
+  ],
+  "negative_invariants": []
+}

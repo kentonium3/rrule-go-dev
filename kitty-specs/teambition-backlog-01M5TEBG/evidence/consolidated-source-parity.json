@@ -1,0 +1,20 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--exit-code",
+    "0f7154e7bdb98b7e2de3e22ed2db78b8bfe0ce53",
+    "--",
+    "*.go",
+    "go.mod",
+    "go.sum",
+    "LICENSE"
+  ],
+  "cwd": "~/repos/rrule-go",
+  "exit": 0,
+  "stdout": "",
+  "stderr": "",
+  "target_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+  "main": "76c646dde8d33ff7c3325df0613b31b058243bea",
+  "interpretation": "All Go source/tests/driver, module files and license byte-identical to independently reviewed integrated head when exit0."
+}

@@ -1,0 +1,32 @@
+import subprocess, pathlib, json, os, hashlib, time, sys
+repo=pathlib.Path('~/repos/rrule-go')
+out=pathlib.Path('/tmp/rrule-backlog-final-gates'); out.mkdir(exist_ok=True)
+head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=repo,text=True).strip()
+sources={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(repo.glob('*.go'))}
+def run(name,argv,extra=None):
+ env=os.environ.copy(); env['GOCACHE']='/tmp/rrule-go-cache'; env.update(extra or {})
+ start=time.monotonic()
+ with (out/(name+'.txt')).open('w') as f:
+  p=subprocess.run(argv,cwd=repo,env=env,stdout=f,stderr=subprocess.STDOUT)
+ meta={'head':head,'cwd':str(repo),'argv':argv,'environment':{'GOCACHE':env['GOCACHE'],**(extra or {})},'exit':p.returncode,'elapsed_seconds':time.monotonic()-start,'source_sha256':sources}
+ (out/(name+'.json')).write_text(json.dumps(meta,indent=2)+'\n')
+ print(name,p.returncode,round(meta['elapsed_seconds'],3),flush=True)
+ if p.returncode: sys.exit(p.returncode)
+ if name=='format' and (out/'format.txt').stat().st_size: sys.exit('gofmt emitted paths')
+mode=sys.argv[1]
+if mode=='basic':
+ run('test',['go','test','-count=1','./...'])
+ run('go116',['/tmp/rrule-go116-toolchain/go/bin/go','test','-count=1','./...'],{'GOCACHE':'/tmp/rrule-go116-cache'})
+ run('vet',['go','vet','./...'])
+ run('format',['gofmt','-l','.'])
+ run('diff-check',['git','diff','--check'])
+elif mode=='race': run('race',['go','test','-race','-count=1','./...'])
+elif mode=='fuzz': run('fuzz',['go','test','-run=^$','-fuzz=FuzzIterate','-fuzztime=60s'],{'GOMAXPROCS':'2'})
+elif mode=='golden':
+ run('golden-build',['go','build','-o','/tmp/rrule-backlog-final-golden','docs/repro/05-07-backlog/golden/main.go'])
+ for kind in ['dst','forms']:
+  corpus='docs/repro/05-07-backlog/golden/corpus-'+kind+'.json'
+  current=str(out/('current-'+kind+'.json'))
+  run('golden-'+kind+'-collect',['/tmp/rrule-backlog-final-golden','-corpus',corpus,'-out',current])
+  run('golden-'+kind+'-compare',['/tmp/rrule-backlog-final-golden','-corpus',corpus,'-baseline','docs/repro/05-07-backlog/golden/baseline-'+kind+'.json','-current',current])
+else: raise SystemExit('unknown mode')

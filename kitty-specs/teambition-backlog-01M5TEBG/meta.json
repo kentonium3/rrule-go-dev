@@ -1,0 +1,37 @@
+{
+  "accept_commit": "97b3bc63dc82125ecd91a459b226c45f03c8293c",
+  "acceptance_history": [
+    {
+      "accept_commit": "97b3bc63dc82125ecd91a459b226c45f03c8293c",
+      "acceptance_mode": "local",
+      "accepted_at": "2026-10-25T22:43:35.512192+00:00",
+      "accepted_by": "codex",
+      "accepted_from_commit": "2556fd4d9c01838e20544f48d15e68970fcd2522"
+    }
+  ],
+  "acceptance_mode": "local",
+  "accepted_at": "2026-10-25T22:43:35.512192+00:00",
+  "accepted_by": "codex",
+  "accepted_from_commit": "2556fd4d9c01838e20544f48d15e68970fcd2522",
+  "baseline_merge_commit": "27032ae385cced1b3947ef284a16dca74e39e19a",
+  "contracts": "none",
+  "contracts_rationale": "Existing Go-library signatures/keyed callers are preserved. Kent explicitly approved private ROption parse metadata with the external positional-literal source break and targetv1.9.0; no new endpoint, integration, payload or exported identifier. Compatibility assertions and Go API tests define the contract.",
+  "created_at": "2026-10-25T21:09:36.468079+00:00",
+  "flattened": false,
+  "friendly_name": "teambition backlog",
+  "merged_at": "2026-10-25T22:44:00.251820+00:00",
+  "merged_commit": "124c372e2adf2686cb5e980cc6487a69d12c3a35",
+  "mid8": "01M5TEBG",
+  "mission_id": "01M5TEBG27H6AA9G6T9D8AN7NH",
+  "mission_number": 4,
+  "mission_slug": "teambition-backlog-01M5TEBG",
+  "mission_type": "software-dev",
+  "purpose_context": "This mission advances teambition backlog on fix/teambition-backlog so stakeholders can track the work from mission creation onward.",
+  "purpose_tldr": "teambition backlog",
+  "slug": "teambition-backlog-01M5TEBG",
+  "status_phase": "1",
+  "target_branch": "fix/teambition-backlog",
+  "topology": "lanes",
+  "vcs": "git",
+  "vcs_locked_at": "2026-10-25T21:40:11.450622+00:00"
+}

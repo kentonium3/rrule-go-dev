@@ -1,0 +1,12 @@
+id: testing-style-guide
+schema_version: '1.0'
+title: Regression and fuzz tests
+scope: testing
+principles:
+- Prove each new regression fails against unfixed code before implementing its correction.
+- Use plain Go tests to verify safe handling of accepted RRULE input and preserved correct 
+  sequences.
+- Cover BY* and INTERVAL domains with bounded fuzzing for the panic mission; settle compiler 
+  compatibility in its plan.
+- Keep failure reproduction and green verification evidence attributable to the actual revisions 
+  tested.

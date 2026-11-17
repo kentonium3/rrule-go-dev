@@ -1,0 +1,33 @@
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=true
+    str_timeforms_test.go:570: want shared DTSTART rejection, got <nil> ([2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=true
+    str_timeforms_test.go:570: want shared DTSTART rejection, got <nil> ([2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=true
+    str_timeforms_test.go:570: want shared DTSTART rejection, got <nil> ([2020-12-29 09:00:00 +0000 UTC 2020-12-30 09:00:00 +0000 UTC])
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=true
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=false
+=== RUN   TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=true
+--- FAIL: TestTimeFormsSeparateStartCannotBeOverridden (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=false (0.00s)
+    --- FAIL: TestTimeFormsSeparateStartCannotBeOverridden/RRule/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=false (0.00s)
+    --- FAIL: TestTimeFormsSeparateStartCannotBeOverridden/ROption/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=false (0.00s)
+    --- FAIL: TestTimeFormsSeparateStartCannotBeOverridden/ROptionInLocation/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/RRuleSet/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSet/bad=true (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=false (0.00s)
+    --- PASS: TestTimeFormsSeparateStartCannotBeOverridden/SliceSetInLoc/bad=true (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s
+exit=1

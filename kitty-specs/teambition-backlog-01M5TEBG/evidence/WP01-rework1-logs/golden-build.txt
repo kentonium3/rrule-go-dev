@@ -1,0 +1,2 @@
+COMMAND:GOCACHE=/tmp/rrule-go-cache go build -o /tmp/rrule-rework1-golden-current docs/repro/05-07-backlog/golden/main.go
+EXIT:0

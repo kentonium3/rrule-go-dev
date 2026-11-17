@@ -1,0 +1,249 @@
+CWD: ~/repos/rrule-go/.worktrees/teambition-backlog-01M5TEBG-lane-a
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run TestDST -v -count=1
+EXIT: 0
+=== RUN   TestDSTSydney
+=== RUN   TestDSTSydney/HourlySpring
+=== RUN   TestDSTSydney/HourlyFold
+=== RUN   TestDSTSydney/MinutelySpring
+=== RUN   TestDSTSydney/DailyExpansionCompatibility
+=== RUN   TestDSTSydney/DailyExpansionAligned
+=== RUN   TestDSTSydney/DailyGap
+=== RUN   TestDSTSydney/DailyFold
+=== RUN   TestDSTSydney/BYHOUR9WallClockControl
+--- PASS: TestDSTSydney (0.00s)
+    --- PASS: TestDSTSydney/HourlySpring (0.00s)
+    --- PASS: TestDSTSydney/HourlyFold (0.00s)
+    --- PASS: TestDSTSydney/MinutelySpring (0.00s)
+    --- PASS: TestDSTSydney/DailyExpansionCompatibility (0.00s)
+    --- PASS: TestDSTSydney/DailyExpansionAligned (0.00s)
+    --- PASS: TestDSTSydney/DailyGap (0.00s)
+    --- PASS: TestDSTSydney/DailyFold (0.00s)
+    --- PASS: TestDSTSydney/BYHOUR9WallClockControl (0.00s)
+=== RUN   TestDSTAllFrequencies
+=== RUN   TestDSTAllFrequencies/YEARLYGap
+=== RUN   TestDSTAllFrequencies/YEARLYFold
+=== RUN   TestDSTAllFrequencies/MONTHLYGap
+=== RUN   TestDSTAllFrequencies/MONTHLYFold
+=== RUN   TestDSTAllFrequencies/WEEKLYGap
+=== RUN   TestDSTAllFrequencies/WEEKLYFold
+=== RUN   TestDSTAllFrequencies/DAILYGap
+=== RUN   TestDSTAllFrequencies/DAILYFold
+=== RUN   TestDSTAllFrequencies/HOURLYGap
+=== RUN   TestDSTAllFrequencies/HOURLYFold
+=== RUN   TestDSTAllFrequencies/MINUTELYGap
+=== RUN   TestDSTAllFrequencies/MINUTELYFold
+=== RUN   TestDSTAllFrequencies/SECONDLYGap
+=== RUN   TestDSTAllFrequencies/SECONDLYFold
+--- PASS: TestDSTAllFrequencies (0.00s)
+    --- PASS: TestDSTAllFrequencies/YEARLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/YEARLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/MONTHLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/MONTHLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/WEEKLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/WEEKLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/DAILYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/DAILYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/HOURLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/HOURLYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/MINUTELYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/MINUTELYFold (0.00s)
+    --- PASS: TestDSTAllFrequencies/SECONDLYGap (0.00s)
+    --- PASS: TestDSTAllFrequencies/SECONDLYFold (0.00s)
+=== RUN   TestDSTOtherZones
+=== RUN   TestDSTOtherZones/NewYorkGap
+=== RUN   TestDSTOtherZones/NewYorkFold
+=== RUN   TestDSTOtherZones/LordHoweGap
+=== RUN   TestDSTOtherZones/LordHoweFold
+--- PASS: TestDSTOtherZones (0.00s)
+    --- PASS: TestDSTOtherZones/NewYorkGap (0.00s)
+    --- PASS: TestDSTOtherZones/NewYorkFold (0.00s)
+    --- PASS: TestDSTOtherZones/LordHoweGap (0.00s)
+    --- PASS: TestDSTOtherZones/LordHoweFold (0.00s)
+=== RUN   TestDSTBysetposRanks
+=== RUN   TestDSTBysetposRanks/3
+=== RUN   TestDSTBysetposRanks/-3
+=== RUN   TestDSTBysetposRanks/HalfHour1
+=== RUN   TestDSTBysetposRanks/HalfHour2
+=== RUN   TestDSTBysetposRanks/HalfHour3
+=== RUN   TestDSTBysetposRanks/HalfHour-1
+=== RUN   TestDSTBysetposRanks/HalfHour-2
+=== RUN   TestDSTBysetposRanks/HalfHour-3
+=== RUN   TestDSTBysetposRanks/SignedOverlapDedup
+--- PASS: TestDSTBysetposRanks (0.00s)
+    --- PASS: TestDSTBysetposRanks/3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/-3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-2 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/SignedOverlapDedup (0.00s)
+=== RUN   TestDSTPublicQueries
+=== RUN   TestDSTPublicQueries/Iterator
+=== RUN   TestDSTPublicQueries/Between
+=== RUN   TestDSTPublicQueries/After
+=== RUN   TestDSTPublicQueries/Before
+=== RUN   TestDSTPublicQueries/Set
+=== RUN   TestDSTPublicQueries/Until-1
+=== RUN   TestDSTPublicQueries/Until0
+=== RUN   TestDSTPublicQueries/Until1
+--- PASS: TestDSTPublicQueries (0.00s)
+    --- PASS: TestDSTPublicQueries/Iterator (0.00s)
+    --- PASS: TestDSTPublicQueries/Between (0.00s)
+    --- PASS: TestDSTPublicQueries/After (0.00s)
+    --- PASS: TestDSTPublicQueries/Before (0.00s)
+    --- PASS: TestDSTPublicQueries/Set (0.00s)
+    --- PASS: TestDSTPublicQueries/Until-1 (0.00s)
+    --- PASS: TestDSTPublicQueries/Until0 (0.00s)
+    --- PASS: TestDSTPublicQueries/Until1 (0.00s)
+=== RUN   TestDSTParsedAnchors
+=== RUN   TestDSTParsedAnchors/GapNominalCadence
+=== RUN   TestDSTParsedAnchors/NewYorkPregapOffset
+=== RUN   TestDSTParsedAnchors/FoldFirst
+=== RUN   TestDSTParsedAnchors/NewYorkGapSubdailyOverlap
+=== RUN   TestDSTParsedAnchors/GapSubdailyOverlap
+=== RUN   TestDSTParsedAnchors/StandaloneGap
+=== RUN   TestDSTParsedAnchors/StandaloneFold
+--- PASS: TestDSTParsedAnchors (0.00s)
+    --- PASS: TestDSTParsedAnchors/GapNominalCadence (0.00s)
+    --- PASS: TestDSTParsedAnchors/NewYorkPregapOffset (0.00s)
+    --- PASS: TestDSTParsedAnchors/FoldFirst (0.00s)
+    --- PASS: TestDSTParsedAnchors/NewYorkGapSubdailyOverlap (0.00s)
+    --- PASS: TestDSTParsedAnchors/GapSubdailyOverlap (0.00s)
+    --- PASS: TestDSTParsedAnchors/StandaloneGap (0.00s)
+    --- PASS: TestDSTParsedAnchors/StandaloneFold (0.00s)
+=== RUN   TestDSTAuthoritativeLaterFold
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Sydney
+=== RUN   TestDSTAuthoritativeLaterFold/America/New_York
+=== RUN   TestDSTAuthoritativeLaterFold/Australia/Lord_Howe
+--- PASS: TestDSTAuthoritativeLaterFold (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Sydney (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/America/New_York (0.00s)
+    --- PASS: TestDSTAuthoritativeLaterFold/Australia/Lord_Howe (0.00s)
+=== RUN   TestDSTMetadataCopiesAndLocation
+=== RUN   TestDSTMetadataCopiesAndLocation/CopyRetainsNominal
+=== RUN   TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart
+=== RUN   TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal
+=== RUN   TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA
+--- PASS: TestDSTMetadataCopiesAndLocation (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/CopyRetainsNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA (0.00s)
+=== RUN   TestDSTEveryFrequencyEveryZone
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY
+=== RUN   TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY
+--- PASS: TestDSTEveryFrequencyEveryZone (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/NYFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/SydneyFold/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweGap/SECONDLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/YEARLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MONTHLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/WEEKLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/DAILY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/HOURLY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/MINUTELY (0.00s)
+    --- PASS: TestDSTEveryFrequencyEveryZone/LordHoweFold/SECONDLY (0.00s)
+=== RUN   TestDSTCustomTZifIdentity
+--- PASS: TestDSTCustomTZifIdentity (0.00s)
+=== RUN   TestDSTAnnualTransitionRanks
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/7
+=== RUN   TestDSTAnnualTransitionRanks/YEARLY/-7
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/7
+=== RUN   TestDSTAnnualTransitionRanks/MONTHLY/-7
+--- PASS: TestDSTAnnualTransitionRanks (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/YEARLY/7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/YEARLY/-7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/MONTHLY/7 (0.00s)
+    --- PASS: TestDSTAnnualTransitionRanks/MONTHLY/-7 (0.00s)
+=== RUN   TestDSTUTCShortUntilFloatingControl
+--- PASS: TestDSTUTCShortUntilFloatingControl (0.00s)
+=== RUN   TestDSTDenseAnnualArithmetic
+--- PASS: TestDSTDenseAnnualArithmetic (0.00s)
+=== RUN   TestDSTParsedSetAnchors
+=== RUN   TestDSTParsedSetAnchors/SydneyGap
+=== RUN   TestDSTParsedSetAnchors/NYGap
+=== RUN   TestDSTParsedSetAnchors/SydneyFold
+--- PASS: TestDSTParsedSetAnchors (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/NYGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyFold (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.007s

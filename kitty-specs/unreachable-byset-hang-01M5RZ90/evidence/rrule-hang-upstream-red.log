@@ -1,0 +1,12 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/hourly/string/All
+    rrule_reachability_test.go:63: child failed (watchdog=context deadline exceeded): signal: killed
+        === RUN   TestClockReachability
+        === RUN   TestClockReachability/hourly/string/All
+--- FAIL: TestClockReachability (4.00s)
+    --- FAIL: TestClockReachability/hourly/string/All (4.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	4.006s
+
+EXIT=1

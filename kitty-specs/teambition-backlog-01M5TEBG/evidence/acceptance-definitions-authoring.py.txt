@@ -1,0 +1,56 @@
+from dataclasses import replace
+from pathlib import Path
+import json
+from mission_runtime import MissionArtifactKind, placement_seam
+from specify_cli.coordination.surface_resolver import resolve_for_write
+from specify_cli.acceptance.matrix import locked_reread_splice_and_write, read_acceptance_matrix
+
+root = Path('~/repos/rrule-go')
+slug = 'teambition-backlog-01M5TEBG'
+resolve_for_write(root, slug, MissionArtifactKind.ACCEPTANCE_MATRIX)
+matrix_dir = placement_seam(root, slug).write_dir(MissionArtifactKind.ACCEPTANCE_MATRIX).path
+assert matrix_dir == root / 'kitty-specs' / slug, 'Unexpected write surface; refuse before mutation'
+descriptions = {
+    'FR-001': 'All supported frequencies exclude nonexistent generated civil times before COUNT and BYSETPOS, choose the first repeated local-time instant, retain civil BY matching, unique ascending output and consistent iterator/query/Set behavior.',
+    'FR-002': 'Explicit parsed gap/fold DTSTART follows RFC5545 section3.3.5, preserves nominal recurrence cadence and first-instance counting; ordinary programmatic constructor/public-setter instants, including later folds, remain authoritative exactly once.',
+    'FR-003': 'Every relevant parser rejects forbidden DTSTART/UNTIL value-type or time-form pairings and TZID-on-DATE/UTC with named errors, independent of inline/line order and shared-set DTSTART placement; valid paired controls remain accepted.',
+    'FR-004': 'Explicit parsed floating and DATE forms retain their semantic syntax through option copies, construction, serialization and Set handoffs using immutable metadata and exact supplied locations; conformant TZID DTSTART plus UTC UNTIL remains accepted.',
+    'FR-005': 'Ordinary NewRRule Until serialization stays UTC-Z, bare no-DTSTART fragments retain legacy InLocation interpretation and UTC-Z output, and public value/setter replacement replaces only the supplied part semantics without corrupting immutable copies.',
+    'FR-007': 'All first-N occurrences, String/error outputs and inherited contributor behavior outside the enumerated RFC corrections match the exact v1.8.3-plus76c646d golden baseline, with classified differences and positive sensitivity controls.',
+    'FR-008': 'Private v1.9.0 release notes enumerate all changed results/serialization and newly rejected forms, disclose the approved private ROption field and external positional-literal break with keyed migration, and credit retained independently verified prior-art ideas/tests.',
+}
+notes = ('Authored from current approved spec/plan; specification tables are the intent snapshot. '
+         'Canonical WP status, exact-code independent reviews and criterion evidence carry actual completion. '
+         'This definition-only write preserves every existing judgment and proof field; WP02 independent review remains pending at authoring.')
+observed = {}
+def splice(fresh):
+    assert set(descriptions).issubset({c.criterion_id for c in fresh.criteria}), 'Required criterion missing'
+    observed['criteria_before'] = [c.to_dict() for c in fresh.criteria]
+    observed['invariants_before'] = [n.to_dict() for n in fresh.negative_invariants]
+    fresh.criteria = [replace(c, description=descriptions[c.criterion_id], notes=notes)
+                      if c.criterion_id in descriptions else c for c in fresh.criteria]
+    for before, after in zip(observed['criteria_before'], [c.to_dict() for c in fresh.criteria]):
+        expected = dict(before)
+        if before['criterion_id'] in descriptions:
+            expected['description'] = descriptions[before['criterion_id']]
+            expected['notes'] = notes
+        assert after == expected, 'Non-definition criterion state changed'
+    assert [n.to_dict() for n in fresh.negative_invariants] == observed['invariants_before']
+
+print('resolved write surface:', matrix_dir)
+print('operation: descriptions/notes only; all judgment/proof fields and siblings preserved')
+matrix, result = locked_reread_splice_and_write(
+    repo_root=root, mission_slug=slug, matrix_dir=matrix_dir,
+    splice=splice, commit=True, entry_id='codex',
+    message='docs(acceptance): author concrete backlog criterion definitions',
+)
+print('canonical locked writer result:', result)
+assert result.status in ('committed', 'unchanged'), 'Writer failed; inspect before retry'
+readback = read_acceptance_matrix(matrix_dir)
+assert readback is not None
+for c in readback.criteria:
+    if c.criterion_id in descriptions:
+        assert c.description == descriptions[c.criterion_id] and c.notes == notes
+print('readback PASS: all seven definitions authored; no verdict/proof changes made')
+print('authoring-time verdicts:', json.dumps({c.criterion_id:c.pass_fail for c in matrix.criteria}, sort_keys=True))
+print('overall authoring-time verdict:', matrix.overall_verdict)

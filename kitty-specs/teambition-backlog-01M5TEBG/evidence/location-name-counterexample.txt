@@ -1,0 +1,18 @@
+2026-10-25, gpt-6.1-sol root/driver reproduction on pristine code.
+
+Source: location-name-counterexample.go.txt, copied from /tmp/rrule-backlog-location-proof/main.go.
+Baseline: /tmp/rrule-backlog-v183, snapshot533ab669bb9582d35f880867ebcf0d5689aca521 (v1.8.3 library content).
+Command cwd=/tmp/rrule-backlog-v183:
+GOCACHE=/tmp/rrule-go-cache go run /tmp/rrule-backlog-location-proof/main.go
+Exit0, output:
+
+exact supplied fixed zone
+2026-03-07T14:00:00Z
+2026-03-08T14:00:00Z
+2026-03-09T14:00:00Z
+same name reloaded as IANA
+2026-03-07T14:00:00Z
+2026-03-08T13:00:00Z
+2026-03-09T13:00:00Z
+
+This tests the proposed transport's name-reconstruction assumption, not a committed implementation: the exact caller location and same-name reloaded location produce different occurrence instants. Neither a name nor current offset is a complete arbitrary-location identifier. The counterexample is within normal accepted InLocation API inputs.

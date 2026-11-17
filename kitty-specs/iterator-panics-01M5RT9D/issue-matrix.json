@@ -1,0 +1,17 @@
+{
+  "rows": {
+    "#4": {
+      "evidence_ref": "WP01 commit6177350 and WP02 commit3dfc313; both independently approved; evidence/WP02-fuzz.log; known Easter257 spill limit explicitly retained",
+      "fr": null,
+      "nfr": null,
+      "repo": null,
+      "sc": null,
+      "scope": null,
+      "source_file": null,
+      "title": null,
+      "verdict": "fixed",
+      "wp": "WP01"
+    }
+  },
+  "schema_version": 1
+}

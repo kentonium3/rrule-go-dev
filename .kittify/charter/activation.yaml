@@ -1,0 +1,8 @@
+mission_type_activations:
+- software-dev
+activated_paradigms: []
+activated_directives: []
+activated_tactics:
+- acceptance-test-first
+- review-policy-tactic
+- testing-philosophy-tactic

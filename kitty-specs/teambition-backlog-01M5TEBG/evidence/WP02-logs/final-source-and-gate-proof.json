@@ -1,0 +1,35 @@
+{
+  "gate-go116": {
+    "exit": 0,
+    "elapsed_seconds": 0.8785219192504883,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "gate-vet": {
+    "exit": 0,
+    "elapsed_seconds": 0.15033197402954102,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "gate-race": {
+    "exit": 0,
+    "elapsed_seconds": 149.31639671325684,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "gate-fuzz": {
+    "exit": 0,
+    "elapsed_seconds": 61.944129943847656,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "gate-resource": {
+    "exit": 0,
+    "elapsed_seconds": 2.2972450256347656,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "gate-gofmt": {
+    "exit": 0,
+    "elapsed_seconds": 0.034155845642089844,
+    "all_go_source_hashes_match_final_head": true
+  },
+  "final_head": "0f7154e7bdb98b7e2de3e22ed2db78b8bfe0ce53",
+  "driver_sha256": "ef590e56baca5005ad173824a905225cb4821bfa14261a97c4cb6d8c9ea19b89",
+  "clean": true
+}

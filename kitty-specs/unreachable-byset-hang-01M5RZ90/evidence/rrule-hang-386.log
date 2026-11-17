@@ -1,0 +1,3 @@
+signal: bad system call (core dumped)
+FAIL	github.com/teambition/rrule-go	0.057s
+FAIL

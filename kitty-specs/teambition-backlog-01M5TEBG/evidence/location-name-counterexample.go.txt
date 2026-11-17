@@ -1,0 +1,22 @@
+package main
+
+import (
+ "fmt"
+ "time"
+ rrule "github.com/teambition/rrule-go"
+)
+
+func main() {
+ input := "DTSTART:20260307T090000\nRRULE:FREQ=DAILY;COUNT=3"
+ fixed := time.FixedZone("America/New_York", -5*60*60)
+ iana, err := time.LoadLocation(fixed.String())
+ if err != nil { panic(err) }
+ for _, tc := range []struct{name string; loc *time.Location}{{"exact supplied fixed zone",fixed},{"same name reloaded as IANA",iana}} {
+  opt, err := rrule.StrToROptionInLocation(input,tc.loc)
+  if err != nil { panic(err) }
+  rule, err := rrule.NewRRule(*opt)
+  if err != nil { panic(err) }
+  fmt.Println(tc.name)
+  for _, dt := range rule.All() { fmt.Println(dt.UTC().Format(time.RFC3339)) }
+ }
+}

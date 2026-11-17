@@ -1,0 +1,36 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/hourly/string/All
+    rrule_reachability_test.go:49:     rrule_reachability_test.go:62: operation=hourly/string/All elapsed=475.485776ms
+=== RUN   TestClockReachability/minutely/string/All
+    rrule_reachability_test.go:48: child failed (watchdog=context deadline exceeded): signal: killed
+        === RUN   TestClockReachability
+        === RUN   TestClockReachability/hourly/string/All
+        === RUN   TestClockReachability/hourly/string/After
+        === RUN   TestClockReachability/hourly/string/Iterator
+        === RUN   TestClockReachability/hourly/option/All
+        === RUN   TestClockReachability/hourly/option/After
+        === RUN   TestClockReachability/hourly/option/Iterator
+        === RUN   TestClockReachability/minutely/string/All
+=== RUN   TestClockReachability/secondly/string/All
+    rrule_reachability_test.go:48: child failed (watchdog=context deadline exceeded): signal: killed
+        === RUN   TestClockReachability
+        === RUN   TestClockReachability/hourly/string/All
+        === RUN   TestClockReachability/hourly/string/After
+        === RUN   TestClockReachability/hourly/string/Iterator
+        === RUN   TestClockReachability/hourly/option/All
+        === RUN   TestClockReachability/hourly/option/After
+        === RUN   TestClockReachability/hourly/option/Iterator
+        === RUN   TestClockReachability/minutely/string/All
+        === RUN   TestClockReachability/minutely/string/After
+        === RUN   TestClockReachability/minutely/string/Iterator
+        === RUN   TestClockReachability/minutely/option/All
+        === RUN   TestClockReachability/minutely/option/After
+        === RUN   TestClockReachability/minutely/option/Iterator
+        === RUN   TestClockReachability/secondly/string/All
+--- FAIL: TestClockReachability (8.49s)
+    --- PASS: TestClockReachability/hourly/string/All (0.48s)
+    --- FAIL: TestClockReachability/minutely/string/All (4.00s)
+    --- FAIL: TestClockReachability/secondly/string/All (4.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	8.490s

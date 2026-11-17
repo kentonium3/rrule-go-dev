@@ -1,0 +1,83 @@
+=== RUN   TestUntilScan
+=== RUN   TestUntilScan/new/iterator/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/new/iterator/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.15s)
+            rrule_until_test.go:97: new,iterator,2 operation=146.882413ms
+            rrule_until_test.go:99: operation 146.882413ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/new/iterator/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+=== RUN   TestUntilScan/new/all/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/new/all/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.15s)
+            rrule_until_test.go:97: new,all,2 operation=150.648122ms
+            rrule_until_test.go:99: operation 150.648122ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/new/all/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+=== RUN   TestUntilScan/new/after/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/new/after/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.15s)
+            rrule_until_test.go:97: new,after,2 operation=152.012312ms
+            rrule_until_test.go:99: operation 152.012312ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/new/after/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+=== RUN   TestUntilScan/parse/iterator/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/parse/iterator/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.15s)
+            rrule_until_test.go:97: parse,iterator,2 operation=145.96886ms
+            rrule_until_test.go:99: operation 145.96886ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/parse/iterator/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+=== RUN   TestUntilScan/parse/all/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/parse/all/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.15s)
+            rrule_until_test.go:97: parse,all,2 operation=150.72246ms
+            rrule_until_test.go:99: operation 150.72246ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/parse/all/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+=== RUN   TestUntilScan/parse/after/1
+    rrule_until_test.go:35: PASS
+=== RUN   TestUntilScan/parse/after/2
+    rrule_until_test.go:33: child: exit status 1 (watchdog: <nil>)
+        --- FAIL: TestUntilScan (0.14s)
+            rrule_until_test.go:97: parse,after,2 operation=141.994926ms
+            rrule_until_test.go:99: operation 141.994926ms exceeds 100ms
+        FAIL
+=== RUN   TestUntilScan/parse/after/heavy
+    rrule_until_test.go:33: child: signal: killed (watchdog: context deadline exceeded)
+--- FAIL: TestUntilScan (18.94s)
+    --- PASS: TestUntilScan/new/iterator/1 (0.00s)
+    --- FAIL: TestUntilScan/new/iterator/2 (0.15s)
+    --- FAIL: TestUntilScan/new/iterator/heavy (3.00s)
+    --- PASS: TestUntilScan/new/all/1 (0.00s)
+    --- FAIL: TestUntilScan/new/all/2 (0.15s)
+    --- FAIL: TestUntilScan/new/all/heavy (3.00s)
+    --- PASS: TestUntilScan/new/after/1 (0.00s)
+    --- FAIL: TestUntilScan/new/after/2 (0.15s)
+    --- FAIL: TestUntilScan/new/after/heavy (3.00s)
+    --- PASS: TestUntilScan/parse/iterator/1 (0.00s)
+    --- FAIL: TestUntilScan/parse/iterator/2 (0.15s)
+    --- FAIL: TestUntilScan/parse/iterator/heavy (3.00s)
+    --- PASS: TestUntilScan/parse/all/1 (0.00s)
+    --- FAIL: TestUntilScan/parse/all/2 (0.15s)
+    --- FAIL: TestUntilScan/parse/all/heavy (3.00s)
+    --- PASS: TestUntilScan/parse/after/1 (0.00s)
+    --- FAIL: TestUntilScan/parse/after/2 (0.14s)
+    --- FAIL: TestUntilScan/parse/after/heavy (3.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	18.937s

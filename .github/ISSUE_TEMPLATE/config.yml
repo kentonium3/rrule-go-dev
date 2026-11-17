@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a bug, ask a question or request a feature
+    url: https://github.com/kentonium3/rrule-go/issues/new/choose
+    about: Issues for rrule-go are tracked in the library repository, not in this development workspace.
+  - name: Report a security vulnerability privately
+    url: https://github.com/kentonium3/rrule-go/security/advisories/new
+    about: Report accepted-input crashes, hangs, resource exhaustion, or other security concerns privately.

@@ -1,0 +1,33 @@
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTParsedAnchors$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTParsedAnchors
+=== RUN   TestDSTParsedAnchors/GapNominalCadence
+    rrule_dst_test.go:245: [1] got 2022-10-03 03:30:00 +1100 AEDT (2022-10-02 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+    rrule_dst_test.go:245: [2] got 2022-10-04 03:30:00 +1100 AEDT (2022-10-03 16:30:00 +0000 UTC), want 2022-10-03T15:30:00Z
+=== RUN   TestDSTParsedAnchors/NewYorkPregapOffset
+    rrule_dst_test.go:245: [0] got 2023-03-12 01:30:00 -0500 EST (2023-03-12 06:30:00 +0000 UTC), want 2023-03-12T07:30:00Z
+    rrule_dst_test.go:245: [1] got 2023-03-13 01:30:00 -0400 EDT (2023-03-13 05:30:00 +0000 UTC), want 2023-03-13T06:30:00Z
+=== RUN   TestDSTParsedAnchors/FoldFirst
+    rrule_dst_test.go:245: [0] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+=== RUN   TestDSTParsedAnchors/NewYorkGapSubdailyOverlap
+    rrule_dst_test.go:245: [0] got 2023-03-12 01:30:00 -0500 EST (2023-03-12 06:30:00 +0000 UTC), want 2023-03-12T07:30:00Z
+    rrule_dst_test.go:245: [1] got 2023-03-12 01:45:00 -0500 EST (2023-03-12 06:45:00 +0000 UTC), want 2023-03-12T07:45:00Z
+    rrule_dst_test.go:245: [2] got 2023-03-12 01:30:00 -0500 EST (2023-03-12 06:30:00 +0000 UTC), want 2023-03-12T08:00:00Z
+    rrule_dst_test.go:245: nonascending instances: [2023-03-12 01:30:00 -0500 EST 2023-03-12 01:45:00 -0500 EST 2023-03-12 01:30:00 -0500 EST 2023-03-12 01:45:00 -0500 EST]
+    rrule_dst_test.go:245: [3] got 2023-03-12 01:45:00 -0500 EST (2023-03-12 06:45:00 +0000 UTC), want 2023-03-12T08:15:00Z
+=== RUN   TestDSTParsedAnchors/GapSubdailyOverlap
+=== RUN   TestDSTParsedAnchors/StandaloneGap
+    rrule_dst_test.go:253: [0] got 2023-03-12 01:30:00 -0500 EST (2023-03-12 06:30:00 +0000 UTC), want 2023-03-12T07:30:00Z
+=== RUN   TestDSTParsedAnchors/StandaloneFold
+    rrule_dst_test.go:260: [0] got 2023-04-02 02:30:00 +1000 AEST (2023-04-01 16:30:00 +0000 UTC), want 2023-04-01T15:30:00Z
+--- FAIL: TestDSTParsedAnchors (0.00s)
+    --- FAIL: TestDSTParsedAnchors/GapNominalCadence (0.00s)
+    --- FAIL: TestDSTParsedAnchors/NewYorkPregapOffset (0.00s)
+    --- FAIL: TestDSTParsedAnchors/FoldFirst (0.00s)
+    --- FAIL: TestDSTParsedAnchors/NewYorkGapSubdailyOverlap (0.00s)
+    --- PASS: TestDSTParsedAnchors/GapSubdailyOverlap (0.00s)
+    --- FAIL: TestDSTParsedAnchors/StandaloneGap (0.00s)
+    --- FAIL: TestDSTParsedAnchors/StandaloneFold (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

@@ -1,0 +1,22 @@
+Baseline HEAD a0ea3af6 (source inherited76c646d)
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTMetadataCopiesAndLocation$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTMetadataCopiesAndLocation
+=== RUN   TestDSTMetadataCopiesAndLocation/CopyRetainsNominal
+    rrule_dst_test.go:275: [1] got 2022-10-03 03:30:00 +1100 AEDT (2022-10-02 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+=== RUN   TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates
+=== RUN   TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart
+    rrule_dst_test.go:295: [1] got 2022-10-03 03:30:00 +1100 AEDT (2022-10-02 16:30:00 +0000 UTC), want 2022-10-02T15:30:00Z
+=== RUN   TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal
+=== RUN   TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA
+--- FAIL: TestDSTMetadataCopiesAndLocation (0.00s)
+    --- FAIL: TestDSTMetadataCopiesAndLocation/CopyRetainsNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/ChangedStartInvalidates (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/LocationIdentityInvalidates (0.00s)
+    --- FAIL: TestDSTMetadataCopiesAndLocation/UntilReplacementRetainsStart (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/PublicSetterReplacesNominal (0.00s)
+    --- PASS: TestDSTMetadataCopiesAndLocation/FixedZoneNameIsNotIANA (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

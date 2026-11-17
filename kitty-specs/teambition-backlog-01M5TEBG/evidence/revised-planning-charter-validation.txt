@@ -1,0 +1,11 @@
+2026-10-25; build1a0c8b467; revised user-approved two-issue scope and private ROption metadata/v1.9.0.
+
+Commands (all exit0):
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter generate
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter validate .kittify/charter
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter bundle validate
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter status
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty charter context --action plan --json
+SPEC_KITTY_NO_UPGRADE_CHECK=1 spec-kitty agent decision verify --mission teambition-backlog-01M5TEBG
+
+Generate succeeded; authored governance/directives before/after byte-identical (captured `/tmp/backlog-authored-charter-before.txt`). Eight generated artifacts validate, bundle compliant, source/synced/synthesized fresh. CharterYaml.model_validate(yaml.safe_load(charter.yaml)) passed with installed Python. Runtime context RRULE001 includes inherited baseline76c646d and explicit private-field positional-literal exception/targetv1.9.0; RRULE004 includes only5/6 and inherited7 not assessed/extended. Original interview unchanged from baseline76c646d. Decision verify clean with zero markers/deferred/findings.

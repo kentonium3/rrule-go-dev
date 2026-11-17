@@ -1,0 +1,1 @@
+ok  	github.com/teambition/rrule-go	0.421s

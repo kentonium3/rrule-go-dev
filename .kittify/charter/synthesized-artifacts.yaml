@@ -1,0 +1,10 @@
+# Artifact ids spec-kitty synthesis has created, per kind. Synthesis adds an
+# artifact to an explicit activated_<kind>s list only the first time it creates
+# it, so an artifact you remove stays removed. Written by spec-kitty; do not edit.
+created_tactics:
+- review-policy-tactic
+- testing-philosophy-tactic
+created_styleguides:
+- documentation-policy-style-guide
+- quality-gates-style-guide
+- testing-style-guide

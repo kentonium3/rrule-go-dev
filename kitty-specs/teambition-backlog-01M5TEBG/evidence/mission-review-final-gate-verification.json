@@ -1,0 +1,166 @@
+[
+  {
+    "command_record": "diff-check.json",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.0022461339831352234,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "format.json",
+    "argv": [
+      "gofmt",
+      "-l",
+      "."
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.034934369032271206,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "fuzz.json",
+    "argv": [
+      "go",
+      "test",
+      "-run=^$",
+      "-fuzz=FuzzIterate",
+      "-fuzztime=60s"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 61.35390684497543,
+    "recorded_head": "d4828284acbb5b0c61fdc800f07ae01852005edc",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "go116.json",
+    "argv": [
+      "/tmp/rrule-go116-toolchain/go/bin/go",
+      "test",
+      "-count=1",
+      "./..."
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.7659959510201588,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "golden-build.json",
+    "argv": [
+      "go",
+      "build",
+      "-o",
+      "/tmp/rrule-backlog-final-golden",
+      "docs/repro/05-07-backlog/golden/main.go"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.1863698490196839,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "golden-dst-collect.json",
+    "argv": [
+      "/tmp/rrule-backlog-final-golden",
+      "-corpus",
+      "docs/repro/05-07-backlog/golden/corpus-dst.json",
+      "-out",
+      "/tmp/rrule-backlog-final-gates/current-dst.json"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 1.6528362180106342,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "golden-dst-compare.json",
+    "argv": [
+      "/tmp/rrule-backlog-final-golden",
+      "-corpus",
+      "docs/repro/05-07-backlog/golden/corpus-dst.json",
+      "-baseline",
+      "docs/repro/05-07-backlog/golden/baseline-dst.json",
+      "-current",
+      "/tmp/rrule-backlog-final-gates/current-dst.json"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.00809495896100998,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "golden-forms-collect.json",
+    "argv": [
+      "/tmp/rrule-backlog-final-golden",
+      "-corpus",
+      "docs/repro/05-07-backlog/golden/corpus-forms.json",
+      "-out",
+      "/tmp/rrule-backlog-final-gates/current-forms.json"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.20141481794416904,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "golden-forms-compare.json",
+    "argv": [
+      "/tmp/rrule-backlog-final-golden",
+      "-corpus",
+      "docs/repro/05-07-backlog/golden/corpus-forms.json",
+      "-baseline",
+      "docs/repro/05-07-backlog/golden/baseline-forms.json",
+      "-current",
+      "/tmp/rrule-backlog-final-gates/current-forms.json"
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.0023956160293892026,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "race.json",
+    "argv": [
+      "go",
+      "test",
+      "-race",
+      "-count=1",
+      "./..."
+    ],
+    "exit": 0,
+    "elapsed_seconds": 149.47236739599612,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "test.json",
+    "argv": [
+      "go",
+      "test",
+      "-count=1",
+      "./..."
+    ],
+    "exit": 0,
+    "elapsed_seconds": 1.006517993984744,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  },
+  {
+    "command_record": "vet.json",
+    "argv": [
+      "go",
+      "vet",
+      "./..."
+    ],
+    "exit": 0,
+    "elapsed_seconds": 0.10136383702047169,
+    "recorded_head": "9c517fd084cc43e4e48e78463f8151db66e37f75",
+    "source_hashes_match": true
+  }
+]

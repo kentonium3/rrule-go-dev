@@ -1,0 +1,4 @@
+schema: valid=True, errors=[]
+runtime: valid=True, errors=[]
+admissibility: valid=True, errors=[]
+Eight explicit categories; approval remains pending; no implementation performed.

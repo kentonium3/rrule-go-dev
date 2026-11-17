@@ -1,0 +1,75 @@
+{
+  "entries": [
+    {
+      "created_at": "2026-10-25T07:55:17.724077Z",
+      "decision_id": "01M5S0X2AW994PNVNMEXVCVENB",
+      "final_answer": "Kent confirmed the proposed issue 6 scope: effective explicit/default UNTIL bounds scans, both short-horizon reproductions complete within 100ms operation time, exact inclusive/DST/subdaily/setter/API behavior preserved, no arbitrary caps or Vikunja changes.",
+      "input_key": "intent_summary",
+      "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+      "mission_slug": "until-scan-01M5S0WJ",
+      "opened_by": "codex",
+      "options": [
+        "Confirm scope",
+        "Revise scope"
+      ],
+      "origin_flow": "specify",
+      "other_answer": false,
+      "question": "Confirm issue 6 scope: stop scanning when no later period can yield an occurrence at or before effective UNTIL (explicit or existing default); make both reported short-horizon cases complete within 100ms of operation time; preserve exact occurrence sequences, inclusive boundaries, DST/sub-daily behavior, setters and APIs; no new arbitrary horizon caps or Vikunja changes.",
+      "rationale": null,
+      "resolved_at": "2026-10-25T07:59:18.324998Z",
+      "resolved_by": "kent",
+      "slot_key": null,
+      "status": "resolved",
+      "step_id": "brief-intake",
+      "summary_json": null
+    },
+    {
+      "created_at": "2026-10-25T08:01:31.971325Z",
+      "decision_id": "01M5S18FT3W9X750JBDBGTP2TV",
+      "final_answer": "Kent confirmed conservative period-bound design and delegated exact bound selection to research and independent review; proceed with mission.",
+      "input_key": "engineering_alignment",
+      "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+      "mission_slug": "until-scan-01M5S0WJ",
+      "opened_by": "codex",
+      "options": [
+        "Confirm conservative design",
+        "Revise direction"
+      ],
+      "origin_flow": "plan",
+      "other_answer": false,
+      "question": "Confirm engineering direction: add a conservative period-bound guard, retain existing per-occurrence UNTIL checks, and favor limited extra scanning over any risk of dropping valid DST or period-boundary occurrences. Keep APIs, dependencies and Go minimum unchanged; delegate exact bound selection to implementation research and independent review.",
+      "rationale": null,
+      "resolved_at": "2026-10-25T08:05:14.191733Z",
+      "resolved_by": "kent",
+      "slot_key": "plan.architecture.safe-period-bound",
+      "status": "resolved",
+      "step_id": null,
+      "summary_json": null
+    },
+    {
+      "created_at": "2026-10-25T08:08:41.910136Z",
+      "decision_id": "01M5S1NKNPCYNJNX44929ZRZBQ",
+      "final_answer": "Kent chose option 1: UTC optimization with safe fallback. Narrow optimization to DTSTART location pointer time.UTC; preserve existing behavior for other locations.",
+      "input_key": "timezone_coverage",
+      "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+      "mission_slug": "until-scan-01M5S0WJ",
+      "opened_by": "codex",
+      "options": [
+        "UTC optimization with safe fallback",
+        "Broader timezone-aware design"
+      ],
+      "origin_flow": "plan",
+      "other_answer": false,
+      "question": "Research found that a naive period cutoff can change real midnight-DST normalization behavior, and a universal timezone bound needs more machinery. Choose: deliver the small proved UTC optimization with unchanged fallback for other locations, or broaden the design for timezone-aware pruning and revisit Go-version/complexity constraints.",
+      "rationale": null,
+      "resolved_at": "2026-10-25T08:11:43.594031Z",
+      "resolved_by": null,
+      "slot_key": "plan.architecture.timezone-coverage",
+      "status": "resolved",
+      "step_id": null,
+      "summary_json": null
+    }
+  ],
+  "mission_id": "01M5S0WJ9WB869NDQG5TSKG8AQ",
+  "version": 1
+}

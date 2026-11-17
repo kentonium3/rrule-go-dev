@@ -1,0 +1,166 @@
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#0/options$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#0 (0.00s)
+        --- FAIL: FuzzIterate/seed#0/options (0.00s)
+panic: runtime error: index out of range [-5] [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x607200, 0xc00001c1b0})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc00001c1b0?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001c63b8, 0x270f, 0x1)
+	/tmp/rrule-WP02-original/rrule.go:469 +0xcaa
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001c8008)
+	/tmp/rrule-WP02-original/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc0001c6000)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:107 +0xb4
+testing.tRunner(0xc0001c6000, 0xc0000b3960)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#0/text$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#0 (0.00s)
+        --- FAIL: FuzzIterate/seed#0/text (0.00s)
+panic: runtime error: index out of range [-5] [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x607200, 0xc00001c1f8})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc00001c1f8?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001c63b8, 0x270f, 0x1)
+	/tmp/rrule-WP02-original/rrule.go:469 +0xcaa
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001c8008)
+	/tmp/rrule-WP02-original/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc0001c6000)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:107 +0xb4
+testing.tRunner(0xc0001c6000, 0xc0000b39a0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.005s
+FAIL
+
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#1/options$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#1 (0.00s)
+        --- FAIL: FuzzIterate/seed#1/options (0.00s)
+panic: runtime error: index out of range [386] with length 372 [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x607200, 0xc00001c1c8})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc00001c1c8?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001c63b8, 0x270f, 0x1)
+	/tmp/rrule-WP02-original/rrule.go:485 +0xa54
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001c8008)
+	/tmp/rrule-WP02-original/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc0001c6000)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:107 +0xb4
+testing.tRunner(0xc0001c6000, 0xc0000b39a0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#1/text$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#1 (0.00s)
+        --- FAIL: FuzzIterate/seed#1/text (0.00s)
+panic: runtime error: index out of range [386] with length 372 [recovered, repanicked]
+
+goroutine 20 [running]:
+testing.tRunner.func1.2({0x607200, 0xc0001b4090})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc0001b4090?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).rebuild(0xc0001031b8, 0x270f, 0x1)
+	/tmp/rrule-WP02-original/rrule.go:485 +0xa54
+github.com/teambition/rrule-go.(*RRule).Iterator(0xc0001c2008)
+	/tmp/rrule-WP02-original/rrule.go:888 +0x1d3
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc000102e00)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:107 +0xb4
+testing.tRunner(0xc000102e00, 0xc00012d9c0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 19
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#2/options$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#2 (0.00s)
+        --- FAIL: FuzzIterate/seed#2/options (0.00s)
+panic: runtime error: index out of range [9223372036854775807] with length 13 [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x607200, 0xc00001c1e0})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc00001c1e0?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).calcDaySet(0xc0001c63b8?, 0x270f?, 0x8000000000000000?, 0x0?, 0x617620?)
+	/tmp/rrule-WP02-original/rrule.go:498 +0xdf
+github.com/teambition/rrule-go.(*rIterator).generate(0xc0001c6380)
+	/tmp/rrule-WP02-original/rrule.go:585 +0xba
+github.com/teambition/rrule-go.(*rIterator).next(0xc0001c6380)
+	/tmp/rrule-WP02-original/rrule.go:847 +0x1c
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc0001c6000)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:110 +0x17f
+testing.tRunner(0xc0001c6000, 0xc0000b39e0)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+
+COMMAND: timeout 30 go test -run ^FuzzIterate/seed#2/text$ -count=1 .
+EXIT: 1
+--- FAIL: FuzzIterate (0.00s)
+    --- FAIL: FuzzIterate/seed#2 (0.00s)
+        --- FAIL: FuzzIterate/seed#2/text (0.00s)
+panic: runtime error: index out of range [9223372036854775807] with length 13 [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x607200, 0xc00001c228})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1872 +0x232
+testing.tRunner.func1()
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1875 +0x35b
+panic({0x607200?, 0xc00001c228?})
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/runtime/panic.go:783 +0x132
+github.com/teambition/rrule-go.(*iterInfo).calcDaySet(0xc0001c83b8?, 0x270f?, 0x8000000000000000?, 0x0?, 0x617620?)
+	/tmp/rrule-WP02-original/rrule.go:498 +0xdf
+github.com/teambition/rrule-go.(*rIterator).generate(0xc0001c8380)
+	/tmp/rrule-WP02-original/rrule.go:585 +0xba
+github.com/teambition/rrule-go.(*rIterator).next(0xc0001c8380)
+	/tmp/rrule-WP02-original/rrule.go:847 +0x1c
+github.com/teambition/rrule-go.fuzzIteratePaths.func1(0xc0001c8000)
+	/tmp/rrule-WP02-original/rrule_fuzz_test.go:110 +0x17f
+testing.tRunner(0xc0001c8000, 0xc0000b3a20)
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1934 +0xea
+created by testing.(*T).Run in goroutine 7
+	/home/linuxbrew/.linuxbrew/Cellar/go@1.25/1.25.14/libexec/src/testing/testing.go:1997 +0x465
+FAIL	github.com/teambition/rrule-go	0.004s
+FAIL
+

@@ -1,0 +1,40 @@
+=== RUN   TestClockReachability
+=== RUN   TestClockReachability/joint-minute/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/All elapsed=58.691µs
+=== RUN   TestClockReachability/joint-minute/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/After elapsed=61.706µs
+=== RUN   TestClockReachability/joint-minute/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/string/Iterator elapsed=58.38µs
+=== RUN   TestClockReachability/joint-minute/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/All elapsed=46.257µs
+=== RUN   TestClockReachability/joint-minute/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/After elapsed=48.371µs
+=== RUN   TestClockReachability/joint-minute/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-minute/option/Iterator elapsed=45.025µs
+=== RUN   TestClockReachability/joint-second/string/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/All elapsed=2.0165ms
+=== RUN   TestClockReachability/joint-second/string/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/After elapsed=1.972878ms
+=== RUN   TestClockReachability/joint-second/string/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/string/Iterator elapsed=1.97388ms
+=== RUN   TestClockReachability/joint-second/option/All
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/All elapsed=1.967146ms
+=== RUN   TestClockReachability/joint-second/option/After
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/After elapsed=1.965603ms
+=== RUN   TestClockReachability/joint-second/option/Iterator
+    rrule_reachability_test.go:67:     rrule_reachability_test.go:169: operation=joint-second/option/Iterator elapsed=2.030586ms
+--- PASS: TestClockReachability (0.04s)
+    --- PASS: TestClockReachability/joint-minute/string/All (0.00s)
+    --- PASS: TestClockReachability/joint-minute/string/After (0.00s)
+    --- PASS: TestClockReachability/joint-minute/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/All (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/After (0.00s)
+    --- PASS: TestClockReachability/joint-minute/option/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/All (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/After (0.00s)
+    --- PASS: TestClockReachability/joint-second/string/Iterator (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/All (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/After (0.00s)
+    --- PASS: TestClockReachability/joint-second/option/Iterator (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.045s

@@ -1,0 +1,32 @@
+COMMAND: GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTBysetposRanks$ -v -count=1
+EXIT: 1
+=== RUN   TestDSTBysetposRanks
+=== RUN   TestDSTBysetposRanks/3
+    rrule_dst_test.go:157: [1] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+=== RUN   TestDSTBysetposRanks/-3
+    rrule_dst_test.go:157: [1] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T15:00:00Z
+=== RUN   TestDSTBysetposRanks/HalfHour1
+=== RUN   TestDSTBysetposRanks/HalfHour2
+=== RUN   TestDSTBysetposRanks/HalfHour3
+    rrule_dst_test.go:186: [1] got 2023-10-01 02:30:00 +1100 +11 (2023-09-30 15:30:00 +0000 UTC), want 2023-09-30T16:30:00Z
+=== RUN   TestDSTBysetposRanks/HalfHour-1
+=== RUN   TestDSTBysetposRanks/HalfHour-2
+=== RUN   TestDSTBysetposRanks/HalfHour-3
+    rrule_dst_test.go:186: [1] got 2023-10-01 02:45:00 +1100 +11 (2023-09-30 15:45:00 +0000 UTC), want 2023-09-30T16:15:00Z
+=== RUN   TestDSTBysetposRanks/SignedOverlapDedup
+    rrule_dst_test.go:191: [0] got 2022-10-02 03:00:00 +1100 AEDT (2022-10-01 16:00:00 +0000 UTC), want 2022-10-01T17:00:00Z
+    rrule_dst_test.go:191: [1] got 2022-10-02 04:00:00 +1100 AEDT (2022-10-01 17:00:00 +0000 UTC), want 2022-10-02T16:00:00Z
+    rrule_dst_test.go:191: [2] got 2022-10-03 03:00:00 +1100 AEDT (2022-10-02 16:00:00 +0000 UTC), want 2022-10-02T17:00:00Z
+--- FAIL: TestDSTBysetposRanks (0.00s)
+    --- FAIL: TestDSTBysetposRanks/3 (0.00s)
+    --- FAIL: TestDSTBysetposRanks/-3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour2 (0.00s)
+    --- FAIL: TestDSTBysetposRanks/HalfHour3 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-1 (0.00s)
+    --- PASS: TestDSTBysetposRanks/HalfHour-2 (0.00s)
+    --- FAIL: TestDSTBysetposRanks/HalfHour-3 (0.00s)
+    --- FAIL: TestDSTBysetposRanks/SignedOverlapDedup (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

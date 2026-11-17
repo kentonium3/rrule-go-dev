@@ -1,0 +1,5 @@
+Error: safe_commit: failed to stage requested files in 
+~/repos/rrule-go/.worktrees/unreachable-byset-hang-01M5RZ90-lane-a: 
+'rrule.go': fatal: Unable to create 
+'~/repos/rrule-go/.git/worktrees/unreachable-byset-hang-01M5RZ90-lane-
+a/index.lock': Read-only file system

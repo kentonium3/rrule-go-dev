@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "mission_slug": "unreachable-byset-hang-01M5RZ90",
+  "mission_id": "01M5RZ906D003V6HNGXV4B8ZNF",
+  "mission_branch": "kitty/mission-unreachable-byset-hang-01M5RZ90",
+  "target_branch": "fix/unreachable-byset-hang",
+  "lanes": [
+    {
+      "lane_id": "lane-a",
+      "wp_ids": [
+        "WP01"
+      ],
+      "write_scope": [
+        "docs/issues/02-unreachable-byset-hang.md",
+        "rrule.go",
+        "rrule_reachability_test.go"
+      ],
+      "predicted_surfaces": [
+        "api",
+        "legacy-cleanup"
+      ],
+      "depends_on_lanes": [],
+      "parallel_group": 0
+    }
+  ],
+  "computed_at": "2026-10-25T07:37:54.689141+00:00",
+  "computed_from": "dependency_graph+ownership",
+  "planning_artifact_wps": [],
+  "planning_commit_sha": "373d08fa7ef51f32af2ba391fe6983db293c09de"
+}

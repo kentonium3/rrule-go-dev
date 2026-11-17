@@ -1,0 +1,120 @@
+{
+  "accepted_at": "2026-10-25T22:43:35Z",
+  "accepted_by": "codex",
+  "mode": "local",
+  "parent_commit": "2556fd4d9c01838e20544f48d15e68970fcd2522",
+  "accept_commit": "97b3bc63dc82125ecd91a459b226c45f03c8293c",
+  "commit_created": true,
+  "instructions": [
+    "Acceptance recorded directly on `fix/teambition-backlog`. No merge needed."
+  ],
+  "cleanup_instructions": [],
+  "notes": [
+    "Acceptance commit: 97b3bc63dc82125ecd91a459b226c45f03c8293c",
+    "Accepted from parent commit: 2556fd4d9c01838e20544f48d15e68970fcd2522"
+  ],
+  "accepted_wps": [
+    "WP01",
+    "WP02"
+  ],
+  "approved_wps": [
+    "WP01",
+    "WP02"
+  ],
+  "done_wps": [],
+  "merge_pending_wps": [
+    "WP01",
+    "WP02"
+  ],
+  "canceled_wps": [],
+  "summary": {
+    "mission_slug": "teambition-backlog-01M5TEBG",
+    "mission_number": null,
+    "mission_type": "software-dev",
+    "branch": "fix/teambition-backlog",
+    "repo_root": "~/repos/rrule-go",
+    "feature_dir": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG",
+    "tasks_dir": "~/repos/rrule-go/kitty-specs/teambition-backlog-01M5TEBG/tasks",
+    "worktree_root": "~/repos/rrule-go",
+    "primary_repo_root": "~/repos/rrule-go",
+    "lanes": {
+      "planned": [],
+      "claimed": [],
+      "in_progress": [],
+      "for_review": [],
+      "in_review": [],
+      "approved": [
+        "WP01",
+        "WP02"
+      ],
+      "done": [],
+      "blocked": [],
+      "canceled": []
+    },
+    "work_packages": [
+      {
+        "id": "WP01",
+        "lane": "approved",
+        "title": "RFC civil time and explicit DTSTART",
+        "path": "kitty-specs/teambition-backlog-01M5TEBG/tasks/WP01-civil-time.md",
+        "latest_lane": "approved",
+        "has_lane_entry": true,
+        "metadata": {
+          "lane": "approved",
+          "agent": "codex",
+          "assignee": "codex",
+          "shell_pid": "3568"
+        }
+      },
+      {
+        "id": "WP02",
+        "lane": "approved",
+        "title": "RFC DTSTART UNTIL forms and integrated compatibility",
+        "path": "kitty-specs/teambition-backlog-01M5TEBG/tasks/WP02-time-forms.md",
+        "latest_lane": "approved",
+        "has_lane_entry": true,
+        "metadata": {
+          "lane": "approved",
+          "agent": "codex",
+          "assignee": "codex",
+          "shell_pid": "3568"
+        }
+      }
+    ],
+    "metadata_issues": [],
+    "activity_issues": [],
+    "unchecked_tasks": [],
+    "needs_clarification": [],
+    "missing_artifacts": [],
+    "optional_missing": [],
+    "git_dirty": [],
+    "path_violations": [],
+    "warnings": [
+      "contracts/ requirement waived by meta.json (contracts: none): Existing Go-library signatures/keyed callers are preserved. Kent explicitly approved private ROption parse metadata with the external positional-literal source break and targetv1.9.0; no new endpoint, integration, payload or exported identifier. Compatibility assertions and Go API tests define the contract."
+    ],
+    "failed_checks": [],
+    "skipped_checks": [],
+    "blocked_checks": [],
+    "recommended_fix_order": [],
+    "canceled_wps": [],
+    "all_done": true,
+    "ok": true
+  },
+  "advisories": [],
+  "residual_commit": {
+    "surfaces": [
+      {
+        "surface": "primary",
+        "branch": "fix/teambition-backlog",
+        "status": "committed",
+        "commit_hash": "27032ae385cced1b3947ef284a16dca74e39e19a",
+        "committed": [
+          "kitty-specs/teambition-backlog-01M5TEBG/meta.json"
+        ],
+        "skipped": [],
+        "refused": [],
+        "diagnostic": null
+      }
+    ]
+  }
+}

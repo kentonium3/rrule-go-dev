@@ -1,0 +1,22 @@
+Production HEAD:af862491333c8a06fdb30bb60a58619e65e9baa6 (tests added; no production edits)
+COMMAND:GOCACHE=/tmp/rrule-go-cache go test -run ^TestDSTGapAnchorRankPeriods$ -v -count=1
+EXIT:1
+=== RUN   TestDSTGapAnchorRankPeriods
+=== RUN   TestDSTGapAnchorRankPeriods/YEARLY
+    rrule_dst_test.go:551: [1] got 2008-03-11 02:30:00 -0400 EDT (2008-03-11 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+=== RUN   TestDSTGapAnchorRankPeriods/MONTHLY
+    rrule_dst_test.go:551: [1] got 2007-04-11 02:30:00 -0400 EDT (2007-04-11 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+=== RUN   TestDSTGapAnchorRankPeriods/WEEKLY
+    rrule_dst_test.go:551: [1] got 2007-03-18 02:30:00 -0400 EDT (2007-03-18 06:30:00 +0000 UTC), want 2007-03-11T08:30:00Z
+=== RUN   TestDSTGapAnchorRankPeriods/HalfHour
+    rrule_dst_test.go:559: [1] got 2023-10-02 02:15:00 +1100 +11 (2023-10-01 15:15:00 +0000 UTC), want 2023-09-30T16:15:00Z
+    rrule_dst_test.go:559: [2] got 2023-10-02 02:45:00 +1100 +11 (2023-10-01 15:45:00 +0000 UTC), want 2023-10-01T15:15:00Z
+    rrule_dst_test.go:559: [3] got 2023-10-03 02:15:00 +1100 +11 (2023-10-02 15:15:00 +0000 UTC), want 2023-10-01T15:45:00Z
+--- FAIL: TestDSTGapAnchorRankPeriods (0.00s)
+    --- FAIL: TestDSTGapAnchorRankPeriods/YEARLY (0.00s)
+    --- FAIL: TestDSTGapAnchorRankPeriods/MONTHLY (0.00s)
+    --- FAIL: TestDSTGapAnchorRankPeriods/WEEKLY (0.00s)
+    --- FAIL: TestDSTGapAnchorRankPeriods/HalfHour (0.00s)
+FAIL
+exit status 1
+FAIL	github.com/teambition/rrule-go	0.002s

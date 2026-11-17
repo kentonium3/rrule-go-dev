@@ -1,0 +1,10 @@
+=== RUN   TestDSTParsedSetAnchors
+=== RUN   TestDSTParsedSetAnchors/SydneyGap
+=== RUN   TestDSTParsedSetAnchors/NYGap
+=== RUN   TestDSTParsedSetAnchors/SydneyFold
+--- PASS: TestDSTParsedSetAnchors (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/NYGap (0.00s)
+    --- PASS: TestDSTParsedSetAnchors/SydneyFold (0.00s)
+PASS
+ok  	github.com/teambition/rrule-go	0.002s

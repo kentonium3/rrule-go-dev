@@ -1,0 +1,17 @@
+COMMAND: timeout 180 go test -count=1 ./...
+EXIT: 0
+ok  	github.com/teambition/rrule-go	0.346s
+
+COMMAND: timeout 180 go test -race ./...
+EXIT: 0
+ok  	github.com/teambition/rrule-go	4.666s
+
+COMMAND: timeout 180 go vet ./...
+EXIT: 0
+
+COMMAND: timeout 180 go build ./...
+EXIT: 0
+
+COMMAND: timeout 180 gofmt -l .
+EXIT: 0
+

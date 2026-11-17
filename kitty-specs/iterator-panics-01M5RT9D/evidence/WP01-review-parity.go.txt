@@ -1,0 +1,19 @@
+package rrule
+import("crypto/sha256";"fmt";"os";"testing";"time")
+func TestReviewParity(t *testing.T) {
+ h:=sha256.New(); n:=0
+ for _,zone:=range []string{"UTC","America/New_York","Australia/Lord_Howe"} {
+ loc,err:=time.LoadLocation(zone);if err!=nil {t.Fatal(err)}
+ for _,start:=range []time.Time{time.Date(2026,3,7,23,59,58,0,loc),time.Date(2026,10,31,23,59,58,0,loc),time.Date(9999,12,25,23,59,58,0,loc)} {
+ for f:=YEARLY;f<=SECONDLY;f++ {for _,iv:=range []int{1,2,7,13,25,61,400,1441,86401} {for _,wk:=range []Weekday{MO,TH,SU} {
+ o:=ROption{Freq:f,Dtstart:start,Interval:iv,Count:12,Wkst:wk}
+ if f==WEEKLY{o.Byweekday=[]Weekday{MO,TH,SU}}
+ if f<=DAILY{o.Byhour=[]int{0,10,23};o.Byminute=[]int{0,30};o.Bysecond=[]int{0,59}}
+ r,e:=NewRRule(o);if e!=nil{t.Fatal(e)};next:=r.Iterator()
+ fmt.Fprintf(h,"%s|%v|%v|%d|%v\n",zone,start,f,iv,wk)
+ for i:=0;i<13;i++{d,ok:=next();fmt.Fprintf(h,"%v:%s\n",ok,d.Format(time.RFC3339));if !ok{break};if i==12{t.Fatal("count exceeded")}}
+ n++
+ }}}
+ }}
+ fmt.Fprintf(os.Stdout,"REVIEW_PARITY %d %x\n",n,h.Sum(nil))
+}
